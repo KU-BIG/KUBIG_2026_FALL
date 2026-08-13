@@ -1,0 +1,23 @@
+# data & external code (reproducible via scripts, not committed)
+data/
+external/
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.egg-info/
+.venv/
+venv/
+
+# large artifacts
+*.h5ad
+*.h5
+*.pt
+*.pth
+*.ckpt
+*.npz
+results/tables/*.parquet
+
+# logs
+*.log
