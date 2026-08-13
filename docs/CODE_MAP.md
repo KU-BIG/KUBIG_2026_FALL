@@ -27,18 +27,18 @@
 | Baseline gap 측정: encoder (c) linear CCA | `src/experiments/phase1_baseline.py` | **실행완료** | 결과: `results/tables/phase1_baseline_linear_cca.csv`. cite Δgap=0.047, multiome Δgap=0.156 — **계획서 가설과 반대 방향(잠정치)**. CCA는 상관 최대화가 목적함수라 "gap"을 그 자체로 최소화하므로, encoder (b)(contrastive) 결과 없이는 해석 보류 — docs/HISTORY.md 2026-08-13(계속 3) 참고 |
 | Baseline gap 측정: encoder (b) MatchCLOT-arch(from-scratch) | `src/experiments/phase1_baseline_matchclot.py` | 실행중 | 계획서가 실제로 검증하려던 핵심 비교. 실행 결과는 HISTORY.md에 추가 예정 |
 | Signal quality(SNR) 공변량 | `src/metrics/signal_quality.py` | 미구현 | - |
-| Batch variance partitioning | `src/experiments/phase1_batch_confound.py` | 미구현 | - |
-| Harmony on/off + 과교정 sanity check | `src/experiments/phase1_batch_confound.py` | 미구현 | - |
-| Matched-N 조건 | `src/experiments/phase1_batch_confound.py` | 미구현 | - |
+| Batch variance partitioning | `src/experiments/phase1_batch_confound.py` (`group_r2`+`permutation_test_r2` 사용) | 구현완료(미실행) | GEX-CCA-embedding 풀에 modality/batch 라벨을 붙여 R² 분해. harmonypy 방향 버그 수정 완료(HISTORY 참고) |
+| Harmony on/off + 과교정 sanity check | `src/experiments/phase1_batch_confound.py` (`_harmony_correct`, silhouette) | 구현완료(미실행) | cell_type silhouette로 과교정 확인 |
+| Matched-N 조건 | `src/experiments/phase1_batch_confound.py::main` | 구현완료(미실행) | cite/multiome을 min(N)으로 subsample 후 동일 파이프라인 재실행 |
 
 ## Phase 2 — 정보 비대칭 조작 실험
 
 | 계획서 항목 | 파일 | 상태 | 구현 방식 요약 |
 |---|---|---|---|
-| 실험 A: quantity 축 | `src/experiments/phase2_expA_dial_swipe.py` | 미구현 | - |
-| 실험 A: quality 축 (통계매칭/쌍셔플 control 포함) | `src/experiments/phase2_expA_dial_swipe.py` | 미구현 | - |
-| 실험 B: cross-cell-type 5조건 + permutation null | `src/experiments/phase2_expB_crosstype.py` | 미구현 | - |
-| 실험 C: 단일 lineage dose-response + N-matched | `src/experiments/phase2_expC_lineage.py` | 미구현 | - |
+| 실험 A: quantity 축 | `src/experiments/phase2_expA_dial_swipe.py::run_quantity_axis` | 구현완료(미실행) | HVG 50/134/500/2000/전체 × 3 seed, MatchCLOT-arch 인코더에 직접(PCA 없이) 입력 |
+| 실험 A: quality 축 (통계매칭/쌍셔플 control 포함) | `src/experiments/phase2_expA_dial_swipe.py::run_quality_axis` | 구현완료(미실행) | random-134 / ADT-gene_id-matched / 발현분위수-matched-random / ADT-matched-pair-shuffled, 각 3 seed |
+| 실험 B: cross-cell-type 5조건 + permutation null | `src/experiments/phase2_expB_crosstype.py` | 구현완료(미실행) | true_pair/random_pair/same_type_diff_object/same_lineage_diff_type/diff_lineage, null은 500회 random-pair 재추출. 실행 전 encoder1/2 배정 버그 발견+수정(HISTORY 참고) |
+| 실험 C: 단일 lineage dose-response + N-matched | `src/experiments/phase2_expC_lineage.py` | 구현완료(미실행) | `src/data/cell_lineage.py`의 lineage 매핑으로 5개 계통(T_CD4/T_CD8/Myeloid_Mono/B_cell/NK_ILC) + 전체 조건, heterogeneity는 Shannon entropy로 정량화 |
 
 ## Phase 3 — 통합분석
 
