@@ -35,8 +35,8 @@
 
 | 계획서 항목 | 파일 | 상태 | 구현 방식 요약 |
 |---|---|---|---|
-| 실험 A: quantity 축 | `src/experiments/phase2_expA_dial_swipe.py::run_quantity_axis` | 구현완료(미실행) | HVG 50/134/500/2000/전체 × 3 seed, MatchCLOT-arch 인코더에 직접(PCA 없이) 입력 |
-| 실험 A: quality 축 (통계매칭/쌍셔플 control 포함) | `src/experiments/phase2_expA_dial_swipe.py::run_quality_axis` | 구현완료(미실행) | random-134 / ADT-gene_id-matched / 발현분위수-matched-random / ADT-matched-pair-shuffled, 각 3 seed |
+| 실험 A: quantity 축 | `src/experiments/phase2_expA_dial_swipe.py::run_quantity_axis` | **실행완료** | 결과: `results/tables/phase2_expA_dial_swipe.csv`. **계획서 가설과 반대**: 유전자 50→13,953개로 늘수록 delta_gap이 0.588→0.076로 단조 감소(약 8배). retrieval 성능은 2,000개에서 정점(0.184) 후 하락 — gap과 downstream 성능의 최적점이 다름. 세부 해석: docs/HISTORY.md 2026-08-13(계속 6) |
+| 실험 A: quality 축 (통계매칭/쌍셔플 control 포함) | `src/experiments/phase2_expA_dial_swipe.py::run_quality_axis` | **실행완료** | ADT-matched 유전자는 134개가 아니라 실제로는 36개만 확보(대부분 isotype control/gene_id 없음). 36개 기준 공정비교: adt_matched gap=0.363 vs stat_matched_random gap=0.752 — **내용(quality)이 gap에 실제로 영향을 준다는 걸 계획서 가설 방향대로 확인**. pair-shuffled(0.983)가 가장 커서 "올바른 대응관계 > 올바른 내용"도 확인 |
 | 실험 B: cross-cell-type 5조건 + permutation null | `src/experiments/phase2_expB_crosstype.py` | 구현완료(미실행) | true_pair/random_pair/same_type_diff_object/same_lineage_diff_type/diff_lineage, null은 500회 random-pair 재추출. 실행 전 encoder1/2 배정 버그 발견+수정(HISTORY 참고) |
 | 실험 C: 단일 lineage dose-response + N-matched | `src/experiments/phase2_expC_lineage.py` | 구현완료(미실행) | `src/data/cell_lineage.py`의 lineage 매핑으로 5개 계통(T_CD4/T_CD8/Myeloid_Mono/B_cell/NK_ILC) + 전체 조건, heterogeneity는 Shannon entropy로 정량화 |
 
