@@ -48,6 +48,14 @@
 
 ---
 
+## 후속 분석 (계획서 원문에는 없던 추가 항목, 1회전 실행 후 발견한 패턴을 조사하기 위해 추가)
+
+| 항목 | 파일 | 상태 | 구현 방식 요약 |
+|---|---|---|---|
+| Gap 지표 분해(delta_gap/alignment/uniformity/linear_sep 중 무엇이 성능을 예측하는가) | `src/experiments/followup_gap_decomposition.py` | **실행완료** | phase1 baseline + exp A + exp C 결과(44행) 풀링, 지표별 top5_retrieval_acc 상관 + 표준화 다중회귀. 결과: `results/tables/followup_gap_decomposition_*.csv`. **이전 결론(exp C에서 gap과 성능이 어긋난다는 기록) 정정** — docs/HISTORY.md 2026-08-13(계속 8) |
+
+---
+
 ## 참고 자료 / 외부 의존성
 
 | 항목 | 위치 | 비고 |
