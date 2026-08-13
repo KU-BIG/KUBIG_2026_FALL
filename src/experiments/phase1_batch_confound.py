@@ -38,9 +38,15 @@ SILHOUETTE_MAX_N = 5000
 
 
 def _harmony_correct(x: np.ndarray, batch_labels: np.ndarray) -> np.ndarray:
+    """Harmony batch correction. NOTE: this harmonypy version (2.0.0, C++
+    backend) returns Z_corr in the *same* orientation as the input
+    (cells x features) — verified empirically, since it differs from the
+    classic pure-python harmonypy's transposed convention that other code
+    (e.g. MatchCLOT's own harmony() wrapper) assumes. Do not transpose here.
+    """
     meta = pd.DataFrame({"batch": batch_labels})
     ho = harmonypy.run_harmony(x, meta, vars_use=["batch"], verbose=False)
-    return np.asarray(ho.Z_corr).T.astype(np.float32)
+    return np.asarray(ho.Z_corr).astype(np.float32)
 
 
 def _preprocess_pair(pair: str, other_modality: str, cell_idx: np.ndarray | None, seed: int):
