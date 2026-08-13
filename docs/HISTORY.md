@@ -145,6 +145,30 @@
 
 ---
 
+## 2026-08-13 (계속 5) — Phase 1 batch confound 실행 완료 (실측 결과)
+
+**한 일:** `phase1_batch_confound.py` 전체(full / matched-N × harmony on/off, 8개 조건) 실행 완료.
+
+| pair | condition | harmony | delta_gap | linear_sep | top5_retrieval | r2_batch (p) | r2_modality | celltype_silhouette |
+|---|---|---|---|---|---|---|---|---|
+| cite | full | off | 0.0467 | 0.530 | 0.062 | 0.1018 (0.005) | 0.0000 | 0.0898 |
+| cite | full | on | 0.0477 | 0.558 | 0.028 | 0.0221 (0.005) | 0.0000 | 0.0985 |
+| multiome | full | off | 0.1559 | 0.679 | 0.123 | 0.0858 (0.005) | 0.0038 | 0.0539 |
+| multiome | full | on | 0.1638 | 0.684 | 0.070 | 0.0189 (0.005) | 0.0045 | 0.0591 |
+| cite | matchedN(n=69,249) | off | 0.0479 | 0.531 | 0.074 | 0.0996 (0.005) | 0.0000 | 0.0909 |
+| cite | matchedN | on | 0.0483 | 0.547 | 0.036 | 0.0220 (0.005) | 0.0000 | 0.0982 |
+| multiome | matchedN(=전체와 동일 N) | off/on | (full과 동일) | | | | | |
+
+**판단 및 해석**
+
+1. **Matched-N 조건이 사실상 full과 동일** — cite를 69,249개로 subsample해도 delta_gap(0.0467→0.0479)이 거의 안 변함. multiome은 애초에 두 데이터셋 중 더 작은 쪽(69,249)이라 matchedN의 n이 곧 자기 자신의 전체 크기와 같아서 subsampling이 실질적으로 발생하지 않음(정확히 같은 값 출력, 버그 아니라 설계상 당연한 결과 — HISTORY에 명시해 나중에 "왜 두 행이 똑같지?"로 헷갈리지 않게 함). **결론: 두 데이터셋의 세포 수 차이(9만 vs 7만)가 gap 크기 차이의 원인이 아니다.**
+2. **Harmony on/off — 배치효과가 gap의 주원인이 아님을 재확인** (이전 항목에서 이미 기록한 내용과 일관). 배치가 설명하는 분산(r2_batch)이 두 pair 모두 ~78% 감소하는데도 delta_gap은 거의 그대로(cite는 오히려 미세 증가, multiome도 미세 증가). Cell-type silhouette도 유지/소폭 상승 → 과교정 없음.
+3. **예상 밖의 흥미로운 부작용 발견**: Harmony 적용 후 **top5_retrieval_acc가 뚜렷하게 하락**했다 (cite 0.062→0.028, multiome 0.123→0.070 — 절반 이하로). 반면 linear_separability는 오히려 소폭 상승(cite 0.530→0.558, multiome 0.679→0.684). 즉 Harmony는 "배치 매크로 구조"는 잘 지우지만(r2_batch↓), 개별 세포 수준의 미세 대응 관계(retrieval에 필요한 정보)는 오히려 훼손하는 것으로 보인다. 가능한 원인: 본 구현에서 GEX와 ADT/ATAC을 각각 독립적으로(같은 배치 라벨 기준이지만 서로 참조 없이) harmonize한 뒤 CCA를 새로 fit하다 보니, 두 모달리티 사이에 남아있던 세포 수준 미세 정렬 정보가 배치 보정 과정에서 함께 뭉개졌을 가능성. **이건 배치효과 제거와 gap 측정이 서로 다른 목적의 전처리라는 걸 보여주는 유용한 발견**으로 기록 — 이후 실험에서 "batch corrected" 조건과 "raw" 조건의 downstream 성능을 같은 잣대로 비교할 때 이 트레이드오프를 염두에 둬야 함.
+
+**다음 단계:** 실험 A(정보량 dial swipe) 실행 중.
+
+---
+
 ## 디렉토리 구조 (참고용, 바뀔 때마다 갱신)
 
 ```
