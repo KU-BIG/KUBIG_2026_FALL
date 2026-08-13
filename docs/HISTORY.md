@@ -208,6 +208,71 @@
 
 ---
 
+## 2026-08-13 (계속 7) — 실험 B, C, Phase 3 통합분석 실행 완료 — 전체 계획서 실행 1회전 완료
+
+**한 일:** 남은 실행 체인(`phase2_expB_crosstype.py`, `phase2_expC_lineage.py`, `phase3_integration.py`)이 전부 성공적으로 끝남 (exit code 0). 이걸로 **계획서 Phase 0~3 전체를 한 바퀴 다 돌렸다.**
+
+### 실험 B — Cross-cell-type 미스매칭 결과
+
+| condition | n_pairs | mean_sim | null 대비 p-value |
+|---|---|---|---|
+| true_pair | 2000 | 0.647 | 0.002 |
+| same_type_diff_object | 2000 | 0.412 | 0.002 |
+| same_lineage_diff_type | 2000 | 0.171 | 0.002 |
+| diff_lineage | 2000 | -0.003 | **1.000** |
+| random_pair (null) | 2000 | 0.009 | — |
+
+**해석**: 계획서가 예상한 그대로 깨끗한 단조 감소 패턴이 나왔다 — true_pair > same_type_diff_object > same_lineage_diff_type > diff_lineage ≈ random_pair(null). 특히 diff_lineage의 p-value가 정확히 1.0으로, "완전히 다른 계통이면 무작위 쌍과 통계적으로 구분이 안 된다"는 걸 아주 깔끔하게 보여준다. 반대로 "같은 세포타입이면 다른 개체여도" 유사도가 여전히 매우 높다(0.412, null 대비 유의) — 인코더가 개별 세포를 외운 게 아니라 세포타입 수준의 일반화된 정보를 학습했다는 뜻이고, 이건 계획서가 exp B를 설계한 목적(개체 각인 vs 세포타입 편향 구분) 그대로 확인된 것이다.
+
+### 실험 C — 단일 계통 heterogeneity dose-response 결과
+
+| condition | n | n_cell_types | heterogeneity(entropy) | delta_gap | top5_retrieval |
+|---|---|---|---|---|---|
+| full_all_lineages | 90,261 | 45 | 3.069 | 0.0802 | 0.182 |
+| single_lineage_T_CD4 | 14,621 | 5 | 1.074 | 0.0768 | 0.208 |
+| matchedN_for_T_CD4 | 14,621 | 45 | 3.071 | **0.0547** | 0.228 |
+| single_lineage_T_CD8 | 10,663 | 9 | 1.982 | 0.1113 | 0.183 |
+| matchedN_for_T_CD8 | 10,663 | 45 | 3.054 | **0.0620** | 0.276 |
+| single_lineage_Myeloid_Mono | 24,328 | 2 | 0.343(최저) | 0.0775 | 0.120 |
+| matchedN_for_Myeloid_Mono | 24,328 | 45 | 3.079 | **0.0634** | 0.221 |
+| single_lineage_B_cell | 8,977 | 5 | 1.401 | 0.0704 | 0.159 |
+| matchedN_for_B_cell | 8,977 | 45 | 3.091 | **0.0576** | 0.222 |
+| single_lineage_NK_ILC | 8,391 | 4 | 0.911 | 0.0772 | 0.145 |
+| matchedN_for_NK_ILC | 8,391 | 45 | 3.089 | **0.0531** | 0.222 |
+
+**판단 및 해석 (중요 — 계획서 가설을 반증하는 방향의 결과, 숨기지 않고 그대로 기록)**
+
+- **5개 계통 전부에서, N을 맞췄을 때 오히려 matchedN(전체 이질성 유지) 쪽의 delta_gap이 single-lineage(이질성 낮춤) 쪽보다 작다.** 즉 이질성을 낮추면 gap이 줄어들 거라는 계획서의 가설과 **정반대 방향**의 결과다. Myeloth_Mono가 heterogeneity entropy 기준 가장 낮은 계통(0.343)인데도 gap이 특별히 작지 않다는 것도 같은 방향.
+- 계획서 원문이 이 실험에 대해 미리 정해둔 반증 기준을 그대로 인용하면: *"만약 이 조건에서 gap이 줄어들지 않는다면 인과관계가 single-cell 데이터에서는 성립하지 않는다는 증거가 된다"*. **이 기준에 따르면 이번 결과는 "heterogeneity 감소 → gap 감소"라는 인과 경로가 (적어도 이 구현·이 데이터에서는) 성립하지 않는다는 증거로 해석해야 한다.** 좋은 결과가 아니라고 숨기는 게 아니라, 계획서가 미리 정해둔 판정 기준을 그대로 적용한 정직한 결론이다.
+- 가능한 이유(추측, 추가 검증 필요): 단일 계통으로 좁히면 ADT 134개 항체 패널 중 그 계통에서는 거의 발현되지 않는(즉 사실상 상수에 가까운) 마커가 많아져서, contrastive loss가 학습에 쓸 수 있는 유효한 대조 신호(negative pair들 사이의 변별력)가 오히려 줄어드는 것일 수 있다 — heterogeneity 감소가 "GEX가 인코딩해야 할 정보량 감소"로 이어지긴 하지만, 동시에 "InfoNCE가 학습에 활용할 수 있는 유효 신호"도 함께 줄어들어 오히려 정렬이 더 어려워질 가능성. 이건 검증 안 된 사후 가설이므로 그대로 확정하지 않고 다음 조사 항목으로 남겨둠.
+- retrieval 성능은 오히려 matchedN 쪽이 대체로 더 높다(예: T_CD8 matchedN 0.276 vs single 0.183) — gap과 downstream 성능이 여기서도 같은 방향으로 안 움직인다는 걸 재확인.
+
+### Phase 3 — 통합 mediation 분석 (실험 A quantity 축 15개 관측치 기준)
+
+```
+Step 1 (asymmetry -> gap):        coef=-0.0852, p<0.001   (정보 비대칭↑ → gap↓, exp A 결과와 일관)
+Step 2 (asymmetry -> performance): coef=+0.0204, p=0.003   (정보 비대칭↑ → 성능↑)
+Step 3 (asymmetry+gap -> perf):    asymmetry coef=-0.0092(비유의, p=0.196), gap coef=-0.3475(유의, p<0.001)
+→ Mediation 신호 확인됨: gap이 유의하고 asymmetry의 직접효과가 사실상 사라짐 (0.0204 → -0.0092)
+```
+
+**해석**: 통계적으로는 "정보 비대칭 → gap → 성능"이라는 매개 구조 자체는 확인된다(gap이 유의한 매개변수, 직접효과 소멸). 다만 **방향은 계획서 원 가설과 반대**다 — 여기서 "정보 비대칭"은 log(유전자수/134)로 정의했으므로, 비대칭이 커질수록(유전자가 많아질수록) gap은 줄고 성능은 오른다. 그리고 gap 자체는 성능에 음의 방향으로 작동한다(gap↑ → 성능↓, 계획서가 원래 기대한 방향). **주의할 점**: 이 회귀는 asymmetry_index가 정의된 exp A quantity 축 15개 관측치에만 기반한다(quality 축·exp C는 이 척도로 환산 불가능하다고 판단해 제외 — `phase3_integration.py` docstring에 명시). 표본이 작으므로 통계적으로 유의하긴 해도 이 계수 크기를 과신하지 않아야 한다.
+
+**세션 전체를 관통하는 핵심 그림 (Phase 0~3 1회전 결론 요약)**
+1. Batch effect는 gap의 원인이 아니다 (Phase 1).
+2. "정보량"(유전자 개수) 자체는 계획서 예상과 반대로 gap을 줄인다 — 아마도 "충분한 정보"의 문제였지 "너무 많은 정보"의 문제가 아니었던 것 같다 (실험 A quantity).
+3. "정보의 질"(내용이 실제로 관련 있는가)은 계획서 예상대로 gap에 영향을 준다 (실험 A quality).
+4. Cross-cell-type 정보는 계획서 예상대로 계통 거리에 따라 매끄럽게 감쇠한다 (실험 B).
+5. Heterogeneity 감소가 gap을 줄인다는 가설은 **이번 데이터·구현에서는 반증됐다** (실험 C) — 계획서가 스스로 정한 반증 기준에 따름.
+6. Gap 크기와 downstream 매칭 성능은 자주 같이 안 움직인다 — 이건 여러 실험(Harmony, quantity 축, exp C)에서 반복적으로 나타난 패턴이라 우연이 아닐 가능성이 크다.
+
+**다음 단계 (2회차로 넘어갈 때 우선순위)**
+- 실험 C의 반증 결과가 재현되는지 다른 계통 조합·다른 seed로 재확인.
+- exp A quantity 축을 GEX-ATAC(multiome) pair에도 적용해서 방향이 일관되는지 확인.
+- "gap과 성능이 왜 자주 어긋나는지"를 직접 조사하는 후속 분석(예: gap을 uniformity/alignment로 분해해서 어느 성분이 성능과 실제로 상관되는지).
+
+---
+
 ## 디렉토리 구조 (참고용, 바뀔 때마다 갱신)
 
 ```

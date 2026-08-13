@@ -37,14 +37,14 @@
 |---|---|---|---|
 | 실험 A: quantity 축 | `src/experiments/phase2_expA_dial_swipe.py::run_quantity_axis` | **실행완료** | 결과: `results/tables/phase2_expA_dial_swipe.csv`. **계획서 가설과 반대**: 유전자 50→13,953개로 늘수록 delta_gap이 0.588→0.076로 단조 감소(약 8배). retrieval 성능은 2,000개에서 정점(0.184) 후 하락 — gap과 downstream 성능의 최적점이 다름. 세부 해석: docs/HISTORY.md 2026-08-13(계속 6) |
 | 실험 A: quality 축 (통계매칭/쌍셔플 control 포함) | `src/experiments/phase2_expA_dial_swipe.py::run_quality_axis` | **실행완료** | ADT-matched 유전자는 134개가 아니라 실제로는 36개만 확보(대부분 isotype control/gene_id 없음). 36개 기준 공정비교: adt_matched gap=0.363 vs stat_matched_random gap=0.752 — **내용(quality)이 gap에 실제로 영향을 준다는 걸 계획서 가설 방향대로 확인**. pair-shuffled(0.983)가 가장 커서 "올바른 대응관계 > 올바른 내용"도 확인 |
-| 실험 B: cross-cell-type 5조건 + permutation null | `src/experiments/phase2_expB_crosstype.py` | 구현완료(미실행) | true_pair/random_pair/same_type_diff_object/same_lineage_diff_type/diff_lineage, null은 500회 random-pair 재추출. 실행 전 encoder1/2 배정 버그 발견+수정(HISTORY 참고) |
-| 실험 C: 단일 lineage dose-response + N-matched | `src/experiments/phase2_expC_lineage.py` | 구현완료(미실행) | `src/data/cell_lineage.py`의 lineage 매핑으로 5개 계통(T_CD4/T_CD8/Myeloid_Mono/B_cell/NK_ILC) + 전체 조건, heterogeneity는 Shannon entropy로 정량화 |
+| 실험 B: cross-cell-type 5조건 + permutation null | `src/experiments/phase2_expB_crosstype.py` | **실행완료** | 결과: `results/tables/phase2_expB_crosstype.csv`. **계획서 가설과 방향 일치, 매우 깔끔함**: true_pair(0.647) > same_type_diff_object(0.412) > same_lineage_diff_type(0.171) > diff_lineage(-0.003≈null, p=1.0). docs/HISTORY.md 2026-08-13(계속 7) |
+| 실험 C: 단일 lineage dose-response + N-matched | `src/experiments/phase2_expC_lineage.py` | **실행완료** | 결과: `results/tables/phase2_expC_lineage.csv`. **계획서 가설과 반대 — 계획서 자체가 정한 반증 기준에 해당**: 5개 계통 전부에서 single-lineage(이질성↓) 쪽이 matchedN(이질성 유지) 쪽보다 gap이 더 크다. "heterogeneity 감소→gap 감소" 인과관계가 이 데이터/구현에서는 성립하지 않음. docs/HISTORY.md 2026-08-13(계속 7) 참고 |
 
 ## Phase 3 — 통합분석
 
 | 계획서 항목 | 파일 | 상태 | 구현 방식 요약 |
 |---|---|---|---|
-| Mediation analysis (asymmetry → gap → performance) | `src/experiments/phase3_integration.py` | 미구현 | - |
+| Mediation analysis (asymmetry → gap → performance) | `src/experiments/phase3_integration.py` | **실행완료** | 결과: `results/tables/phase3_pooled.csv` + `logs/phase3_integration.log`. exp A quantity 축 15개 관측치 기준 mediation 신호 확인(gap 유의, asymmetry 직접효과 소멸) — 단 방향은 "정보 비대칭↑→gap↓→성능↑"으로 계획서 가설과 반대(exp A 결과와 일관). 표본 작음(n=15) 주의. docs/HISTORY.md 2026-08-13(계속 7) |
 
 ---
 
