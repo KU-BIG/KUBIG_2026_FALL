@@ -113,6 +113,38 @@
 
 ---
 
+## 2026-08-13 (계속 4) — 전체 계획서(Phase 0~3) 코드 작성 완료, encoder (b) 첫 실측 결과
+
+**한 일**
+- Phase 2 실험 B(`phase2_expB_crosstype.py`, `src/data/cell_lineage.py`), 실험 C(`phase2_expC_lineage.py`), Phase 3 통합분석(`phase3_integration.py`, Baron & Kenny mediation) 구현 완료. 이걸로 **계획서 Phase 0~3 전체 코드가 작성되고 단위테스트(48개, 전부 통과)를 거친 상태**가 됨. 아직 실행 전인 것: batch confound, 실험 A/B/C, 통합분석.
+- Encoder (b) MatchCLOT-arch(from-scratch, contrastive) baseline 실행 완료 — **계획서가 실제로 검증하려던 핵심 비교**.
+
+**실행 중 발견 및 수정한 버그 2건 (실행 전에 합성데이터로 잡음, 실제 실행에는 영향 없음)**
+1. `phase2_expB_crosstype.py`의 `_cosine_sim_pairs()` 내부에서 encoder_modality1/2 배정이 실제 학습 시(`train_modality_clip(gex, other)` → modality1=GEX, modality2=other) 방향과 반대로 되어 있었는데, 호출부에서도 인자 순서를 반대로 넘기고 있어서 **두 실수가 우연히 상쇄되어 결과는 맞지만 코드는 매우 위험한 상태**였음. 둘 중 하나만 나중에 "고치면" 조용히 깨지는 전형적인 함정이라 판단, 명확한 단일 규약으로 리팩터링. 입력 차원이 서로 다른 합성 데이터로 회귀테스트 작성(잘못 배정되면 바로 shape 에러로 터지도록).
+2. (사소) exp B 초안에 실행되지 않는 죽은 코드(빈 placeholder 루프) 발견, 실행 전 제거.
+
+**Phase 1 baseline 최종 비교 (linear CCA vs MatchCLOT-arch, 둘 다 3 seed 평균)**
+
+| pair | encoder | delta_gap (mean±std) | linear_separability | top5_retrieval_acc |
+|---|---|---|---|---|
+| cite (GEX-ADT) | linear CCA | 0.0467 | 0.530 | 0.062 |
+| cite (GEX-ADT) | MatchCLOT-arch | 0.0838 ± 0.0032 | 0.783 | 0.184 ± 0.002 |
+| multiome (GEX-ATAC) | linear CCA | 0.1559 | 0.679 | 0.123 |
+| multiome (GEX-ATAC) | MatchCLOT-arch | 0.0897 ± 0.0020 | 0.845 | 0.249 ± 0.002 |
+
+**판단 및 해석 (중요 — 이번 세션의 핵심 실측 결과)**
+
+- **두 인코더 모두에서 GEX-ATAC의 delta_gap이 GEX-ADT보다 크거나 같게 나왔다 — 계획서 원 가설("GEX-ADT gap이 GEX-ATAC보다 유의미하게 크다")과 반대 방향.** 다만 크기 차이는 인코더에 따라 크게 다르다: linear CCA에서는 ATAC이 ADT보다 ~3.3배 컸는데, MatchCLOT-arch(contrastive)에서는 그 차이가 ~1.07배로 훨씬 작아졌다. → **"어느 쪽 gap이 더 큰가"의 방향 자체는 인코더 선택에 어느 정도 강건해 보이지만, 그 격차의 크기는 인코더(목적함수)에 크게 의존한다**는 것이 현재까지의 잠정 결론. (baseline 인코더 3종 비교의 원래 취지—"gap 순위가 인코더에 강건한지 확인"—가 실제로 의미 있는 발견을 만들어냈다.)
+- **gap과 downstream 성능(top-5 retrieval)이 같은 방향으로 안 움직인다**: MatchCLOT-arch에서 GEX-ATAC이 GEX-ADT보다 delta_gap도 크고 top5_retrieval_acc도 더 높다(0.249 vs 0.184). 즉 "gap이 크면 매칭 성능이 나쁘다"는 순진한 예상과 다르게, 이 데이터에서는 gap이 큰 쪽이 오히려 retrieval을 더 잘한다. 이는 이미지-텍스트 CLIP 문헌에서도 보고된 바 있는 패턴(gap 크기와 downstream 성능이 항상 반비례하지는 않음)과 일치하며, "gap 자체"와 "매칭 가능성"을 같은 것으로 섞어서 해석하면 안 된다는 근거가 된다.
+- **주의할 한계**: 이번 MatchCLOT-arch 학습은 원 논문의 7000 epoch가 아니라 150 epoch로 축소했고(계산자원/실험 조건 수 트레이드오프, `matchclot_arch.py` docstring에 근거 명시), pretrained weight와 비교도 못 했다(링크 만료). 그래서 이 delta_gap 절대값이나 정확한 비율을 논문 수준 결론으로 취급하면 안 되고, **"방향이 두 인코더에서 일관된다"는 정성적 신호** 정도로만 우선 받아들이는 게 안전하다고 판단. Phase 2 실험(정보 비대칭 조작)의 결과가 이 방향성과 일관되게 나오는지가 다음 검증 포인트.
+- Seed 간 분산이 매우 작다(std 0.002~0.003 수준) — 150 epoch 정도로도 이 정도 크기 데이터·모델에서는 학습이 안정적으로 수렴한다는 뜻으로 해석, 반복 seed 수(3개)가 부족하지 않다는 근거로 사용 가능.
+
+**다음 단계**
+- Phase 1 batch confound, Phase 2 실험 A/B/C, Phase 3 통합분석을 순서대로 백그라운드 실행 (이미 작성된 스크립트 그대로).
+- 각 실행이 끝나는 대로 HISTORY.md에 결과 반영.
+
+---
+
 ## 디렉토리 구조 (참고용, 바뀔 때마다 갱신)
 
 ```
