@@ -40,6 +40,7 @@
 | 실험 A: quality 축 (통계매칭/쌍셔플 control 포함) | `src/experiments/phase2_expA_dial_swipe.py::run_quality_axis` | **실행완료** | ADT-matched 유전자는 134개가 아니라 실제로는 36개만 확보(대부분 isotype control/gene_id 없음). 36개 기준 공정비교: adt_matched gap=0.363 vs stat_matched_random gap=0.752 — **내용(quality)이 gap에 실제로 영향을 준다는 걸 계획서 가설 방향대로 확인**. pair-shuffled(0.983)가 가장 커서 "올바른 대응관계 > 올바른 내용"도 확인 |
 | 실험 B: cross-cell-type 5조건 + permutation null | `src/experiments/phase2_expB_crosstype.py` | **실행완료** | 결과: `results/tables/phase2_expB_crosstype.csv`. **계획서 가설과 방향 일치, 매우 깔끔함**: true_pair(0.647) > same_type_diff_object(0.412) > same_lineage_diff_type(0.171) > diff_lineage(-0.003≈null, p=1.0). docs/HISTORY.md 2026-08-13(계속 7) |
 | 실험 C: 단일 lineage dose-response + N-matched | `src/experiments/phase2_expC_lineage.py` | **실행완료** | 결과: `results/tables/phase2_expC_lineage.csv`. **계획서 가설과 반대 — 계획서 자체가 정한 반증 기준에 해당**: 5개 계통 전부에서 single-lineage(이질성↓) 쪽이 matchedN(이질성 유지) 쪽보다 gap이 더 크다. "heterogeneity 감소→gap 감소" 인과관계가 이 데이터/구현에서는 성립하지 않음. docs/HISTORY.md 2026-08-13(계속 7) 참고 |
+| 실험 C 재현성 확인 (계획서 외 후속, 다중 seed) | `src/experiments/phase2_expC_reproducibility.py` | **실행완료** | 결과: `results/tables/phase2_expC_reproducibility.csv`. 3 seed×독립 subsample(총 33회 학습) — **4/5 계통은 9번의 seed쌍 전부(100%)에서, B_cell은 67%에서 반증 패턴 재현**. Seed-fluke가 아님을 확인, 반증 결론을 확정으로 격상. docs/HISTORY.md 2026-08-13(계속 10) |
 
 ## Phase 3 — 통합분석
 
