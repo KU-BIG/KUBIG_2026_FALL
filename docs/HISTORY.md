@@ -59,6 +59,31 @@
 
 ---
 
+## 2026-08-13 (계속 2) — 실제 데이터 구조 확인, Phase 1 데이터/인코더 모듈 구현, OOM 버그 수정
+
+**한 일**
+- h5ad 실제 구조 확인: cite(90,261 cells, GEX 13,953 + ADT 134, batch 12개=4 site×donor, cell_type 45종, obs에 이미 `is_train` 컬럼 존재하나 우리는 별도 split 사용), multiome(69,249 cells, GEX 13,431 + ATAC 116,490, batch 13개, cell_type 22종). 계획서에 적힌 세포수·ADT 134차원과 정확히 일치함을 확인.
+- `src/data/loading.py`, `src/data/preprocessing.py`(GEX HVG+정규화, ADT CLR, ATAC LSI), `src/encoders/linear_baseline.py`(CCA), `src/encoders/matchclot_arch.py`(MatchCLOT 아키텍처 vendored + 순수 PyTorch 학습 루프) 구현 및 커밋.
+- `src/experiments/phase1_baseline.py`으로 linear CCA 인코더 첫 실행 → **버그 발견 및 수정** (아래).
+- `src/metrics/variance_partitioning.py`(batch-effect confound 분석용 group R² + permutation p-value) 구현, 단위테스트 5개 통과.
+
+**판단 및 근거 (중요) — 실행 중 발견한 버그**
+
+1. **CCA가 2000차원 HVG 행렬에서 비정상적으로 느림.** `sklearn.cross_decomposition.CCA`(NIPALS 기반)를 72,208×2000 GEX 행렬에 직접 fit 시도했더니 2~3분 만에 CPU-time 50분+ 소모하며 끝나지 않음. → **GEX를 PCA로 100차원까지 먼저 축소한 뒤 CCA를 적용**하도록 `src/data/preprocessing.py::pca_reduce` 추가. 이는 속도 문제 회피일 뿐 아니라 실제로 표준적인 방법(Seurat의 CCA도 원본 유전자가 아니라 PCA 성분 위에서 수행)이라 근거도 있음. 적용 후 CCA fit이 84초로 단축.
+2. **`gap_metrics.uniformity()`가 실제 데이터 규모에서 메모리 폭발(OOM 직전) 발생.** 합성 데이터 단위테스트는 n≤500으로 작아서 몰랐는데, held-out test set(18,053 cells, 32차원 임베딩)에 대해 실행하니 `(n,n,d)` 형태의 완전 pairwise 텐서를 만들면서 프로세스가 약 40GB+ 상주 메모리를 소비하며 계속 증가 (n=18,053, d=32 기준 naive 방식은 이론상 ~83GB 필요). **실행 중 kill로 중단하고 수정**: (a) unit-normalize된 벡터에서는 `||a-b||² = 2 - 2·(a·b)`이므로 d를 거치지 않고 n×n 행렬 하나(matmul)로 계산 — 메모리를 d배 절감. (b) 그래도 n이 수만 단위면 n² 자체가 부담이므로 `max_n`(기본 5000) 초과 시 랜덤 서브샘플링 추가. `topk_retrieval_accuracy()`도 동일한 이유로 float32 사용 + `max_n`(기본 20000) 캡 추가(단, retrieval은 정의상 "전체 후보 풀 안에서" top-k를 찾는 task이므로 query/target을 같은 인덱스로 함께 서브샘플링 — 후보 풀이 줄어드는 실질적 trade-off이며, 그냥 공짜 근사가 아님을 코드 docstring에 명시).
+   - 이 버그는 **실제 규모 데이터로 처음 실행해봐야 드러나는 종류**였다는 점이 중요 — 합성 단위테스트만으로는 통과했었음. 이후 모든 지표 함수를 실제 데이터에 처음 적용할 때는 먼저 작은 서브셋으로 메모리/시간 추정을 해보고 진행하기로 함.
+   - 회귀 테스트 추가: `tests/test_gap_metrics.py`에 (a) naive 계산과 결과가 일치하는지, (b) n=20,000~30,000에서 OOM 없이 도는지 확인하는 테스트 3개 추가.
+
+**막힘/이슈**
+- 위 두 건 모두 발견 즉시 프로세스를 죽이고 코드 수정 후 재실행하는 방식으로 대응 완료. 데이터 손상이나 되돌릴 수 없는 부작용은 없음(둘 다 순수 계산 중 발생한 문제).
+
+**다음 단계**
+- Phase 1 baseline 재실행 (linear CCA, GEX-ADT / GEX-ATAC).
+- MatchCLOT-arch(from-scratch) 인코더로도 Phase 1 baseline 실행 (encoder (b)).
+- Phase 1 batch confound 분석 스크립트 작성 및 실행.
+
+---
+
 ## 디렉토리 구조 (참고용, 바뀔 때마다 갱신)
 
 ```

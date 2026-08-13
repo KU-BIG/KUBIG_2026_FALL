@@ -108,6 +108,37 @@ def test_topk_retrieval_drops_with_noise():
     assert acc_high < 0.15  # chance level ~ k/n = 5/400
 
 
+def test_uniformity_matches_naive_on_small_input():
+    """Regression test for the OOM fix in docs/HISTORY.md 2026-08-13: the
+    matmul-based pairwise-distance computation must agree with the original
+    naive O(n^2*d) broadcast, just without allocating the n*n*d tensor."""
+    rng = np.random.default_rng(20)
+    x = rng.normal(size=(50, 6))
+    from src.metrics.gap_metrics import _unit_normalize
+
+    xn = _unit_normalize(x)
+    naive_sq = np.sum((xn[:, None, :] - xn[None, :, :]) ** 2, axis=-1)
+    iu = np.triu_indices(50, k=1)
+    naive_uniformity = np.log(np.mean(np.exp(-2.0 * naive_sq[iu])) + 1e-12)
+    assert uniformity(x, t=2.0, max_n=50) == pytest.approx(naive_uniformity, abs=1e-6)
+
+
+def test_uniformity_handles_large_n_without_oom():
+    """n=20,000 would allocate ~64GB for the naive n*n*d broadcast at d=32;
+    this must run in a couple seconds using only O(max_n^2) memory."""
+    rng = np.random.default_rng(21)
+    x = rng.normal(size=(20_000, 32))
+    val = uniformity(x, max_n=2000)
+    assert np.isfinite(val)
+
+
+def test_topk_retrieval_handles_large_n_without_oom():
+    rng = np.random.default_rng(22)
+    x = rng.normal(size=(30_000, 16))
+    acc = topk_retrieval_accuracy(x, x, k=5, max_n=3000)
+    assert acc == pytest.approx(1.0)
+
+
 def test_gap_report_paired_vs_unpaired_keys():
     rng = np.random.default_rng(11)
     a = rng.normal(size=(100, 8))

@@ -48,15 +48,32 @@ def alignment(emb_a: np.ndarray, emb_b: np.ndarray, alpha: float = 2.0) -> float
     return float(np.mean(dists ** alpha))
 
 
-def uniformity(emb: np.ndarray, t: float = 2.0) -> float:
+def _subsample(x: np.ndarray, max_n: int, seed: int) -> np.ndarray:
+    if x.shape[0] <= max_n:
+        return x
+    rng = np.random.default_rng(seed)
+    idx = rng.choice(x.shape[0], size=max_n, replace=False)
+    return x[idx]
+
+
+def uniformity(emb: np.ndarray, t: float = 2.0, max_n: int = 5000, seed: int = 0) -> float:
     """Uniformity term (Wang & Isola 2020): log mean pairwise Gaussian potential.
 
     Computed per-modality (single embedding set). Closer to 0 (from below) =
     more spread out / uniform on the hypersphere; more negative = more clustered.
+
+    Pairwise squared distances are computed via ||a-b||^2 = 2 - 2*a.b (valid
+    since inputs are unit-normalized) through a single matmul, i.e. O(n^2)
+    memory instead of the O(n^2 * d) a naive broadcast would allocate — with
+    tens of thousands of single cells, the naive version exhausts memory
+    (see docs/HISTORY.md 2026-08-13, Phase 1 baseline OOM). n is additionally
+    capped at `max_n` via random subsampling, since even O(n^2) is too much
+    once n is in the tens of thousands.
     """
     x = _unit_normalize(np.asarray(emb, dtype=np.float64))
-    sq_dists = np.sum((x[:, None, :] - x[None, :, :]) ** 2, axis=-1)
+    x = _subsample(x, max_n, seed)
     n = x.shape[0]
+    sq_dists = np.clip(2 - 2 * (x @ x.T), a_min=0, a_max=None)
     iu = np.triu_indices(n, k=1)
     pairwise = sq_dists[iu]
     return float(np.log(np.mean(np.exp(-t * pairwise)) + 1e-12))
@@ -80,15 +97,29 @@ def linear_separability(
     return float(np.mean(scores))
 
 
-def topk_retrieval_accuracy(emb_query: np.ndarray, emb_target: np.ndarray, k: int = 5) -> float:
+def topk_retrieval_accuracy(
+    emb_query: np.ndarray, emb_target: np.ndarray, k: int = 5, max_n: int = 20000, seed: int = 0
+) -> float:
     """Fraction of query cells whose true paired match is in the top-k nearest
     (by cosine similarity) targets. emb_query[i] and emb_target[i] must be the
     same cell (ground-truth pair index = row index).
+
+    The retrieval task is defined over the *whole* candidate pool, so unlike
+    uniformity() we can't subsample query and target independently — that
+    would change what "top-k out of n" means. If n exceeds `max_n`, query and
+    target are subsampled together with the same indices (preserving row
+    correspondence) purely to keep the n x n similarity matrix (float32)
+    within memory; this does shrink the candidate pool, which is a real
+    (documented) tradeoff, not a free simplification.
     """
-    q = _unit_normalize(np.asarray(emb_query, dtype=np.float64))
-    t = _unit_normalize(np.asarray(emb_target, dtype=np.float64))
+    q = _unit_normalize(np.asarray(emb_query, dtype=np.float32))
+    t = _unit_normalize(np.asarray(emb_target, dtype=np.float32))
     if q.shape[0] != t.shape[0]:
         raise ValueError("topk_retrieval_accuracy() requires paired embeddings (same n_cells)")
+    if q.shape[0] > max_n:
+        rng = np.random.default_rng(seed)
+        idx = rng.choice(q.shape[0], size=max_n, replace=False)
+        q, t = q[idx], t[idx]
     n = q.shape[0]
     sims = q @ t.T
     k = min(k, n)
