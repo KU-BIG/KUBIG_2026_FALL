@@ -1,6 +1,7 @@
 # data & external code (reproducible via scripts, not committed)
-data/
-external/
+# anchored to repo root so this doesn't also match src/data/ (the source module)
+/data/
+/external/
 
 # python
 __pycache__/
