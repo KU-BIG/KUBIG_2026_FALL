@@ -24,7 +24,8 @@
 | 데이터 로딩 / 모달리티 분리 | `src/data/loading.py` (`load_bmmc`, `split_modalities`) | 구현완료 | `var['feature_types']`로 GEX/ADT/ATAC 분리 |
 | Train/test split | `src/data/loading.py` (`held_out_split`) | 구현완료 | batch-stratified `train_test_split`, 기본 test_frac=0.2 |
 | GEX/ADT/ATAC 전처리 | `src/data/preprocessing.py` (`select_hvgs`, `normalize_gex`, `clr_normalize_adt`, `LSITransformer`) | 구현완료 | GEX: seurat_v3 HVG(개수 조절 가능, 실험 A의 quantity 축과 동일 인터페이스)+normalize_total+log1p. ADT: CLR(margin=2, Seurat 방식). ATAC: TF-IDF+LSI(MatchCLOT 방식 vendored) |
-| Baseline gap 측정 (encoder (c) 우선, (b) 진행중) | `src/experiments/phase1_baseline.py` | 실행중 | linear CCA 인코더로 held-out test에서 GEX-ADT vs GEX-ATAC Δgap 등 4개 지표 측정. 결과 `results/tables/phase1_baseline_linear_cca.csv`에 저장 예정 |
+| Baseline gap 측정: encoder (c) linear CCA | `src/experiments/phase1_baseline.py` | **실행완료** | 결과: `results/tables/phase1_baseline_linear_cca.csv`. cite Δgap=0.047, multiome Δgap=0.156 — **계획서 가설과 반대 방향(잠정치)**. CCA는 상관 최대화가 목적함수라 "gap"을 그 자체로 최소화하므로, encoder (b)(contrastive) 결과 없이는 해석 보류 — docs/HISTORY.md 2026-08-13(계속 3) 참고 |
+| Baseline gap 측정: encoder (b) MatchCLOT-arch(from-scratch) | `src/experiments/phase1_baseline_matchclot.py` | 실행중 | 계획서가 실제로 검증하려던 핵심 비교. 실행 결과는 HISTORY.md에 추가 예정 |
 | Signal quality(SNR) 공변량 | `src/metrics/signal_quality.py` | 미구현 | - |
 | Batch variance partitioning | `src/experiments/phase1_batch_confound.py` | 미구현 | - |
 | Harmony on/off + 과교정 sanity check | `src/experiments/phase1_batch_confound.py` | 미구현 | - |

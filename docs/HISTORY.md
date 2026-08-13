@@ -84,6 +84,35 @@
 
 ---
 
+## 2026-08-13 (계속 3) — Phase 1 baseline 첫 실측 결과 (linear CCA), harmonypy 버그 수정
+
+**한 일**
+- `phase1_baseline.py` 재실행(OOM 수정 후) 완료. **실제 데이터 기준 첫 결과**:
+
+  | pair | delta_gap | linear_separability | top5_retrieval_acc | alignment |
+  |---|---|---|---|---|
+  | cite (GEX-ADT) | 0.0467 | 0.530 | 0.062 | 0.832 |
+  | multiome (GEX-ATAC) | 0.1559 | 0.679 | 0.123 | 0.762 |
+
+- `harmonypy.run_harmony()`의 반환값 `Z_corr` 방향(orientation)을 실제로 검증 — 이 버전(2.0.0, C++ 백엔드)은 입력과 **같은** (cells × features) 방향으로 반환함을 작은 합성 데이터로 직접 확인. `_harmony_correct()`가 classic pure-python harmonypy의 관례(transposed)를 가정하고 `.T`를 붙이고 있었던 걸 발견 → 수정. `tests/test_phase1_batch_confound.py`에 방향 고정 회귀테스트 + Harmony가 실제로 배치 분리를 줄이는지 확인하는 sanity test 추가.
+
+**판단 및 해석 (중요 — 잠정적 결과이므로 신중하게 기록)**
+
+- **linear CCA 결과만 놓고 보면 계획서의 가설(GEX-ADT gap > GEX-ATAC gap)과 반대 방향**이 나왔다 (GEX-ATAC의 delta_gap이 GEX-ADT의 약 3.3배). 이걸 바로 "가설 기각"으로 해석하면 안 된다고 판단하는 이유:
+  - **CCA는 애초에 두 모달리티 간 상관을 최대화하도록 학습되는 방법**이라, "gap"(정렬 안 된 정도)을 목적함수 자체에서 최소화하는 셈이다. 반면 MatchCLOT의 실제 학습 방식(InfoNCE/contrastive)은 정렬을 유도하긴 하지만 Liang et al.(2022)의 원 발견 자체가 "contrastive 학습을 해도 gap이 완전히 없어지지 않는다"는 것이었으므로, CCA와 contrastive 인코더가 만드는 "gap"은 성격이 다르다.
+  - 따라서 이번 CCA 결과는 (a) "CCA로 억지로 정렬해도 GEX-ATAC 쪽이 더 안 풀린다" 정도의 약한 신호로만 해석하고, (b) **원래 계획서가 검증하고자 한 가설(정보 비대칭 → contrastive 인코더의 gap)은 encoder (b) MatchCLOT-arch(from-scratch, InfoNCE)의 결과가 나와야 제대로 판단 가능**하다는 게 현재 판단. CODE_MAP.md에도 "잠정치, MatchCLOT-arch 결과와 함께 봐야 함"으로 표시.
+- retrieval 정확도(top-5)가 두 pair 모두 낮음(6~12%, chance보다는 확실히 높지만 절대적으로 낮음) — CCA 32차원 공유공간이 cross-modal retrieval에는 약하다는 뜻. 이 자체도 "CCA가 alignment는 어느 정도 잡아도 개별 세포 수준 식별력은 약하다"는 인코더별 특성 차이로 이해.
+
+**막힘/이슈**
+- 없음 (harmonypy 버그는 batch confound 실행 전에 합성 데이터 스모크테스트로 미리 잡아서, 실제 실행에는 영향 없음).
+
+**다음 단계**
+- Encoder (b) MatchCLOT-arch로 동일한 Phase 1 baseline 재실행 (진짜 비교의 핵심).
+- Phase 1 batch confound 스크립트 실행.
+- Phase 2 실험 A(dial swipe) 실행.
+
+---
+
 ## 디렉토리 구조 (참고용, 바뀔 때마다 갱신)
 
 ```
