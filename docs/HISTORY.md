@@ -301,6 +301,24 @@ Step 3 (asymmetry+gap -> perf):    asymmetry coef=-0.0092(비유의, p=0.196), g
 
 ---
 
+## 2026-08-13 (계속 9) — 실험 A quantity 축을 GEX-ATAC(multiome)에도 적용 — 패턴 재현 확인
+
+**한 일:** `phase2_expA_multiome_quantity.py` 실행 완료 (`run_quantity_axis()`를 수정 없이 그대로 재사용, ATAC LSI는 1회만 fit).
+
+| n_genes | cite(GEX-ADT) gap | multiome(GEX-ATAC) gap | cite retrieval | multiome retrieval |
+|---|---|---|---|---|
+| 50 | 0.588 | 0.599 | 0.025 | 0.033 |
+| 134 | 0.331 | 0.362 | 0.058 | 0.069 |
+| 500 | 0.136 | 0.134 | 0.143 | 0.184 |
+| 2,000 | 0.084 | 0.090 | 0.184 | 0.249 |
+| 전체 | 0.076 | 0.063 | 0.119 | 0.164 |
+
+**해석:** **패턴이 두 pair에서 거의 그대로 재현됐다.** gap 값 자체가 각 조건마다 cite와 multiome이 놀랍도록 비슷하고(예: n=2,000에서 0.084 vs 0.090), 유전자 수가 늘수록 gap이 줄고 2,000개에서 retrieval이 정점을 찍은 뒤 전체 유전자에서 오히려 떨어지는 모양까지 동일하다. 다만 retrieval의 절대 수준은 multiome이 전 구간에서 cite보다 높다 — Phase 1 baseline에서 이미 확인했던 "multiome이 매칭 자체는 더 잘 된다"는 관찰과 일관됨. **결론: "quantity 축에서 정보량↑→gap↓"라는, 계획서 가설과 반대 방향인 이 패턴은 GEX-ADT 한정이 아니라 GEX-ATAC에서도 성립하는 좀 더 일반적인 현상으로 보인다.**
+
+**다음 단계:** 실험 C 재현성(다중 seed) 결과 대기 중 (백그라운드 실행 중).
+
+---
+
 ## 디렉토리 구조 (참고용, 바뀔 때마다 갱신)
 
 ```
