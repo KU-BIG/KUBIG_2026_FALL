@@ -13,16 +13,18 @@
 | 지표: Linear separability | `src/metrics/gap_metrics.py` (`linear_separability`) | 구현완료+테스트 통과 | 5-fold CV logistic regression, chance=0.5 |
 | 지표: Top-5 retrieval | `src/metrics/gap_metrics.py` (`topk_retrieval_accuracy`) | 구현완료+테스트 통과 | cosine sim 기반, paired 필요 |
 | 4개 지표 통합 진입점 | `src/metrics/gap_metrics.py` (`gap_report`) | 구현완료+테스트 통과 | `paired=True/False`로 alignment/retrieval 포함 여부 제어 |
-| Baseline 인코더 3종 정의 | `src/encoders/` | 구현중 | (a) pretrained MatchCLOT은 가중치 미확보로 **제외** (docs/HISTORY.md 2026-08-13 판단 1 참고), (b) from-scratch 재학습, (c) linear CCA+OT 2종으로 진행 |
-| MatchCLOT 코드/가중치 확보 | `external/MatchCLOT/` (git 미포함, clone 완료) | 부분완료 | 아키텍처(`models.py`)·전처리(`preprocess.py`)는 재사용 확정. Pretrained 가중치(IBM Box 링크)는 접근 불가(404) — docs/HISTORY.md 참고. 학습 루프는 catalyst 의존성 때문에 재사용하지 않고 순수 PyTorch로 재작성 예정 |
+| Baseline 인코더 정의 | `src/encoders/linear_baseline.py` (c), `src/encoders/matchclot_arch.py` (b) | 구현완료+테스트 통과 | (a) pretrained MatchCLOT은 가중치 미확보로 **제외** (docs/HISTORY.md 2026-08-13 판단 1). (b) `matchclot_arch.py`: MatchCLOT의 `Encoder`/`Modality_CLIP`/`symmetric_npair_loss`를 vendored(출처 명시, BSD-3-Clause)하고 catalyst 없는 순수 PyTorch 학습 루프를 새로 작성 (판단 2). Epoch을 원 논문의 7000→기본 300으로 축소(다수 실험 조건 반복을 위한 의도적 트레이드오프, 모듈 docstring에 근거 명시). (c) `linear_baseline.py`: sklearn CCA로 공유 임베딩 공간 생성. `tests/test_matchclot_arch.py` 3개 통과(shape, 임의 입력차원 지원, 시드 재현성) |
+| MatchCLOT 코드/가중치 확보 | `external/MatchCLOT/` (git 미포함, clone 완료) | 부분완료 | 아키텍처(`models.py`)·전처리(`preprocess.py`)는 재사용(vendored) 확정. Pretrained 가중치(IBM Box 링크)는 접근 불가(404) — docs/HISTORY.md 참고 |
 
 ## Phase 1 — Baseline + Confound
 
 | 계획서 항목 | 파일 | 상태 | 구현 방식 요약 |
 |---|---|---|---|
-| GSE194122 데이터 확보 | `src/data/download_bmmc.py` | 미구현 | - |
-| Train/test split | `src/data/split.py` | 미구현 | - |
-| Baseline gap 측정 (인코더 3종 × 데이터셋 2종) | `src/experiments/phase1_baseline.py` | 미구현 | - |
+| GSE194122 데이터 확보 | `data/raw/*.h5ad` (GEO 직접 다운로드, git 미포함) | 실행완료 | cite(90,261 cells, GEX 13,953 + ADT 134) / multiome(69,249 cells, GEX 13,431 + ATAC 116,490) 다운로드+압축해제+무결성 확인 완료 |
+| 데이터 로딩 / 모달리티 분리 | `src/data/loading.py` (`load_bmmc`, `split_modalities`) | 구현완료 | `var['feature_types']`로 GEX/ADT/ATAC 분리 |
+| Train/test split | `src/data/loading.py` (`held_out_split`) | 구현완료 | batch-stratified `train_test_split`, 기본 test_frac=0.2 |
+| GEX/ADT/ATAC 전처리 | `src/data/preprocessing.py` (`select_hvgs`, `normalize_gex`, `clr_normalize_adt`, `LSITransformer`) | 구현완료 | GEX: seurat_v3 HVG(개수 조절 가능, 실험 A의 quantity 축과 동일 인터페이스)+normalize_total+log1p. ADT: CLR(margin=2, Seurat 방식). ATAC: TF-IDF+LSI(MatchCLOT 방식 vendored) |
+| Baseline gap 측정 (encoder (c) 우선, (b) 진행중) | `src/experiments/phase1_baseline.py` | 실행중 | linear CCA 인코더로 held-out test에서 GEX-ADT vs GEX-ATAC Δgap 등 4개 지표 측정. 결과 `results/tables/phase1_baseline_linear_cca.csv`에 저장 예정 |
 | Signal quality(SNR) 공변량 | `src/metrics/signal_quality.py` | 미구현 | - |
 | Batch variance partitioning | `src/experiments/phase1_batch_confound.py` | 미구현 | - |
 | Harmony on/off + 과교정 sanity check | `src/experiments/phase1_batch_confound.py` | 미구현 | - |
