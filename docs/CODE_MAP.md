@@ -8,12 +8,13 @@
 
 | 계획서 항목 | 파일 | 상태 | 구현 방식 요약 |
 |---|---|---|---|
-| Gap 정의(Δgap unit-normalized), 지표 위계 | `src/metrics/gap_metrics.py` | 미구현 | - |
-| 지표: Alignment-Uniformity | `src/metrics/gap_metrics.py` | 미구현 | - |
-| 지표: Linear separability | `src/metrics/gap_metrics.py` | 미구현 | - |
-| 지표: Top-5 retrieval | `src/metrics/gap_metrics.py` | 미구현 | - |
-| Baseline 인코더 3종 정의 | `src/encoders/` | 미구현 | - |
-| MatchCLOT 코드/가중치 확보 | `external/MatchCLOT/`, `src/encoders/matchclot_wrapper.py` | 미구현 | - |
+| Gap 정의(Δgap unit-normalized), 지표 위계 | `src/metrics/gap_metrics.py` (`delta_gap`) | 구현완료+테스트 통과 | Unit-normalize 후 centroid L2 거리. 주지표로 확정. `tests/test_gap_metrics.py`에서 shift 단조성 검증 |
+| 지표: Alignment-Uniformity | `src/metrics/gap_metrics.py` (`alignment`, `uniformity`) | 구현완료+테스트 통과 | Wang & Isola(2020) 분해 그대로 구현. alignment는 paired 필요 |
+| 지표: Linear separability | `src/metrics/gap_metrics.py` (`linear_separability`) | 구현완료+테스트 통과 | 5-fold CV logistic regression, chance=0.5 |
+| 지표: Top-5 retrieval | `src/metrics/gap_metrics.py` (`topk_retrieval_accuracy`) | 구현완료+테스트 통과 | cosine sim 기반, paired 필요 |
+| 4개 지표 통합 진입점 | `src/metrics/gap_metrics.py` (`gap_report`) | 구현완료+테스트 통과 | `paired=True/False`로 alignment/retrieval 포함 여부 제어 |
+| Baseline 인코더 3종 정의 | `src/encoders/` | 구현중 | (a) pretrained MatchCLOT은 가중치 미확보로 **제외** (docs/HISTORY.md 2026-08-13 판단 1 참고), (b) from-scratch 재학습, (c) linear CCA+OT 2종으로 진행 |
+| MatchCLOT 코드/가중치 확보 | `external/MatchCLOT/` (git 미포함, clone 완료) | 부분완료 | 아키텍처(`models.py`)·전처리(`preprocess.py`)는 재사용 확정. Pretrained 가중치(IBM Box 링크)는 접근 불가(404) — docs/HISTORY.md 참고. 학습 루프는 catalyst 의존성 때문에 재사용하지 않고 순수 PyTorch로 재작성 예정 |
 
 ## Phase 1 — Baseline + Confound
 

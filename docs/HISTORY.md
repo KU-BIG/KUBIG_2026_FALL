@@ -31,6 +31,34 @@
 
 ---
 
+## 2026-08-13 (계속) — Phase 0 지표 모듈 구현 + MatchCLOT 조사 + 데이터 확보
+
+**한 일**
+- `pip install`로 scanpy/anndata/harmonypy/POT/statsmodels/pytest 등 설치. 이 과정에서 numpy 1.26→2.5, pandas 2.1→3.0, scipy 1.11→1.18, scikit-learn 1.3→1.9로 의존성 해결에 따라 자동 업그레이드됨. torch/CUDA는 그대로 유지되고 정상 동작 확인(`torch.cuda.is_available()==True`, A100 인식). `requirements.txt`에 실제 설치된 정확한 버전을 고정해 기록.
+- `src/metrics/gap_metrics.py` 구현: `delta_gap`(주지표, unit-normalized centroid distance), `alignment`/`uniformity`(Wang & Isola 분해), `linear_separability`(logistic regression CV accuracy), `topk_retrieval_accuracy`. `gap_report()`로 4개 지표를 한번에 계산하는 진입점 추가.
+- `tests/test_gap_metrics.py`: 순수 합성 데이터로 15개 단위테스트 작성 및 전체 통과 확인 (`python -m pytest tests/` → 15 passed). 검증한 성질: gap 없음→delta_gap≈0, shift 커질수록 delta_gap 단조증가, 분포 겹칠 때 linear separability≈chance, 완전분리시≈1.0, paired 노이즈 커질수록 alignment 악화, retrieval accuracy는 노이즈 커질수록 chance(k/n) 근처로 하락 등.
+- `external/MatchCLOT`에 원 저자 레포(AI4SCR/MatchCLOT) clone. 아키텍처/전처리/학습 코드 확인.
+- GSE194122 원본 데이터(OpenProblems NeurIPS2021 BMMC, GEO supplementary) 다운로드 완료: `data/raw/cite_BMMC_processed.h5ad.gz`(587MB, GEX+ADT), `data/raw/multiome_BMMC_processed.h5ad.gz`(2.7GB, GEX+ATAC). gzip 무결성 확인 후 압축 해제 진행 중.
+
+**판단 및 근거 (중요)**
+
+1. **Pretrained MatchCLOT 가중치는 사용 불가로 판단.** `docs/source/quickstart.md`에 명시된 사전학습 GEX2ATAC 가중치 다운로드 링크(`ibm.box.com/s/3qhv2usv4n3aif2v3hml5eu5mmko5jbi`)에 접속 시 Box 앱 쉘만 반환되고 404 처리됨 (링크 만료 또는 접근 제한으로 추정). GEX2ADT용 사전학습 가중치는 애초에 공개 링크 자체가 문서에 없음. → **계획서 1단계의 "인코더 3종(pretrained/from-scratch/linear CCA+OT)" 중 pretrained 조건은 이번 실행에서 제외**하고, from-scratch 재학습 인코더를 주 baseline으로, linear CCA+OT를 경량 robustness baseline으로 사용하기로 결정. (원래 계획에서도 "gap 순위가 인코더 선택에 강건한지" 확인이 목적이었지 pretrained 자체가 목적이 아니었으므로, 목적 달성에는 지장 없음. 다만 "원 논문이 재현한 SOTA 수치와 직접 비교"는 못 하게 된 한계로 기록.)
+2. **MatchCLOT 원본 학습 코드(`train.py`/`run.py`)를 그대로 쓰지 않기로 결정.** 원본은 `catalyst==22.4`, `torch==1.13.1`, `anndata==0.8.0`, `pandas==1.5.1` 등 오래된 버전에 고정되어 있어, 현재 환경(torch 2.8+cu128, anndata 0.13, pandas 3.0)과 충돌 가능성이 크고, 별도의 legacy 가상환경을 만드는 것은 이후 수십 개 실험 조건(입력 차원을 바꿔가며 재학습)을 유연하게 반복하기 어렵게 만듦. → **`matchclot/embedding/models.py`(순수 torch, 의존성 없음: `Encoder`, `Modality_CLIP`, `symmetric_npair_loss`)와 `matchclot/preprocessing/preprocess.py`(LSI, TF-IDF, harmony 래퍼)의 핵심 로직만 그대로 가져다 쓰고, 학습 루프는 catalyst 없이 순수 PyTorch로 새로 작성**한다. 이렇게 하면 아키텍처/손실함수(=MatchCLOT의 실제 기여분)는 그대로 보존하면서, 실험 조건별 입력 차원 변경·시드 반복 등을 코드로 유연하게 제어할 수 있다.
+3. **데이터 소스: OpenProblems competition의 "phase2" 분할 파일 대신 GEO의 원본 processed h5ad를 사용.** MatchCLOT의 `run.py`는 competition이 자체적으로 나눈 `train_mod*.h5ad`/`test_mod*.h5ad` 분할을 기대하지만, 이 분할은 우리가 검증할 수 없는 방식으로 만들어졌고 pretrained 모델이 그 test set으로 이미 검증됐을 가능성이 있어 우리 목적(우리가 직접 정의한 held-out split으로 data leakage 방지)에는 안 맞는다. GEO의 `*_BMMC_processed.h5ad`는 GEX+ADT 또는 GEX+ATAC이 하나의 AnnData에 함께 들어있는 원본 통합본이므로, **우리가 직접 train/test split, batch 구성, cell-type subsetting을 모두 통제해서 재현성 있게 만들 수 있다는 장점**이 있어 이쪽을 채택.
+4. **harmony 패키지 선택.** MatchCLOT 원본은 GPU 가속 `harmony-pytorch`(`from harmony import harmonize`)를 쓰지만, 우리 Phase 1-2 배치효과 분석(계획서 2번 항목)은 MatchCLOT 파이프라인 재현이 목적이 아니라 독립적인 confound 분석이 목적이므로, 생태계에서 더 널리 검증된 `harmonypy`(R Harmony의 python 포트, scanpy 표준)를 사용하기로 결정. MatchCLOT 아키텍처를 그대로 재현하는 encoder 학습 코드 안에서는 원본과 동일하게 harmony-pytorch도 함께 설치해 fidelity를 유지.
+
+**막힘/이슈**
+- IBM Box pretrained weight 링크 접근 불가 (위 판단 1 참고). 대안 조치 완료, 더 이상 막힘 아님.
+- (해결됨) git 커밋 시 `user.name` 미설정 오류 → 전역 git config를 바꾸지 않고 커밋마다 `GIT_AUTHOR_NAME`/`GIT_AUTHOR_EMAIL`/`GIT_COMMITTER_NAME`/`GIT_COMMITTER_EMAIL` 환경변수를 지정하는 방식으로 우회 (git 설정을 영구적으로 바꾸지 않기 위한 선택).
+
+**다음 단계**
+- h5ad 압축 해제 완료 확인 후 구조 파악 (obs/var/layers, batch/cell type 라벨 컬럼, GEX/ADT/ATAC 분리 방법).
+- `src/data/` 모듈: 로딩 + train/test split + batch-aware split 구현.
+- `src/encoders/`: linear CCA+OT baseline, MatchCLOT 아키텍처 기반 from-scratch 학습 래퍼 구현.
+- Phase 1 baseline 실행.
+
+---
+
 ## 디렉토리 구조 (참고용, 바뀔 때마다 갱신)
 
 ```
