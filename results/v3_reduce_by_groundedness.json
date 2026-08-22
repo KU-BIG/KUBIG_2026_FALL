@@ -1,0 +1,21 @@
+{
+  "n_samples": 500,
+  "avg_words_before": 91.924,
+  "avg_words_after": 46.9,
+  "before": {
+    "conformity_mean": 0.8467074036598206,
+    "groundedness_mean": 0.9291623246492986,
+    "groundedness_median": 0.9879759519038076,
+    "R@1": 0.242,
+    "l2m": 1.035636067390442,
+    "rmg": 0.772573999436304
+  },
+  "after": {
+    "conformity_mean": 0.7995619177818298,
+    "groundedness_mean": 0.9403326653306613,
+    "groundedness_median": 0.9919839679358717,
+    "R@1": 0.274,
+    "l2m": 1.0146955251693726,
+    "rmg": 0.7514118331640094
+  }
+}

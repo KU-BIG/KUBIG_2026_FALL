@@ -53,6 +53,28 @@ Schrodi의 이론대로면 이미지를 점점 열화시킬 때 gap이 줄었다
 보장하지는 않는다는 증거(무상관 산점도, α 스윕에서의 미세한 어긋남)가 SemArt에서 나타난다 — COCO에서는
 이 두 축이 얽혀 있어 보이지 않았을 관찰.
 
+### 응용 — Groundedness 기반 캡션 압축
+
+앞의 결론("양보다 관련성")을 실제로 활용해서, 긴 SemArt 해설문을 groundedness 높은 문장만 남겨 줄여봤다.
+"그냥 짧아지기만 해도 좋아지는 것 아니냐"는 반박을 가리기 위해 같은 길이의 대조군 두 개와 비교했다.
+
+| 방식 | 평균 단어수 | text→image R@1 | L2M |
+|---|---|---|---|
+| 원본 전체 텍스트 | 91.9 | 24.2% | 1.0356 |
+| 앞쪽 절반만 (단순 절단 대조군) | 44.5 | 21.4% ↓ | 1.0154 |
+| 무작위 절반 (무작위 대조군) | 44.3 | 17.6% ↓↓ | 1.0262 |
+| **groundedness 상위 절반** | 46.9 | **27.4% ↑** | **1.0147** |
+
+데이터: [`v3_reduce_by_groundedness.json`](results/v3_reduce_by_groundedness.json) ·
+[`v3_reduction_control_comparison.json`](results/v3_reduction_control_comparison.json)
+
+**결론**: 비슷한 길이로 줄여도 앞쪽 절단·무작위 절단은 오히려 성능을 깎아먹는다. groundedness 기준으로 골라야만
+길이를 절반으로 줄이면서 **성능은 오르고 gap은 줄어드는** 결과가 나온다 — "정보의 양보다 캡션과의 관련성"이라는
+이 프로젝트의 결론을 가장 직접적으로 실증하는 응용 사례.
+
+이 원리를 5개 작품에 실시간으로 적용해보는 인터랙티브 데모: **[Grounded Caption Extractor](https://claude.ai/code/artifact/1de26210-c2b2-4667-b70e-7d0f8f774df4)**
+— 슬라이더로 유지 비율을 조절하면 groundedness 낮은 문장부터 흐려지는 걸 직접 확인할 수 있다.
+
 ### 정성적 예시 이미지
 
 | | 설명 |
@@ -72,6 +94,7 @@ Schrodi의 이론대로면 이미지를 점점 열화시킬 때 gap이 줄었다
 6. [ViT 패치 히트맵](https://claude.ai/code/artifact/1f42b7f5-e308-4aae-8736-55df7fdd406a)
 7. [CLIPSeg Localization](https://claude.ai/code/artifact/3117cad1-255b-4e1f-bb7e-d604bf26915d)
 8. [Alpha Sweep (Phase 4/5)](https://claude.ai/code/artifact/edc6d9b6-5e0a-42d6-bf3c-1bd1fe43906a)
+9. [Grounded Caption Extractor (인터랙티브 데모)](https://claude.ai/code/artifact/1de26210-c2b2-4667-b70e-7d0f8f774df4)
 
 > 아티팩트는 기본적으로 비공개(작성자만 열람 가능)다. 다른 사람과 공유하려면 각 링크 페이지에서 공유 설정을 켜야 한다.
 
@@ -123,6 +146,8 @@ data/
 │   ├── phase0_*, phase1_*, phase1b_*, phase1c_*   # v2 트랙 (COCO)
 │   ├── pilot_semart_*                              # v2 트랙 (SemArt)
 │   ├── v3_phase1_*, v3_phase2_*, v3_phase4_*       # v3 트랙 (SemArt, Long-CLIP)
+│   ├── v3_reduce_by_groundedness.py                # groundedness 기반 텍스트 압축
+│   ├── v3_reduction_control_comparison.py          # 압축 방식 3파전 대조군 비교
 │   ├── idea_a_*                                    # 텍스트 풀링 아티팩트 검증
 │   ├── vit_patch_heatmap.py, clipseg_demo.py       # 정성적 groundedness 시각화
 └── results/
@@ -143,4 +168,8 @@ python3 scripts/v3_phase1_thinshell_semart.py
 python3 scripts/v3_groundedness_semart.py
 python3 scripts/v3_phase2_scatter.py
 python3 scripts/v3_phase4_alpha_sweep.py
+
+# groundedness 기반 텍스트 압축 + 대조군 비교
+python3 scripts/v3_reduce_by_groundedness.py
+python3 scripts/v3_reduction_control_comparison.py
 ```
