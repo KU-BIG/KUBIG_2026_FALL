@@ -75,6 +75,26 @@ Schrodi의 이론대로면 이미지를 점점 열화시킬 때 gap이 줄었다
 이 원리를 5개 작품에 실시간으로 적용해보는 인터랙티브 데모: **[Grounded Caption Extractor](https://claude.ai/code/artifact/1de26210-c2b2-4667-b70e-7d0f8f774df4)**
 — 슬라이더로 유지 비율을 조절하면 groundedness 낮은 문장부터 흐려지는 걸 직접 확인할 수 있다.
 
+**실제 예시 — 반 고흐 "The Sower"** (문장을 Long-CLIP으로 이미지와의 코사인 유사도순 정렬, 상위 50% 유지 기준):
+
+<img src="results/figures/vangogh_the_sower.jpg" width="280" alt="Van Gogh, The Sower">
+
+| | groundedness | 문장 |
+|---|---|---|
+| ✅ 유지 | 0.343 | This painting follows van Gogh's depictions of the harvest, just as in reality the sower does his sowing only when the reaping has been completed and the fields are fallow. |
+| ✅ 유지 | 0.331 | The figure of the sower is quoted from an early drawing by van Gogh in which he was copying Millet |
+| ✅ 유지 | 0.297 | These offered van Gogh an opportunity to escape the flatland, to withdraw to a greater distance from where he commanded a panoramic view of the whole region. |
+| ✅ 유지 | 0.287 | It is as flat as van Gogh's native country. |
+| ❌ 제거 | 0.277 | The figure of sower is depicted on the broad plain of La Crau. |
+| ❌ 제거 | 0.225 | Catalogue numbers: F 422, JH 1470. |
+| ❌ 제거 | 0.222 | The plain of La Crau spreads to the southeast of Arles. |
+| ❌ 제거 | 0.210 | La Crau is surrounded on all sides by hills. |
+
+카탈로그 번호("F 422, JH 1470")처럼 그림과 무관한 문장이 자동으로 가장 낮은 점수를 받아 제거 대상이 되는 게 보인다.
+다만 완벽하지는 않다 — "The figure of sower is depicted on the broad plain of La Crau"처럼 시각적으로 들리는
+문장도 애매하게 잘려나가는 경우가 있어, 이 방법이 만능은 아니라는 것도 정직하게 같이 보여준다.
+더 많은 예시와 다른 유지 비율은 위 인터랙티브 데모에서 직접 조절해 볼 수 있다.
+
 ### 정성적 예시 이미지
 
 | | 설명 |
