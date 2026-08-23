@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-08-22T17:54:08.736136+00:00",
+  "n_rows": 9356,
+  "treated_count": 3854,
+  "treated_fraction": 0.4119281744335186,
+  "stage_b_token_stats": {
+    "mean": 31.75502351432236,
+    "median": 30.0,
+    "std": 13.077303760818502,
+    "min": 3,
+    "max": 75
+  }
+}

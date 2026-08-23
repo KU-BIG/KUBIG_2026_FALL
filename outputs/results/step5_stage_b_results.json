@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-08-22T17:11:51.597409+00:00",
+  "source_npz": "outputs/embeddings/clip_vitb32_embeddings.npz",
+  "n_full": 9356,
+  "n_treated": 3854,
+  "full": {
+    "delta_gap_visual_b_norm": 0.8769544959068298,
+    "delta_gap_visual_b_ci_95": [
+      0.8751899692604386,
+      0.8787643352248571
+    ],
+    "delta_gap_contextual_norm": 0.8608506321907043,
+    "delta_gap_contextual_ci_95": [
+      0.8594037486223584,
+      0.8623691993234294
+    ],
+    "bootstrap_n": 2000,
+    "bootstrap_seed": 42,
+    "linear_sep_acc_visual_b_mean": 0.9999465669249264,
+    "linear_sep_acc_visual_b_std": 0.00010686615014692258,
+    "linear_sep_acc_contextual_mean": 1.0,
+    "linear_sep_acc_contextual_std": 0.0,
+    "linear_sep_n_splits": 5,
+    "linear_sep_random_state": 42,
+    "paired_cosine": {
+      "cos_a_mean": 0.29437732696533203,
+      "cos_b_mean": 0.2988889217376709,
+      "ttest_statistic": -8.901882993285984,
+      "ttest_pvalue": 6.515096619489352e-19,
+      "wilcoxon_statistic": 19512152.0,
+      "wilcoxon_pvalue": 1.0265347785893512e-19
+    },
+    "n": 9356
+  },
+  "treated_only": {
+    "delta_gap_visual_b_norm": 0.8913530707359314,
+    "delta_gap_visual_b_ci_95": [
+      0.8887784519089176,
+      0.8940558539114657
+    ],
+    "delta_gap_contextual_norm": 0.8628862500190735,
+    "delta_gap_contextual_ci_95": [
+      0.8607605316448411,
+      0.8652577016121143
+    ],
+    "bootstrap_n": 2000,
+    "bootstrap_seed": 42,
+    "linear_sep_acc_visual_b_mean": 0.9998702983138781,
+    "linear_sep_acc_visual_b_std": 0.0002594033722438382,
+    "linear_sep_acc_contextual_mean": 1.0,
+    "linear_sep_acc_contextual_std": 0.0,
+    "linear_sep_n_splits": 5,
+    "linear_sep_random_state": 42,
+    "paired_cosine": {
+      "cos_a_mean": 0.29084357619285583,
+      "cos_b_mean": 0.29901260137557983,
+      "ttest_statistic": -10.285551104123435,
+      "ttest_pvalue": 1.6932353140326888e-24,
+      "wilcoxon_statistic": 3017366.5,
+      "wilcoxon_pvalue": 6.213163146054416e-24
+    },
+    "n": 3854
+  },
+  "comparison": {
+    "stage_a_gap_diff": 0.006783723831176758,
+    "stage_b_full_gap_diff": -0.01610386371612549,
+    "stage_b_treated_gap_diff": -0.02846682071685791,
+    "note": "gap_diff = delta_gap_contextual_norm - delta_gap_visual_norm (per row's own visual condition). Larger positive value = visual gap smaller than contextual gap (H1 direction). Compare direction/magnitude across the three rows to judge scenario 1 (length dominates -> gap_diff shrinks/reverses in Stage B) vs scenario 2 (information type dominates -> gap_diff holds/grows) - see 02_experiment_plan.md section 4.2. This script does not decide between them."
+  },
+  "pca_figure": "outputs/figures/stage_b_full_pca.png"
+}
