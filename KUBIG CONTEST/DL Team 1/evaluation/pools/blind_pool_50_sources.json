@@ -1,0 +1,2974 @@
+{
+  "note": "blind pool 후보 기사의 출처. 본문은 담지 않는다 — evaluation/rebuild_pool.py 가 url 에서 다시 받아 preprocessing 규칙으로 정제한 뒤 content_sha256 으로 대조한다.",
+  "article_count": 371,
+  "articles": {
+    "1": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0016240070&office_id=001&code=005930&page=1&sm=",
+      "title": "[테크톡노트] 폴드는 어떻게 '아재폰'에서 'MZ폰'이 됐나",
+      "date": "2026.08.08 13:10",
+      "doc_type": "article",
+      "content_sha256": "d3f30458b6da7b9e145183a8d0c9e71e873e5a1ab617a879e93b0012211a82c5",
+      "content_chars": 2240
+    },
+    "3": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002388045&office_id=123&code=005930&page=1&sm=",
+      "title": "세금 깎아줘도 미국으로…서학개미 46억달러 ‘대탈출’",
+      "date": "2026.08.08 12:36",
+      "doc_type": "article",
+      "content_sha256": "9b06d7e17021667176812a27eed5e4583f76a8cbb061902af768510172b2e6b4",
+      "content_chars": 1457
+    },
+    "4": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002237089&office_id=138&code=005930&page=1&sm=",
+      "title": "“레버리지 막자 코스닥으로 돈 몰렸다”…다시 고개 드는 ‘천스닥’...",
+      "date": "2026.08.08 12:30",
+      "doc_type": "article",
+      "content_sha256": "7d90fa7d5de84788e02e5ebfa91ec772d202db1b6b9d077a75ce5c31abec87de",
+      "content_chars": 2121
+    },
+    "5": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0014115286&office_id=003&code=005930&page=1&sm=",
+      "title": "거래대금 15분의 1 급감…ETF 비중도 6분의 1토막[레버리지 그후...",
+      "date": "2026.08.08 08:00",
+      "doc_type": "article",
+      "content_sha256": "e2c06015eef5521967e1cd12b4515e9bd49eb7e7c24abe4121c53a53d9124eaa",
+      "content_chars": 2182
+    },
+    "6": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005318700&office_id=015&code=005930&page=1&sm=",
+      "title": "삼전·하닉은 월가 ‘ATM’이었다?...메모리 저승사자 \"이제 살때\" ...",
+      "date": "2026.08.08 12:02",
+      "doc_type": "article",
+      "content_sha256": "7163c2f9e3794867b7972ccf3b5ddfae3bf97e5215aac9656dc29d995de549be",
+      "content_chars": 6431
+    },
+    "7": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0006347538&office_id=018&code=005930&page=1&sm=",
+      "title": "\"귀여운데 철벽 방어까지\"…케이스티파이, '갤Z8' 꽉 잡아주네[잇:써...",
+      "date": "2026.08.08 12:02",
+      "doc_type": "article",
+      "content_sha256": "69bd0ef66e6afd361fdd0d5ff661d0e6eff3851660059dbb9186e442e24e14c1",
+      "content_chars": 2607
+    },
+    "8": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005800462&office_id=277&code=005930&page=1&sm=",
+      "title": "7월에 망했던 코스닥…8월 반전 기대감 솔솔 [주末머니]",
+      "date": "2026.08.08 11:37",
+      "doc_type": "article",
+      "content_sha256": "e0036c6ea2388dba5d32b7eea4f3ff034266dce5c7ca098aaee37a4fb600c2f8",
+      "content_chars": 1486
+    },
+    "9": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649797&office_id=011&code=005930&page=1&sm=",
+      "title": "건설 한파에 벼랑끝 데크업계…반도체·AI 데이터센터 ‘단비’ 될까",
+      "date": "2026.08.08 11:01",
+      "doc_type": "article",
+      "content_sha256": "256ff223ec6750159ee850f103377e224465d4d6d9a054527f28878602ee4d77",
+      "content_chars": 1556
+    },
+    "10": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000088791&office_id=293&code=005930&page=1&sm=",
+      "title": "8인치 공급 부족 더 심해진다…DB하이텍, 하반기도 청신호",
+      "date": "2026.08.08 11:00",
+      "doc_type": "article",
+      "content_sha256": "9f71963676f527ee1056d24a87180ba217aa1d074a96dd582d71a1fbe0e97923",
+      "content_chars": 2005
+    },
+    "11": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005718270&office_id=009&code=005930&page=1&sm=",
+      "title": "거래소 “단일종목 레버리지 ETF 심사 단축은 사실무근”",
+      "date": "2026.08.08 10:57",
+      "doc_type": "article",
+      "content_sha256": "1daea7343e59f4730968d6893f4c21183cce53b4177ea8dcc72c7c5ae1e31ec4",
+      "content_chars": 1657
+    },
+    "12": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000632239&office_id=448&code=005930&page=1&sm=",
+      "title": "5월 말 출시된 '삼전닉스 레버리지', 다른 ETF보다 상장소요기간 ...",
+      "date": "2026.08.08 10:32",
+      "doc_type": "article",
+      "content_sha256": "7c2572da5459938101bdab4d3ae8cc3fdd2e1ddb89088959a35eea2fb6ec1861",
+      "content_chars": 926
+    },
+    "13": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005718266&office_id=009&code=005930&page=2&sm=",
+      "title": "“반도체 폭락은 일단락됐다”…전문가가 꼽은 ‘8월 반등’ 시그널",
+      "date": "2026.08.08 10:23",
+      "doc_type": "article",
+      "content_sha256": "6a8a9638286aaf8ee5893b81e84249acfb52377afe9ec3b34487e22f3f0701ed",
+      "content_chars": 1622
+    },
+    "14": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0006347508&office_id=018&code=005930&page=2&sm=",
+      "title": "\"폭락 일단락, 8월 주식 회복…삼전닉스 비중은 50% 이하로\"",
+      "date": "2026.08.08 10:03",
+      "doc_type": "article",
+      "content_sha256": "cace0dbdadfdfc3b7b5dc5b9eefdf91c9040de07a96dac01af0f17cd2c1e29c9",
+      "content_chars": 1613
+    },
+    "15": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002433389&office_id=092&code=005930&page=2&sm=",
+      "title": "\"애플, 프리미엄 폰 65% 점유…아이폰17 강세 덕분\"",
+      "date": "2026.08.08 10:11",
+      "doc_type": "article",
+      "content_sha256": "0ee71d4fa6195983f24a9ea029dd68e5380b27925a93a48bf6bf8d64495712ca",
+      "content_chars": 568
+    },
+    "16": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000151753&office_id=658&code=005930&page=2&sm=",
+      "title": "\"올해 코스피 사이드카 43회 중 25회는 삼전닉스 ETF 이후 발생\"",
+      "date": "2026.08.08 10:06",
+      "doc_type": "article",
+      "content_sha256": "b752d007d2b832a3139d75891f381663e2e9660bd2cea834b4ec9d8a8709315b",
+      "content_chars": 1448
+    },
+    "17": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000007903&office_id=665&code=005930&page=2&sm=",
+      "title": "삼전닉스 레버리지 ETF 규제했지만… '코인판'처럼 흔들린 코스피 [주...",
+      "date": "2026.08.08 09:40",
+      "doc_type": "article",
+      "content_sha256": "de46d09703b92781f67fec1ba7a4c97dec47ccc2181a0505897ce0b075b680c1",
+      "content_chars": 3075
+    },
+    "18": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005397246&office_id=008&code=005930&page=2&sm=",
+      "title": "\"땡큐 트럼프\"…삼전닉스 10%대 급락 때 이 업종 달렸다[김근희의 증...",
+      "date": "2026.08.08 09:30",
+      "doc_type": "article",
+      "content_sha256": "1db3447d42da5dcb3903505924503d3d2c31b9ab1e8a7ab5f185cf8d9491cd6f",
+      "content_chars": 1584
+    },
+    "19": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000893640&office_id=422&code=005930&page=2&sm=",
+      "title": "MZ 홀린 삼성 폴더블폰…하반기 구글·애플과 경쟁",
+      "date": "2026.08.08 09:22",
+      "doc_type": "broadcast",
+      "content_sha256": "398b840d3188e572869966800e0675a7f55868bfe5a5ad83d9bff68c638ba618",
+      "content_chars": 826
+    },
+    "20": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005318685&office_id=015&code=005930&page=2&sm=",
+      "title": "\"아이폰 '중티' 나요\" 갤럭시 쓰는 女 늘더니…'놀라운 결과' [홍민...",
+      "date": "2026.08.08 09:01",
+      "doc_type": "article",
+      "content_sha256": "0b66eb07f4b0bac8478705f29d989a993a2350ffcf501b2313d4c23ae3208793",
+      "content_chars": 2666
+    },
+    "21": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649773&office_id=011&code=005930&page=2&sm=",
+      "title": "메모리 품귀에…엔비디아 HBM4E 용량 축소 검토",
+      "date": "2026.08.08 08:42",
+      "doc_type": "article",
+      "content_sha256": "6bbd39d0e34f91fbf69077c063ccbbf768531f894d0849ca4e3b1e66c102da96",
+      "content_chars": 2209
+    },
+    "23": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002433382&office_id=092&code=005930&page=2&sm=",
+      "title": "추억의 탈착식 배터리폰, 다시 주목…왜?",
+      "date": "2026.08.08 08:21",
+      "doc_type": "article",
+      "content_sha256": "3bdbfc425998d973edcd97716d3b756e7519695606ad441b71359df0e762fa21",
+      "content_chars": 2582
+    },
+    "24": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003455335&office_id=030&code=005930&page=3&sm=",
+      "title": "“ETF로 퇴직연금·휴가비 다 날렸다”…7월에만 78% 하락·78조 증...",
+      "date": "2026.08.08 08:16",
+      "doc_type": "article",
+      "content_sha256": "e2f152dbe876141092b9e55a48f136815907f4376a4ab0697ff9d1c721fe017e",
+      "content_chars": 1392
+    },
+    "25": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005800437&office_id=277&code=005930&page=3&sm=",
+      "title": "TSMC에 도전장 내민 인텔, '반값 패키징 기술' 승부수[대만칩통신]",
+      "date": "2026.08.08 08:00",
+      "doc_type": "article",
+      "content_sha256": "f0fd4aa83e4c05985327418c6b29b60d7837e83ef3a0d199620b8822be768b93",
+      "content_chars": 1543
+    },
+    "26": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005800438&office_id=277&code=005930&page=3&sm=",
+      "title": "[칩톡]\"살 빼야 출하된다\"…AI 공룡들, 메모리 기근에 강제 'HBM...",
+      "date": "2026.08.08 08:00",
+      "doc_type": "article",
+      "content_sha256": "6c76925f58aa567faf32a4c0e6f399f8f50e9321617c4051ff75113d7b1ed3b1",
+      "content_chars": 2498
+    },
+    "27": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003739401&office_id=020&code=005930&page=3&sm=",
+      "title": "엔비디아, HBM 공급부족 대응… 차세대 GPU에 저사양칩 검토",
+      "date": "2026.08.08 01:41",
+      "doc_type": "article",
+      "content_sha256": "5c2747a8a759125c462930b00ab33bc1be1380c0ade0c87b9cd0e51c9281d3c1",
+      "content_chars": 1674
+    },
+    "28": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0014115283&office_id=003&code=005930&page=3&sm=",
+      "title": "\"창 3개 띄워도 답답함 없네\"…'폴드8 울트라', 일주일 써보니",
+      "date": "2026.08.08 08:00",
+      "doc_type": "article",
+      "content_sha256": "6c5135b5416a911c6c579c32e4bcc6cd4634e1a6006babf407880bdcc63fb09b",
+      "content_chars": 1577
+    },
+    "29": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005800436&office_id=277&code=005930&page=3&sm=",
+      "title": "美·中 AI 2차전, 이젠 성능 아닌 가격…반도체 운명은? [테크토크]",
+      "date": "2026.08.08 07:55",
+      "doc_type": "article",
+      "content_sha256": "d41a580b2785e60ddf1a2e5b13d6fc35c941e32fe112ddfe98bb3b59e0381845",
+      "content_chars": 2283
+    },
+    "30": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000038640&office_id=037&code=005930&page=3&sm=",
+      "title": "[영상] “주식 우울증 호소하며 병원 찾는 청년 급증… 투자 손실에 따...",
+      "date": "2026.08.08 07:01",
+      "doc_type": "article",
+      "content_sha256": "d7140e6be18f37a9e6f5575d26e9674e7828ca67e6b7a182bf7190fdfea4cb9b",
+      "content_chars": 3588
+    },
+    "33": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0009103359&office_id=421&code=005930&page=3&sm=",
+      "title": "\"열 받으면 안돼\"…AI시대 \"발열 줄이고 빨리 식히기\" 경쟁",
+      "date": "2026.08.08 07:00",
+      "doc_type": "article",
+      "content_sha256": "70844a9b509e9c64d37ef2e874f9eb3dd08d770973ce5319c52be3091ea92631",
+      "content_chars": 2977
+    },
+    "34": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0016239891&office_id=001&code=005930&page=3&sm=",
+      "title": "[AI돋보기] 시장이 사라진 AI 반도체 전쟁…한국의 선택은",
+      "date": "2026.08.08 06:33",
+      "doc_type": "article",
+      "content_sha256": "6dab051c60713c21970537e52728f42b4bf7c6a7b0626013c5fe695327648d82",
+      "content_chars": 3009
+    },
+    "36": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002681088&office_id=016&code=005930&page=4&sm=",
+      "title": "차세대 HBM 거론되는 ‘CXL’…엔비디아가 확산 걸림돌이라고? [칩칩...",
+      "date": "2026.08.08 06:31",
+      "doc_type": "article",
+      "content_sha256": "2dc3081230e25a0406951357b231ed19b79b0205cde54af05bec6f7a6a67b34f",
+      "content_chars": 4989
+    },
+    "38": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004149311&office_id=022&code=005930&page=4&sm=",
+      "title": "“안마의자만 잘 만들면 끝?”…세라젬·바디프랜드·코웨이 ‘연구소...",
+      "date": "2026.08.08 06:16",
+      "doc_type": "article",
+      "content_sha256": "6384aab4992a55a25ce8b1a969887f60808db382318c1c2992c780f6ba5aded8",
+      "content_chars": 2292
+    },
+    "39": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005397215&office_id=008&code=005930&page=4&sm=",
+      "title": "[더차트] 상반기 배당 큰손은 이재용…배당금 727억, 개인 1위",
+      "date": "2026.08.08 06:09",
+      "doc_type": "article",
+      "content_sha256": "1c55d3ef1f0fa035529864d316dcdb1f54725552a42a0aad6a9229b1dae5b57f",
+      "content_chars": 829
+    },
+    "40": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005718230&office_id=009&code=005930&page=4&sm=",
+      "title": "주주환원 외치고 7% 오른 마이크론…말 아끼고 17% 깎인 하이닉스",
+      "date": "2026.08.08 06:07",
+      "doc_type": "article",
+      "content_sha256": "5ddf61045cfab54c41f83ebb68bfb31e6a6aa6a06faa6a87f9a35ab662654fe6",
+      "content_chars": 2137
+    },
+    "41": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005558787&office_id=014&code=005930&page=4&sm=",
+      "title": "\"개별주식에 지쳤다면 ETF에 맡겨라\"…최고민수 'ETF 투자 5일 완...",
+      "date": "2026.08.08 06:07",
+      "doc_type": "article",
+      "content_sha256": "8ee7bb68d9d4d5b9bba5dfdeba45d8cb938bcabc700e057ce62d97ed123bed7a",
+      "content_chars": 1360
+    },
+    "42": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001185023&office_id=366&code=005930&page=4&sm=",
+      "title": "금리보다 수익률… 코스피 급락에도 원화가 강해진 이유는",
+      "date": "2026.08.08 06:03",
+      "doc_type": "article",
+      "content_sha256": "ead3dd81736973578f1b1c52e7e8f01406000d71702fb2d861cc43345544560e",
+      "content_chars": 3437
+    },
+    "44": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001185021&office_id=366&code=005930&page=4&sm=",
+      "title": "[인터뷰] 美 DARPA AI 사이버 챌린지 1위 이끈 김태수 마이크로...",
+      "date": "2026.08.08 06:02",
+      "doc_type": "article",
+      "content_sha256": "3b568286c4b5471b4ed8af0b2f7f91f5be138138f62937f33e1470730283f690",
+      "content_chars": 4338
+    },
+    "45": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002237083&office_id=138&code=005930&page=5&sm=",
+      "title": "[PLAY IT] ‘루이? 위!’ 불어 번역 시켜보니…번역은 ‘글쎄’",
+      "date": "2026.08.08 06:01",
+      "doc_type": "article",
+      "content_sha256": "487759177f2a9553b063cf05c75f513b29352d284cc18aa041aee337f89e4360",
+      "content_chars": 3849
+    },
+    "46": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005318672&office_id=015&code=005930&page=5&sm=",
+      "title": "한 달 만에 22% 폭락한 코스피…\"지금이라도 팔까 버틸까\"",
+      "date": "2026.08.08 06:01",
+      "doc_type": "article",
+      "content_sha256": "b14df66575a52dd0063dc46ae4e6bca5e65fc923c33dbb6ee339e4adc11e06c7",
+      "content_chars": 2480
+    },
+    "47": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000101370&office_id=243&code=005930&page=5&sm=",
+      "title": "삼성 갤럭시, 1위 탈환·예판 신기록 ‘겹경사’…8세대 폴더블로 ‘.....",
+      "date": "2026.08.08 06:01",
+      "doc_type": "article",
+      "content_sha256": "3d480854f95243dc3bb031a44f03bad66cfc9884bc94c038cdcdc0c18b885f12",
+      "content_chars": 1677
+    },
+    "48": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003543045&office_id=025&code=005930&page=5&sm=",
+      "title": "한밤중 멈춰버린 에어컨…‘열받은’ 실외기 식히는 4가지 방법",
+      "date": "2026.08.08 06:00",
+      "doc_type": "article",
+      "content_sha256": "a10e592bb068c1d9ad8ca668a084c02714c7fe9b2bca6a9e82dcbdda770ee89b",
+      "content_chars": 1563
+    },
+    "49": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000526307&office_id=374&code=005930&page=5&sm=",
+      "title": "3백만원 폰·4천만원 아반떼…쓸 땐 쓴다? [취재여담]",
+      "date": "2026.08.08 06:00",
+      "doc_type": "article",
+      "content_sha256": "bad031d907565e1495ec92a31b4a9c7bc9f6d029aa782273b0b107a802520095",
+      "content_chars": 1287
+    },
+    "50": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003462991&office_id=032&code=005930&page=5&sm=",
+      "title": "‘원자재 232조’ 꺼낸 트럼프…K-태양광 수혜 속 반도체 ‘직접 타격...",
+      "date": "2026.08.08 06:00",
+      "doc_type": "article",
+      "content_sha256": "5c6ceede738fa10fb9c39b68be15cbcf429a5e73584688a1e293c55da1f4fab1",
+      "content_chars": 2586
+    },
+    "51": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001261616&office_id=215&code=005930&page=5&sm=",
+      "title": "\"삼전·닉스 이래서 빠졌네\"…中 반도체 속사정 [B급기자의 B급리포트....",
+      "date": "2026.08.08 06:00",
+      "doc_type": "article",
+      "content_sha256": "17f570ac44cbf6d096be4fa72105224b14dfad580832c5db11c8a13961f0ba5e",
+      "content_chars": 2883
+    },
+    "53": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003041256&office_id=029&code=005930&page=5&sm=",
+      "title": "“주식 잃고 대출도 막혔다”…600조 날린 개미들, 삼전닉스에 다시 ....",
+      "date": "2026.08.08 05:50",
+      "doc_type": "article",
+      "content_sha256": "fb49cd18c6b3a8194f4e938324fee42fa11b17393b487b7d6c838d7a4ac773bf",
+      "content_chars": 1501
+    },
+    "54": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004149288&office_id=022&code=005930&page=5&sm=",
+      "title": "“에어컨 1kWh 더 썼을 뿐인데”…전기요금 6790원 뛴 ‘진짜 이유...",
+      "date": "2026.08.08 05:02",
+      "doc_type": "article",
+      "content_sha256": "d9ce9442deee11e0460bae4377bc835cb519c3436e8d24ad8de7aa1e65ec65b0",
+      "content_chars": 2951
+    },
+    "55": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000060529&office_id=053&code=005930&page=6&sm=",
+      "title": "판 깔아주고 나 몰라라… '롤러코스피'에 우는 2030",
+      "date": "2026.08.08 05:00",
+      "doc_type": "article",
+      "content_sha256": "87442da27f77749a8832867ad9dc1c58586eee5c189e71bc1c56cfe7f588921a",
+      "content_chars": 3744
+    },
+    "56": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002681084&office_id=016&code=005930&page=6&sm=",
+      "title": "[단독분석]정의선·김동관 날벼락? …절세 지배구조 파고든 ‘주가 누.....",
+      "date": "2026.08.08 00:01",
+      "doc_type": "article",
+      "content_sha256": "7b78b8fdc1752f3e4ae8d061147440508ffd7c6232cb33ba073b9bf3093b74c6",
+      "content_chars": 4555
+    },
+    "58": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005718175&office_id=009&code=005930&page=6&sm=",
+      "title": "'메모리 3인방' 희비, 주주환원이 갈랐다",
+      "date": "2026.08.07 18:02",
+      "doc_type": "article",
+      "content_sha256": "3a8028f6200fafb602462ff1a5fc48ee0e58ee48357e265d53535e6bdd6f2966",
+      "content_chars": 1871
+    },
+    "59": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001048119&office_id=031&code=005930&page=6&sm=",
+      "title": "SK하이닉스, 2733억원 분기배당?추가 주주환원안 3분기 발표",
+      "date": "2026.08.07 16:46",
+      "doc_type": "article",
+      "content_sha256": "ad4d5e7ae16b5e2965e1a0128c68b4ab0f4919d17b5c657e4762539d00b5bc99",
+      "content_chars": 1515
+    },
+    "60": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649722&office_id=011&code=005930&page=6&sm=",
+      "title": "“벌써 폭락 충격 가셨나” 개미들 ‘빚투’ 또 시작…신용융자잔고...",
+      "date": "2026.08.07 22:52",
+      "doc_type": "article",
+      "content_sha256": "93e2c96d6998f9d625ae0d7716856f5d950a6f82c122a6c531145b71cdcca4b1",
+      "content_chars": 2009
+    },
+    "61": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002810034&office_id=021&code=000660&page=1&sm=",
+      "title": "[속보]서학개미 이달 어디에 몰리나…집중 투자한 깜짝 호실적 기술주.....",
+      "date": "2026.08.08 11:51",
+      "doc_type": "article",
+      "content_sha256": "3fd1b85e76dba42ac8549f44ae9af12322c5b6e5d577445e180487047c68f961",
+      "content_chars": 1012
+    },
+    "62": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000101380&office_id=243&code=000660&page=1&sm=",
+      "title": "달라진 서학개미 장바구니…반도체 ETF 대신 이 것 담았다",
+      "date": "2026.08.08 09:35",
+      "doc_type": "article",
+      "content_sha256": "a579fd27776a2041755c7ba7afe56f95fb2cdc5bf4c87b88689a8a088140b268",
+      "content_chars": 1693
+    },
+    "63": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003041259&office_id=029&code=000660&page=1&sm=",
+      "title": "서학개미, 다시 개별 테크주로…아마존·마이크론 집중매수",
+      "date": "2026.08.08 09:26",
+      "doc_type": "article",
+      "content_sha256": "d506eaaeba2a2bcadf60dcd5b68fabf5a3f850ccc5912e88c9cb67264737708f",
+      "content_chars": 1238
+    },
+    "64": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001261629&office_id=215&code=000660&page=1&sm=",
+      "title": "국장 떠난 서학개미…'속슬' 팔고 담은 종목은?",
+      "date": "2026.08.08 08:55",
+      "doc_type": "article",
+      "content_sha256": "0757ba0f648c590417cb2b40c912c06517caee0add8150a85352397c89d4b96b",
+      "content_chars": 1209
+    },
+    "65": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005318683&office_id=015&code=000660&page=1&sm=",
+      "title": "'다시 미장 갑니다'…서학개미 '4000억' 폭풍 매수한 종목",
+      "date": "2026.08.08 08:26",
+      "doc_type": "article",
+      "content_sha256": "2c77096fdd777cccc61684965ee09bd5becb5cb2fbd450a475f6204f7cf0f44f",
+      "content_chars": 1575
+    },
+    "66": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0016239925&office_id=001&code=000660&page=1&sm=",
+      "title": "다시 개별 기술주?…서학개미, 아마존·마이크론 베팅",
+      "date": "2026.08.08 08:00",
+      "doc_type": "article",
+      "content_sha256": "0e664f92be3ac833e9aba5051061eacd4c58b0a1b7ecb717dffc65fda54f8a83",
+      "content_chars": 1649
+    },
+    "69": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001379078&office_id=055&code=000660&page=2&sm=",
+      "title": "서학개미, 하닉 ADR 팔고 아마존·마이크론 베팅",
+      "date": "2026.08.08 10:00",
+      "doc_type": "article",
+      "content_sha256": "cdc8bebe12176fe07f5203cd4aa3538e28923bf4d67a7425c04a5f6b523b7b1f",
+      "content_chars": 812
+    },
+    "70": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000109451&office_id=050&code=000660&page=2&sm=",
+      "title": "서학개미들 'SK하닉' 아닌 여기 몰렸다",
+      "date": "2026.08.08 09:57",
+      "doc_type": "article",
+      "content_sha256": "4dfea2ba6c17401f8143fbaada481dba5397865cc8b96d4a497b4162013325f5",
+      "content_chars": 444
+    },
+    "71": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003991936&office_id=023&code=000660&page=2&sm=",
+      "title": "美 고용 쇼크에 증시는 환호…S&P500 사상 최고",
+      "date": "2026.08.08 09:19",
+      "doc_type": "article",
+      "content_sha256": "2b1be66d1529a2a84b1956d75e9b146f31d9bb66cb29bff8877de265c2d8bff9",
+      "content_chars": 1085
+    },
+    "78": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000049640&office_id=648&code=000660&page=2&sm=",
+      "title": "[ETF워치]'보완책 통했나'…단일종목레버리지 거래대금 10분의 1토막",
+      "date": "2026.08.08 09:00",
+      "doc_type": "article",
+      "content_sha256": "4b114f3e1606894360c842c706c27a0a710c64726d8d64e8573ed29bd161c52f",
+      "content_chars": 1304
+    },
+    "79": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649757&office_id=011&code=000660&page=2&sm=",
+      "title": "단일종목 규제 묶인 ‘레버리지 개미’, 지수·인버스로 갔다 [이런국....",
+      "date": "2026.08.08 07:02",
+      "doc_type": "article",
+      "content_sha256": "43239adf369f95156ebea8a515fa37b2639dff0f70538305be5f2a196b29a57e",
+      "content_chars": 1356
+    },
+    "80": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649779&office_id=011&code=000660&page=2&sm=",
+      "title": "SK하이닉스, 용인 반도체에 54조 베팅…대규모 투자 나선다",
+      "date": "2026.08.08 08:45",
+      "doc_type": "article",
+      "content_sha256": "da5899905b4ed27ba5d5d331cd6a7339fc461a8038ba8db9200f07a8e5334bbb",
+      "content_chars": 2829
+    },
+    "81": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649777&office_id=011&code=000660&page=2&sm=",
+      "title": "엔비디아, 루빈 울트라 HBM 줄인다…비용 절감 카드 꺼냈다",
+      "date": "2026.08.08 08:44",
+      "doc_type": "article",
+      "content_sha256": "bd2250c9e27d43c158285271ed4260dd34fbda80c72c70c3e3c50cdf75b3314a",
+      "content_chars": 2513
+    },
+    "82": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649774&office_id=011&code=000660&page=2&sm=",
+      "title": "SK하이닉스 54조 투자…용인·청주 거점 대규모 확대",
+      "date": "2026.08.08 08:42",
+      "doc_type": "article",
+      "content_sha256": "6f918362d9d76d748cbaa28d71342f4042b2abf06f51fa0eec7a9fbabec93023",
+      "content_chars": 2418
+    },
+    "83": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001048178&office_id=031&code=000660&page=3&sm=",
+      "title": "HBM 부족에 엔비디아도 사양 조정…'루빈 울트라' 메모리 축소 검토",
+      "date": "2026.08.08 07:21",
+      "doc_type": "article",
+      "content_sha256": "6cfa9340e0d61590ee008588e633a95eef3bf8fd57299600c03cfacfbd5f9900",
+      "content_chars": 1177
+    },
+    "86": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005558778&office_id=014&code=000660&page=4&sm=",
+      "title": "[뉴욕증시] 고용 감소 속 S&P500 사상 최고…스페이스X, 16% ...",
+      "date": "2026.08.08 05:39",
+      "doc_type": "article",
+      "content_sha256": "c3ca9e19dff71db167af0a6779a9af561073bfee356ea933b7922e9a7c83fc56",
+      "content_chars": 1975
+    },
+    "87": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004176711&office_id=079&code=000660&page=5&sm=",
+      "title": "'하닉-베선트' 구원 등판, 환율 1300원대 복귀 가능할까",
+      "date": "2026.08.08 05:01",
+      "doc_type": "article",
+      "content_sha256": "3569fff02b5b94c8598dd066f4ff7a3eb401aa473f62635a8b80ba250b5fb720",
+      "content_chars": 1672
+    },
+    "88": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005397190&office_id=008&code=000660&page=5&sm=",
+      "title": "\"SK하이닉스, 中 충칭공장 지분 일부 처분 검토…4조원 규모 자산\"",
+      "date": "2026.08.08 01:04",
+      "doc_type": "article",
+      "content_sha256": "2c6956368797bd20939566178f2989d0c9065f9fd1f328ac3ff1fe9ed45aa144",
+      "content_chars": 690
+    },
+    "89": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000101382&office_id=243&code=005380&page=1&sm=",
+      "title": "14억 인도 문 두드린 CJ ENM…K콘텐츠 수출 넘어 수익화 시험대",
+      "date": "2026.08.08 10:01",
+      "doc_type": "article",
+      "content_sha256": "37c5184464a44f0df6752c492d752a4986f93fff10d9aac637adad7190a84bb1",
+      "content_chars": 3129
+    },
+    "90": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000893641&office_id=422&code=005380&page=1&sm=",
+      "title": "AI·로봇이 '척척'…K-미래차, 싱가포르서 달린다",
+      "date": "2026.08.08 09:23",
+      "doc_type": "broadcast",
+      "content_sha256": "b2357bf1d7c0d9b843d4aea9b27e77313a67c9a6f2d9ae40bb24bec25042815d",
+      "content_chars": 963
+    },
+    "91": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000109446&office_id=050&code=005380&page=1&sm=",
+      "title": "\"'이 주식' 지금 사라\"...대체 뭐길래",
+      "date": "2026.08.08 08:55",
+      "doc_type": "article",
+      "content_sha256": "01b8037e452501afbeda89a6686f72eab95e5f202ab4f9e16b4cda25d055ade6",
+      "content_chars": 1344
+    },
+    "92": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000109441&office_id=050&code=005380&page=1&sm=",
+      "title": "\"역시는 역시\"...나오자마자 '인기 폭발'",
+      "date": "2026.08.08 06:50",
+      "doc_type": "article",
+      "content_sha256": "b25f2e6db4bda89d71b5f9d1f107a9d32e9e4b0a49485afb6500bbf04b6dcf50",
+      "content_chars": 618
+    },
+    "93": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005718237&office_id=009&code=005380&page=1&sm=",
+      "title": "“이러다 벤츠값”…아반떼, ‘비싸서 폭망’ 욕먹었는데 ‘비쌀수록...",
+      "date": "2026.08.08 06:46",
+      "doc_type": "article",
+      "content_sha256": "3d9ae42332bc8cf18462bf8bf6bafb73b2144cd2a939a168c98d8ceeea216824",
+      "content_chars": 2550
+    },
+    "94": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649721&office_id=011&code=005380&page=1&sm=",
+      "title": "“기아차가 내 목숨 구했다” 극적 생존한 英 여배우…“정말 대단한...",
+      "date": "2026.08.07 22:22",
+      "doc_type": "article",
+      "content_sha256": "21828e319ba14b81102bc88ba74a797e6d4d42558e152b118b2a9ac1b807bd0c",
+      "content_chars": 2221
+    },
+    "95": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000107409&office_id=024&code=005380&page=2&sm=",
+      "title": "야간경제·사장 브랜딩·Z세대 부상…",
+      "date": "2026.08.07 21:01",
+      "doc_type": "article",
+      "content_sha256": "80e6dd0d5b4363d7d3c40ec3a72fd0827c5bbf6ef4ab8e2662e8e0e63058b0c0",
+      "content_chars": 7172
+    },
+    "96": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000107411&office_id=024&code=005380&page=2&sm=",
+      "title": "삼성전자, 휴머노이드 로봇에 꽂히다",
+      "date": "2026.08.07 21:01",
+      "doc_type": "article",
+      "content_sha256": "ca6a1b6ee93c9e02b737269383e174e9f467e03cfd694ceaaab726d0e46a0d82",
+      "content_chars": 5555
+    },
+    "97": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002681066&office_id=016&code=005380&page=2&sm=",
+      "title": "“요즘 같은 때 더 매력적” 아직 늦지 않았다…8월 배당주 투자는 어....",
+      "date": "2026.08.07 20:41",
+      "doc_type": "article",
+      "content_sha256": "90f107664f239c08b7452bbc3a1894f753db8a79b56f2bf9df2a9bccfa657dd5",
+      "content_chars": 2083
+    },
+    "98": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002680856&office_id=016&code=005380&page=2&sm=",
+      "title": "변동성 장세에 뜨는 배당주...8월 배당 시즌 돌아왔다",
+      "date": "2026.08.07 11:15",
+      "doc_type": "article",
+      "content_sha256": "b97514f02c95db5cb2197fc47b4eb993dba52d289b4387d1a1d3f9c67f02b3de",
+      "content_chars": 1526
+    },
+    "99": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000632174&office_id=448&code=005380&page=2&sm=",
+      "title": "현대차 정몽구재단, 사회적 난제 해결 포럼",
+      "date": "2026.08.07 18:36",
+      "doc_type": "article",
+      "content_sha256": "e76549dce3137ed3f985c491f9f8fc1e5b1abd6c243bfa35dfc6d5ccc4219567",
+      "content_chars": 506
+    },
+    "100": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005718013&office_id=009&code=005380&page=2&sm=",
+      "title": "현대차 정몽구재단, 한미 과학기술포럼 개최",
+      "date": "2026.08.07 14:52",
+      "doc_type": "article",
+      "content_sha256": "fc98ed77e3be0e6c6fdde40347f154660cb698ad3f0fe4e96e2541699e958e87",
+      "content_chars": 1042
+    },
+    "101": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002680836&office_id=016&code=005380&page=2&sm=",
+      "title": "현대차 정몽구 재단 “기술혁신으로 인류 난제 해결”",
+      "date": "2026.08.07 11:07",
+      "doc_type": "article",
+      "content_sha256": "38758e0d53ad089820a70d3b3daea3a46e1d657fc4ff4933c0ecf300841f78c0",
+      "content_chars": 902
+    },
+    "102": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000893355&office_id=422&code=005380&page=2&sm=",
+      "title": "현대차 정몽구재단, 한미과학기술대회서 사회적 난제 해결 포럼",
+      "date": "2026.08.07 10:41",
+      "doc_type": "article",
+      "content_sha256": "2eff8595123a3814b74f18101094e267c4eab061a9f7a211b691106b1812049a",
+      "content_chars": 491
+    },
+    "103": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0016238690&office_id=001&code=005380&page=2&sm=",
+      "title": "현대차 정몽구재단, 한미과학기술대회서 사회적 난제 해결 포럼",
+      "date": "2026.08.07 10:05",
+      "doc_type": "article",
+      "content_sha256": "a14593494095f44ce27ce6c7fa06245f166ff2ae599bc3caa11cefc79c474b2e",
+      "content_chars": 890
+    },
+    "104": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002680701&office_id=016&code=005380&page=2&sm=",
+      "title": "현대차 정몽구 재단, 韓美 과학기술인 네트워크 ‘UKC’서 혁신 설루...",
+      "date": "2026.08.07 08:29",
+      "doc_type": "article",
+      "content_sha256": "d719b291867dabb03d3a37b607c7a0288c40b28ea7a3adcca070e076745388ef",
+      "content_chars": 1681
+    },
+    "105": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005397147&office_id=008&code=005380&page=2&sm=",
+      "title": "코스피, 2거래일 연속 하락… 美 고용지표·SK하닉 배당금 주목",
+      "date": "2026.08.07 17:42",
+      "doc_type": "article",
+      "content_sha256": "dd6631a8dc30c60c8bbaa39a421f850736f5eb9415ea953d59b5334f7f48c264",
+      "content_chars": 2432
+    },
+    "106": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005397097&office_id=008&code=005380&page=2&sm=",
+      "title": "'팔자' 외인 vs '사자' 개인·기관 공방… 코스피, 0.6% 하락...",
+      "date": "2026.08.07 16:09",
+      "doc_type": "article",
+      "content_sha256": "87e7a35421b3b454706f51b082523c29ff9b24f2d0be4539058583255559f2ed",
+      "content_chars": 1697
+    },
+    "107": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005396894&office_id=008&code=005380&page=2&sm=",
+      "title": "코스피, 외인·기관 저가 매수에 6400선 터치… 삼전닉스도 상승",
+      "date": "2026.08.07 09:39",
+      "doc_type": "article",
+      "content_sha256": "bdab53bd7f04b39c652328a43bf8a26f87d11b849b828b7e35ee21eb806650a8",
+      "content_chars": 1941
+    },
+    "108": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005318539&office_id=015&code=005380&page=2&sm=",
+      "title": "현대차·기아 '2026 레드 닷 어워드' 17개 수상",
+      "date": "2026.08.07 17:38",
+      "doc_type": "article",
+      "content_sha256": "202675696ad298ec6265b3b3b4cf4c878896ebf34e7fbdd6ac49cd207918a981",
+      "content_chars": 414
+    },
+    "109": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000946845&office_id=469&code=005380&page=2&sm=",
+      "title": "현대차·기아, 2026 레드 닷 어워드 최우수상 포함 17개 수상",
+      "date": "2026.08.07 17:35",
+      "doc_type": "article",
+      "content_sha256": "5c5375862ca943255da1a71ba3770b9cc217e4782cd775ad574c1b7b71cf7ff1",
+      "content_chars": 1248
+    },
+    "110": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001261529&office_id=215&code=005380&page=2&sm=",
+      "title": "현대차·기아, '2026 레드 닷 어워드'서 17개 부문 수상",
+      "date": "2026.08.07 11:10",
+      "doc_type": "article",
+      "content_sha256": "471c255f5faa319e2fcb845d21651b353cc1b130b4f73461862ba789b1300db0",
+      "content_chars": 924
+    },
+    "111": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004176448&office_id=079&code=005380&page=2&sm=",
+      "title": "현대차·기아, 세계 주요 디자인 시상식에서 '17관왕'",
+      "date": "2026.08.07 10:05",
+      "doc_type": "article",
+      "content_sha256": "b7b23e1f3057e360dc5a306d5717cba714ff14dd5027971a927a6ee5d2fb5d11",
+      "content_chars": 1392
+    },
+    "112": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002680709&office_id=016&code=005380&page=2&sm=",
+      "title": "현대차·기아, ‘레드 닷 어워드’ 최우수상 포함 17개 석권…“브랜....",
+      "date": "2026.08.07 08:59",
+      "doc_type": "article",
+      "content_sha256": "7d3b8e10b899efffb89bed0acd70c54a298f0338a53b4f41a5328cf667996a08",
+      "content_chars": 2005
+    },
+    "113": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0014113625&office_id=003&code=005380&page=2&sm=",
+      "title": "현대차·기아, '레드닷 어워드'서 17개 상 수상…\"공간·브랜드 경험...",
+      "date": "2026.08.07 08:47",
+      "doc_type": "article",
+      "content_sha256": "56265bec7a29e51824efa2572cffecf2f2da93bd2bb754f85a095c978ae2444d",
+      "content_chars": 1033
+    },
+    "114": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000893499&office_id=422&code=005380&page=2&sm=",
+      "title": "[비즈&] 세븐일레븐, 쿠팡이츠와 '맞손'…배달 서비스 개시 外",
+      "date": "2026.08.07 17:28",
+      "doc_type": "article",
+      "content_sha256": "39be89f7df70eb7f5ad7bdba04c4d10bcce602805ff365f8ecb32e3cb3a65c1f",
+      "content_chars": 1153
+    },
+    "115": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000038638&office_id=037&code=005380&page=2&sm=",
+      "title": "SK하이닉스 170만→142만 원… 미국 반도체 약세에 코스피 주춤",
+      "date": "2026.08.07 17:21",
+      "doc_type": "article",
+      "content_sha256": "a53d59ea5a6fca79187c1e68d78a8f88a31213e55a8285ea74aec3ebc5fbba51",
+      "content_chars": 1667
+    },
+    "116": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0006346947&office_id=018&code=005380&page=2&sm=",
+      "title": "외국인 '팔자'에 코스피 0.6%↓…SK하이닉스 4.88%↓",
+      "date": "2026.08.07 16:30",
+      "doc_type": "article",
+      "content_sha256": "0f18fa99c70bd3882fcac227afdc1acdee689ac5d8f69f42ff2f0dc2210e1918",
+      "content_chars": 2082
+    },
+    "118": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0014114425&office_id=003&code=005380&page=2&sm=",
+      "title": "신차 효과 노렸는데…현대차, 파업 여파에 7월 생산·내수 '주춤'",
+      "date": "2026.08.07 13:35",
+      "doc_type": "article",
+      "content_sha256": "25b9349b1d074ef676bb247f5bda92a214879085256da1d0d0f5530ff1c4d77d",
+      "content_chars": 1386
+    },
+    "119": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001261579&office_id=215&code=005380&page=3&sm=",
+      "title": "코스피 소폭 하락…SK 하이닉스 5% 가까이 급락",
+      "date": "2026.08.07 16:28",
+      "doc_type": "article",
+      "content_sha256": "10681a70edf9173dbb38fb102ebd71a066cc8b8016d01349add02add82de5a90",
+      "content_chars": 804
+    },
+    "120": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005558704&office_id=014&code=005380&page=3&sm=",
+      "title": "코스피 이틀째 내려 6250선…SK하닉 5% 가까이 급락 [fn마감시황...",
+      "date": "2026.08.07 16:26",
+      "doc_type": "article",
+      "content_sha256": "f9cbac6c60f9e7c700c761e4e3a1d322082f6e078bb6d3bd62042df732e990f3",
+      "content_chars": 1244
+    },
+    "123": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005558594&office_id=014&code=005380&page=3&sm=",
+      "title": "코람코신탁, 10년 만에 LH 제치고 리츠시장 점유율 '1등'",
+      "date": "2026.08.07 11:52",
+      "doc_type": "article",
+      "content_sha256": "ed0b85a496f6fe62694cea40204ec58badafa786a2ecf8434f84fb55e842840f",
+      "content_chars": 1335
+    },
+    "124": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005318328&office_id=015&code=005380&page=3&sm=",
+      "title": "\"LH 10년 독주 깼다\"…코람코, 리츠 시장점유율 1위",
+      "date": "2026.08.07 08:48",
+      "doc_type": "article",
+      "content_sha256": "d5fca4334698deacbc706a98cfc46853d4fa41b8c86ccfe004a377620b1dcd1b",
+      "content_chars": 1521
+    },
+    "126": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0009102931&office_id=421&code=005380&page=3&sm=",
+      "title": "이차전지·내수주 '버팀목' 코스피 6200선…코스닥 6일 만에 내림세[...",
+      "date": "2026.08.07 16:10",
+      "doc_type": "article",
+      "content_sha256": "eff13da449cec414dac5c1b365efe200ede6c04e0bd1806f0102150e2dcb3189",
+      "content_chars": 1678
+    },
+    "127": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001048099&office_id=031&code=005380&page=3&sm=",
+      "title": "외인 '팔자' 전환…코스피 0.6%↓·코스닥 0.4%↓",
+      "date": "2026.08.07 16:07",
+      "doc_type": "article",
+      "content_sha256": "c37f8010206225fe006516b785dbddc34b143c32cf4dae8e2389592235a520ea",
+      "content_chars": 1557
+    },
+    "128": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649608&office_id=011&code=005380&page=3&sm=",
+      "title": "전기차 급증에 예산 동 난 지자체…정부, ‘30% 매칭’ 기준 하향 검...",
+      "date": "2026.08.07 16:05",
+      "doc_type": "article",
+      "content_sha256": "97b8ce72f0eca1bffd511549f93f9fb39fa714a41dd6ae3c85b010671cd0915c",
+      "content_chars": 1064
+    },
+    "130": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0016239516&office_id=001&code=005380&page=3&sm=",
+      "title": "'전강후약' 코스피, 이틀째 내려 6,200대…코스닥 엿새만에 반락(종...",
+      "date": "2026.08.07 16:02",
+      "doc_type": "article",
+      "content_sha256": "acca7ae7a117dc1c462c6850633afdc93932747dab6c99df47e832538e46fae6",
+      "content_chars": 2569
+    },
+    "131": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005397084&office_id=008&code=005380&page=3&sm=",
+      "title": "'12조' 中 유니트리 2배 훌쩍?…현대차가 품은 보스턴다이나믹스 몸값...",
+      "date": "2026.08.07 15:54",
+      "doc_type": "article",
+      "content_sha256": "b0570f2aa1c64116b2a275eeda02e55a242346627ee25e7d22679055716e0c1b",
+      "content_chars": 2224
+    },
+    "132": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000522714&office_id=629&code=005380&page=4&sm=",
+      "title": "6400선 탈환했던 코스피, 결국 하락 마감…코스닥도 800선 붕괴",
+      "date": "2026.08.07 15:49",
+      "doc_type": "article",
+      "content_sha256": "6461572202073498a7077ac6790ae55c8d7ac8617afdb9f8af8f46a6356d3372",
+      "content_chars": 998
+    },
+    "134": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003668591&office_id=081&code=005380&page=4&sm=",
+      "title": "[서울데이터랩]마감 직후 인기 검색 종목 20選",
+      "date": "2026.08.07 15:47",
+      "doc_type": "article",
+      "content_sha256": "3770cb86922c67afcc87990811de7e7294e22513f8e700b41c35a24749d092b9",
+      "content_chars": 1306
+    },
+    "135": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003668590&office_id=081&code=005380&page=4&sm=",
+      "title": "[마감시황]코스피, 장중 상승분 반납하고 6258.77 마감…외국인 8...",
+      "date": "2026.08.07 15:47",
+      "doc_type": "article",
+      "content_sha256": "81dbcb3bf0c481f99ba6f369edda54e8cce251df447355bee330991458b7ed2a",
+      "content_chars": 1146
+    },
+    "136": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000526241&office_id=374&code=005380&page=4&sm=",
+      "title": "[단독] 삼성, 현대차 '경제안보통' 영입… 美 중간선거 앞 통상전 대...",
+      "date": "2026.08.07 15:45",
+      "doc_type": "broadcast",
+      "content_sha256": "50c7e047f566bdbad712c7471423757848f8a902be1bada51a7fa78d66d2fad3",
+      "content_chars": 857
+    },
+    "137": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000526237&office_id=374&code=005380&page=4&sm=",
+      "title": "오락가락 코스피…반락 후 6250선 등락",
+      "date": "2026.08.07 15:38",
+      "doc_type": "broadcast",
+      "content_sha256": "7cd758ee45dea0bfaf8a26e97121589cea1b7ed0e8c9fdd85a59e790551d5654",
+      "content_chars": 922
+    },
+    "138": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001261569&office_id=215&code=005380&page=4&sm=",
+      "title": "형님 끌고 아우 밀었다…'두 달 연속 1위·첫날 1만 대 돌파' 효자 ...",
+      "date": "2026.08.07 15:30",
+      "doc_type": "article",
+      "content_sha256": "86747a0feccca862ebb4feca4be36d8bc17b83d39fa960e2910da04fb146326a",
+      "content_chars": 1227
+    },
+    "139": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002817596&office_id=028&code=005380&page=4&sm=",
+      "title": "탄소중립 ‘선언’ 넘어 ‘전력 조달’로…제조업 재생에너지 구매 계...",
+      "date": "2026.08.07 15:24",
+      "doc_type": "article",
+      "content_sha256": "663dec42ff93489eb9043e95441a008f87a7be3014a4b0272f1ef1abe15f15dd",
+      "content_chars": 2239
+    },
+    "140": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002237040&office_id=138&code=005380&page=4&sm=",
+      "title": "현대차·기아, 레드닷 17관왕…브랜드 공간 디자인 경쟁력 입증",
+      "date": "2026.08.07 15:22",
+      "doc_type": "article",
+      "content_sha256": "df032bbc9a69a9fd33520daa4f3ef7e1d41e85e3f5372778ab5385b322394e95",
+      "content_chars": 976
+    },
+    "141": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002388007&office_id=123&code=005380&page=4&sm=",
+      "title": "현대차·기아, 레드닷 17관왕…제네시스 청주·UX 스튜디오 '최우수상...",
+      "date": "2026.08.07 14:44",
+      "doc_type": "article",
+      "content_sha256": "cfaf2a299c9b7c5ddc9ee974f72e8654fcc4e328bbc81e8471c2db81cd38ea2c",
+      "content_chars": 2518
+    },
+    "142": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003739328&office_id=020&code=005380&page=4&sm=",
+      "title": "현대차·기아, ‘레드 닷 어워드’ 또 다관왕… 디자인 경쟁력 입증",
+      "date": "2026.08.07 14:42",
+      "doc_type": "article",
+      "content_sha256": "cdbfb7e5ea0dfb5b83b1422b0b3fc7d83a17402f99e79f8782a355729c489948",
+      "content_chars": 731
+    },
+    "143": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649501&office_id=011&code=005380&page=4&sm=",
+      "title": "현대차·기아, 레드닷 어워드 최우수상 2개·본상 15개 수상",
+      "date": "2026.08.07 10:38",
+      "doc_type": "article",
+      "content_sha256": "4c377e1c41ba3abc19278f9f901e8ec445e66ac5242045f914d27543c777288a",
+      "content_chars": 525
+    },
+    "144": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003542924&office_id=025&code=005380&page=4&sm=",
+      "title": "현대차·기아 ‘레드닷 어워드’ 17개 수상…‘제네시스 청주’ 최우.....",
+      "date": "2026.08.07 10:18",
+      "doc_type": "article",
+      "content_sha256": "e570bd70c0f9dca5f6fc71bc34b6e2a550f3289810d30f27360ca93689194bc7",
+      "content_chars": 1026
+    },
+    "146": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002681073&office_id=016&code=373220&page=1&sm=",
+      "title": "이틀 연속 ‘SK하닉’ 던지더니…초고수 투자자들, ‘이것’ 사들였다",
+      "date": "2026.08.07 22:00",
+      "doc_type": "article",
+      "content_sha256": "3dfb8ceeb77ffeaf79456003abbfbcf9e6c1ef48385942a351467583d3301c34",
+      "content_chars": 1493
+    },
+    "148": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005718152&office_id=009&code=373220&page=1&sm=",
+      "title": "\"열폭주 막자\" K배터리 안전기술 경쟁",
+      "date": "2026.08.07 17:53",
+      "doc_type": "article",
+      "content_sha256": "294af0f05e689501e4e5932e88efdb404a250ac4a88b69529a1ffae32daca0af",
+      "content_chars": 1009
+    },
+    "149": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005318541&office_id=015&code=373220&page=1&sm=",
+      "title": "LG, 산업특화 AI모델로 구글·알리바바 제쳤다",
+      "date": "2026.08.07 17:39",
+      "doc_type": "article",
+      "content_sha256": "7cf3a829cba32c263ed19ddaae0d25a79b6d62f226fbdddfb65d8bb7defab95d",
+      "content_chars": 1500
+    },
+    "150": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003668613&office_id=081&code=373220&page=1&sm=",
+      "title": "LG 엑사원, 표·시계열 데이터 기반 산업 데이터 분석에서 구글·알리...",
+      "date": "2026.08.07 16:43",
+      "doc_type": "article",
+      "content_sha256": "5cd8e5d8326b71e5fc1eef019c8f0231d137ed1fd2e60d16af2e3e37127590b7",
+      "content_chars": 1591
+    },
+    "151": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004149229&office_id=022&code=373220&page=1&sm=",
+      "title": "구글·알리바바 제친 ‘글로벌 1티어 AI’ LG 엑사원",
+      "date": "2026.08.07 16:42",
+      "doc_type": "article",
+      "content_sha256": "09a025ff588da99c1d9bac3fd80a63bb62f232762b205bc4572a241c6567e7df",
+      "content_chars": 1478
+    },
+    "152": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000526217&office_id=374&code=373220&page=1&sm=",
+      "title": "LG 엑사원, 구글·알리바바 제쳐…산업 AI 시장 주도권",
+      "date": "2026.08.07 14:02",
+      "doc_type": "article",
+      "content_sha256": "a0bc9fd9009b8990eeea59747e5eff062ae7fa82dca346cdc3fa7ad0ba98e5cf",
+      "content_chars": 1303
+    },
+    "153": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001392973&office_id=082&code=373220&page=1&sm=",
+      "title": "LG ‘산업 특화 AI’ 구글·알리바바 제치고 최고 성능",
+      "date": "2026.08.07 10:44",
+      "doc_type": "article",
+      "content_sha256": "0733e9c1d48d26e011fb5fa9fe7b5edd603a3e221450e946683cbe5a8a39e93c",
+      "content_chars": 1317
+    },
+    "154": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0016238672&office_id=001&code=373220&page=1&sm=",
+      "title": "LG 엑사원, 구글·알리바바 제쳤다…산업 특화 AI 사업화 속도",
+      "date": "2026.08.07 10:00",
+      "doc_type": "article",
+      "content_sha256": "82956d1cf2bca88863b030c2bb5b5c44ff46e8043b5bfa631fff3a7a6ec3e8f0",
+      "content_chars": 1813
+    },
+    "155": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649627&office_id=011&code=373220&page=1&sm=",
+      "title": "하이닉스 급락 속 2차전지·바이오 선방… 낙폭 축소 코스피 6250선 ...",
+      "date": "2026.08.07 17:03",
+      "doc_type": "article",
+      "content_sha256": "35890a0355c29c4d48aa33d482ef54a6939ba74536d0c5a331ca3980e5915e4d",
+      "content_chars": 1900
+    },
+    "156": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004149233&office_id=022&code=373220&page=1&sm=",
+      "title": "外人 또 변심 8600억 '팔자'…코스피, 6300선 내주며 0.6%↓",
+      "date": "2026.08.07 16:59",
+      "doc_type": "article",
+      "content_sha256": "462be478af3c10e16e940c31f253fabbd9e49c3e57308ad9c2674c99b4321ba5",
+      "content_chars": 1273
+    },
+    "157": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0014114816&office_id=003&code=373220&page=1&sm=",
+      "title": "外人 또 변심 8600억 '팔자'…코스피, 6300선 내주며 0.6%...",
+      "date": "2026.08.07 16:04",
+      "doc_type": "article",
+      "content_sha256": "8355e6b1b3aae6c172b8547086dbc435d5b43767a5d885112a7605c56f7564bc",
+      "content_chars": 1244
+    },
+    "158": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002388022&office_id=123&code=373220&page=1&sm=",
+      "title": "美폴리실리콘 관세에 한화솔루션·OCI홀딩스 11% 급등…2차전지주도 강...",
+      "date": "2026.08.07 16:56",
+      "doc_type": "article",
+      "content_sha256": "47fec7432630280c0d6f0e8a9965f7dca06fe1bc86f25ac4a7f3f315f225499a",
+      "content_chars": 1712
+    },
+    "159": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000526259&office_id=374&code=373220&page=1&sm=",
+      "title": "[증시 인사이트] 사이드카 없었지만 극심한 변동성에 힘빠진 코스피",
+      "date": "2026.08.07 16:47",
+      "doc_type": "article",
+      "content_sha256": "9f07beb31c50a9a6fa8b12bc0a277258f505d9b3b7894a7abd74c86548f5e48b",
+      "content_chars": 3096
+    },
+    "160": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004176632&office_id=079&code=373220&page=2&sm=",
+      "title": "코스피 6200선 마감…코스닥 닷새 상승 끝내고 800선 아래로",
+      "date": "2026.08.07 16:31",
+      "doc_type": "article",
+      "content_sha256": "e58f90d94965dfb87f1fa9e960a095b64b4f8d601d86675ee25fbf01c7567722",
+      "content_chars": 1948
+    },
+    "161": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002237057&office_id=138&code=373220&page=2&sm=",
+      "title": "HBM 악재에 하이닉스 급락…코스피 상승세도 꺾였다",
+      "date": "2026.08.07 16:21",
+      "doc_type": "article",
+      "content_sha256": "92a1cd7e2915f89931e8c3460f821d9b166623200941a582748fb2bf84b5d12b",
+      "content_chars": 1388
+    },
+    "162": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001184955&office_id=366&code=373220&page=2&sm=",
+      "title": "[마켓뷰] ‘전강후약’ 코스피, 외인 매도에 6300선 회복 실패",
+      "date": "2026.08.07 16:01",
+      "doc_type": "article",
+      "content_sha256": "9ffbe1e8384fa1f181236739c8ec3e9858deb808959258c48d19e4cb28a6ebfa",
+      "content_chars": 1503
+    },
+    "163": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000054170&office_id=657&code=373220&page=3&sm=",
+      "title": "이번에는 중동 여파?···코스피 0.6%·코스닥 0.36% 하락으로 장...",
+      "date": "2026.08.07 15:50",
+      "doc_type": "article",
+      "content_sha256": "49f7939661984fc96f0cee0398ae3486df92d09a180949d142a5fa4d349fdae3",
+      "content_chars": 563
+    },
+    "164": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001048065&office_id=031&code=373220&page=3&sm=",
+      "title": "[단독]LG엔솔 캐나다 ESS 공장, 파업 위기 넘겼다?3년 임단협 타...",
+      "date": "2026.08.07 15:18",
+      "doc_type": "article",
+      "content_sha256": "e8f483755b26d60fc9d78d2fa0a0cdc5403d9166735595df6be5ab36f05afd58",
+      "content_chars": 1394
+    },
+    "165": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0009102692&office_id=421&code=373220&page=3&sm=",
+      "title": "삼성전자 저가매수세에 코스피 6200선…약보합 낙폭 축소[장중시황]",
+      "date": "2026.08.07 14:53",
+      "doc_type": "article",
+      "content_sha256": "015fd558f8253126aeda64e6956a59b3e025d51499129cfe83c48d0329be96d4",
+      "content_chars": 1164
+    },
+    "167": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002809961&office_id=021&code=373220&page=3&sm=",
+      "title": "[속보]코스피, 하락전환해 1% 안팎 하락…코스닥도 2%대 내림세",
+      "date": "2026.08.07 14:01",
+      "doc_type": "article",
+      "content_sha256": "d75afed14f705dafb2ea6c4d8ff73ef9c021a94f95ff72b823674b612d57fbcb",
+      "content_chars": 1063
+    },
+    "168": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0016238983&office_id=001&code=373220&page=3&sm=",
+      "title": "코스피, 하락전환해 1% 안팎 하락…코스닥도 2%대 내림세",
+      "date": "2026.08.07 11:24",
+      "doc_type": "article",
+      "content_sha256": "35b76590e75e9a56af88d76ac90cc13a14fa9c200f094c0f2245bdd23f434549",
+      "content_chars": 1578
+    },
+    "169": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649557&office_id=011&code=373220&page=3&sm=",
+      "title": "“삼전 버티는데 하이닉스는…” 코스피 6200 사수 안간힘 속 코스닥....",
+      "date": "2026.08.07 13:56",
+      "doc_type": "article",
+      "content_sha256": "7e7206c2c65e6605910e0102062d4ea80ddf37b6328914693ab50c62204b0cba",
+      "content_chars": 1545
+    },
+    "170": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0006346820&office_id=018&code=373220&page=3&sm=",
+      "title": "SK하닉 4%↓, 삼전은 버티기…코스피 1.34%하락",
+      "date": "2026.08.07 13:45",
+      "doc_type": "article",
+      "content_sha256": "42be64b4dbe32a39b26c801302ad1d4b60c0def777cb5733e3e6ca114c24b27b",
+      "content_chars": 1953
+    },
+    "171": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003668518&office_id=081&code=373220&page=3&sm=",
+      "title": "[서울데이터랩]코스피 시총 상위주 혼조세…삼성전자 강보합, SK하이닉....",
+      "date": "2026.08.07 13:11",
+      "doc_type": "article",
+      "content_sha256": "5db0fd375e45e497e575d16efb282c95a2d802138ed9f37b668f43457cc65c2e",
+      "content_chars": 1439
+    },
+    "172": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002680914&office_id=016&code=373220&page=4&sm=",
+      "title": "LG 엑사원, 산업 AI 구글·알리바바 제쳤다",
+      "date": "2026.08.07 11:33",
+      "doc_type": "article",
+      "content_sha256": "f153d8515e6672d7fe684a39c477fdad3be6d21daa42c8991a89ba59c2f86210",
+      "content_chars": 2115
+    },
+    "173": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001047988&office_id=031&code=373220&page=4&sm=",
+      "title": "LG '엑사원', 산업 데이터 예측 세계 1위?구글·알리바바 제쳐",
+      "date": "2026.08.07 11:14",
+      "doc_type": "article",
+      "content_sha256": "c19889b1bde5f18e836a9413b0ea71f657368c092f13af2688a14851f3b872b4",
+      "content_chars": 1024
+    },
+    "174": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003455173&office_id=030&code=373220&page=4&sm=",
+      "title": "LG 엑사원, 표·시계열 데이터 예측서 구글·알리바바 제쳐",
+      "date": "2026.08.07 10:57",
+      "doc_type": "article",
+      "content_sha256": "d4b07f31aba1d9ac70ae59d16b0b058dfdea67117d5049ea98fe0ece179d05a8",
+      "content_chars": 1376
+    },
+    "175": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649490&office_id=011&code=373220&page=4&sm=",
+      "title": "LG 엑사원 ‘산업 특화 AI’, 구글·알리바바 성능 넘어섰다",
+      "date": "2026.08.07 10:11",
+      "doc_type": "article",
+      "content_sha256": "84c9f13376d991f8c5267599e55c09bbb09d7193c1250fadd794ce235bc10ec3",
+      "content_chars": 3651
+    },
+    "176": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002680768&office_id=016&code=373220&page=4&sm=",
+      "title": "LG 엑사원, 산업 특화 성능 구글·알리바바 제쳤다",
+      "date": "2026.08.07 10:06",
+      "doc_type": "article",
+      "content_sha256": "b33ba98f94b2502c0d62ac21a278ad5cd989bb7a6fe04a68c6c25735690843da",
+      "content_chars": 2219
+    },
+    "177": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003119341&office_id=119&code=373220&page=4&sm=",
+      "title": "LG 엑사원, 산업 데이터 예측서 구글·알리바바 제쳤다",
+      "date": "2026.08.07 10:04",
+      "doc_type": "article",
+      "content_sha256": "884c7d0d5862f73004abe74b6bbf81d561bc6814c3d0dd49c99eeb21168d522e",
+      "content_chars": 1775
+    },
+    "178": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0006346702&office_id=018&code=373220&page=4&sm=",
+      "title": "LG 엑사원, 산업 데이터 예측 평가서 구글·알리바바 제쳐",
+      "date": "2026.08.07 10:02",
+      "doc_type": "article",
+      "content_sha256": "5a9e3befe847240f198a0b08cc598ca4a1c48c5205e5f00915925036b62d99b0",
+      "content_chars": 1389
+    },
+    "179": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002236958&office_id=138&code=373220&page=4&sm=",
+      "title": "LG '산업 특화 AI 모델', 글로벌 리더보드 상위권…구글·알리바바...",
+      "date": "2026.08.07 10:01",
+      "doc_type": "article",
+      "content_sha256": "007a963a1fa0a6a638a4df9e9a859857c7ebd7fcfd6e39e4a7c496c741cf5e51",
+      "content_chars": 1222
+    },
+    "180": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005396918&office_id=008&code=373220&page=4&sm=",
+      "title": "LG, '산업 특화 AI' 구글·알리바바 제쳤다",
+      "date": "2026.08.07 10:00",
+      "doc_type": "article",
+      "content_sha256": "f8bdfc9880b0610227a529bcbab1c4259b912b36d12e1b7b1fca322770e52d85",
+      "content_chars": 1978
+    },
+    "181": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004092635&office_id=117&code=373220&page=4&sm=",
+      "title": "LG ‘엑사원’, 구글·알리바바 제쳤다…산업 특화 AI 세계 1위",
+      "date": "2026.08.07 10:00",
+      "doc_type": "article",
+      "content_sha256": "b3cf73de729fcb32f630da45debfa0385d4871ddbf8d18fc88964a7d77880279",
+      "content_chars": 1539
+    },
+    "182": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0014114182&office_id=003&code=373220&page=4&sm=",
+      "title": "캐즘 넘는 배터리 소재…포스코퓨처엠 LFP 공급부터 에코프로비엠 전.....",
+      "date": "2026.08.07 11:28",
+      "doc_type": "article",
+      "content_sha256": "1c34cda14231ce48024801d3b43c70f7f52fd3769a3672a34e3c32b3299fad67",
+      "content_chars": 1453
+    },
+    "183": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0014114176&office_id=003&code=373220&page=4&sm=",
+      "title": "코스피·코스닥, 상승 출발했지만 동반↓…外人 '팔자'에 반락(종합)",
+      "date": "2026.08.07 11:24",
+      "doc_type": "article",
+      "content_sha256": "f4a93fad8d52b2f55f26dee15bcd8b36974650548da29a1442555758540e243b",
+      "content_chars": 1073
+    },
+    "184": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0009102200&office_id=421&code=373220&page=4&sm=",
+      "title": "중동 긴장 고조에 코스피 6299선 하락…·코스닥 약세 전환[장중시황....",
+      "date": "2026.08.07 10:56",
+      "doc_type": "article",
+      "content_sha256": "9572191c6cee7b22bcfba62167a52dec0aec17b96e3151a2721e27c9e99bf4f2",
+      "content_chars": 1202
+    },
+    "185": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649499&office_id=011&code=373220&page=4&sm=",
+      "title": "美 폴리실리콘 15% 관세 부과에 2차전지 관련주 ‘불기둥’ [줍줍 리...",
+      "date": "2026.08.07 10:37",
+      "doc_type": "article",
+      "content_sha256": "6cc600d1e90f62f47fd72a55f279436ba819f3278ddfee2ef3c5c6dd85f37ab0",
+      "content_chars": 1207
+    },
+    "186": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005800201&office_id=277&code=373220&page=4&sm=",
+      "title": "양시장 하락 전환…코스피 -0.5%·코스닥-1.8%",
+      "date": "2026.08.07 10:37",
+      "doc_type": "article",
+      "content_sha256": "ab6868c349a2c685514ec8c9358a5695638115cfe2786c4ed1f9b72fa68a5fba",
+      "content_chars": 1085
+    },
+    "187": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0009102135&office_id=421&code=373220&page=4&sm=",
+      "title": "中 공세에 밀린 K배터리…非 중국 시장 점유율 30% 아래로 '뚝'",
+      "date": "2026.08.07 10:32",
+      "doc_type": "article",
+      "content_sha256": "d6a631086e56425d2c4142bca6544101be1c5bc8ffaab6cc6465faf31bc78b1d",
+      "content_chars": 1896
+    },
+    "188": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000893352&office_id=422&code=373220&page=4&sm=",
+      "title": "글로벌 전기차 배터리 성장세…중국 업체 영향력 확대",
+      "date": "2026.08.07 10:29",
+      "doc_type": "article",
+      "content_sha256": "6ecb84d87b37589a761659dcb4c37f681496f776bad974ec8a3472d7cd7397d9",
+      "content_chars": 685
+    },
+    "189": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0016238704&office_id=001&code=373220&page=4&sm=",
+      "title": "비중국 전기차 배터리 사용량 26%↑…중국업체 독주 심화",
+      "date": "2026.08.07 10:11",
+      "doc_type": "article",
+      "content_sha256": "8a673a650ef5fadc752865ccd9f2b8ea88d5eb3d545b2f80b0da0989384d814d",
+      "content_chars": 1345
+    },
+    "190": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002433284&office_id=092&code=373220&page=4&sm=",
+      "title": "K배터리, 상반기 비중국 전기차 시장 점유율 전년비 10% ↓",
+      "date": "2026.08.07 09:56",
+      "doc_type": "article",
+      "content_sha256": "36ef49a0ac9356864ab7a133ac9aeaff2933d4c03449e201aa7a93f9c4ffaf00",
+      "content_chars": 1085
+    },
+    "191": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005318463&office_id=015&code=207940&page=2&sm=",
+      "title": "네이버-엔비디아 '빅 딜' 자문 모건스탠리, 테크·AI 강자 입증",
+      "date": "2026.08.07 14:12",
+      "doc_type": "article",
+      "content_sha256": "b5b48bf2ac5f9bc25203d349055861d5f4ba080440c06c89f4ab431965fa5957",
+      "content_chars": 2138
+    },
+    "192": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000526219&office_id=374&code=207940&page=2&sm=",
+      "title": "황제주 '우후죽순' 늘자…카카오페이증권도 소수점 거래 합류",
+      "date": "2026.08.07 14:04",
+      "doc_type": "article",
+      "content_sha256": "df0f9374ba8d8aa5a401a51c21ea14b195c17a9e36f455e0419cccaba404848f",
+      "content_chars": 1193
+    },
+    "193": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000118257&office_id=666&code=207940&page=2&sm=",
+      "title": "주사위는 던져졌다…경제 생태계 ‘업그레이드’ [창간 38주년, AI경기...",
+      "date": "2026.08.07 14:02",
+      "doc_type": "article",
+      "content_sha256": "49105311d80b527871ef1996398b92a3ecf562cb3d31f0a8aa8ab216482589fb",
+      "content_chars": 4660
+    },
+    "194": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003119330&office_id=119&code=207940&page=3&sm=",
+      "title": "코스피, 외인 ‘사자’에도 보합권…6300선 등락 [시황]",
+      "date": "2026.08.07 09:49",
+      "doc_type": "article",
+      "content_sha256": "a2f6c4b5f28b101622b8aa753c5aaaba8c3e43183e899fe1dad4982d50af575b",
+      "content_chars": 876
+    },
+    "196": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0006346671&office_id=018&code=207940&page=3&sm=",
+      "title": "코스피, 외국인 '사자'에 1.32% 상승…6300선 회복",
+      "date": "2026.08.07 09:35",
+      "doc_type": "article",
+      "content_sha256": "9881fd627fb97641d6f5d00c06b78e4ad8c2f5998868d552a4142c111601eccd",
+      "content_chars": 1724
+    },
+    "197": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000522542&office_id=629&code=207940&page=3&sm=",
+      "title": "뉴욕증시 부진 딛은 코스피, 외인 '사자'에 반등…코스닥도 상승세",
+      "date": "2026.08.07 09:29",
+      "doc_type": "article",
+      "content_sha256": "1ed34eef5d146a543072f764f8e230ff0bcd44e7ef86a69db527d71c44ef4ed4",
+      "content_chars": 1586
+    },
+    "198": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002236937&office_id=138&code=207940&page=3&sm=",
+      "title": "코스피, 외인 매수에 6330선 반등…삼성전자 2.2%↑",
+      "date": "2026.08.07 09:27",
+      "doc_type": "article",
+      "content_sha256": "1d4827c224fd5129fae394cf844bcc1af2de541597d65e22ed706896db85f6be",
+      "content_chars": 1037
+    },
+    "199": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0009101934&office_id=421&code=207940&page=3&sm=",
+      "title": "'삼전닉스' 저가매수에 코스피 1%대 상승…코스닥 810선 회복[개장시...",
+      "date": "2026.08.07 09:25",
+      "doc_type": "article",
+      "content_sha256": "131f4bb52c808c514a86bf51a2c21817e25b442f89c403a772fbe00e3b9a174c",
+      "content_chars": 1274
+    },
+    "200": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003668431&office_id=081&code=207940&page=3&sm=",
+      "title": "[서울데이터랩]코스피, 하루 만에 119.22포인트 반등…외국인 순매수...",
+      "date": "2026.08.07 09:18",
+      "doc_type": "article",
+      "content_sha256": "6f35e6f3d60511e1bf4bd8dd1c8ae798d70d8a21d43fd9b1fa9f7ccadbaa2f6b",
+      "content_chars": 1419
+    },
+    "201": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001184841&office_id=366&code=207940&page=3&sm=",
+      "title": "급락 과했나…코스피, 장 초반 6400선 회복",
+      "date": "2026.08.07 09:15",
+      "doc_type": "article",
+      "content_sha256": "0eab59ed73a1a43cd08314ee8c25509958bca1826e212266a9204ecb4f0d5cbb",
+      "content_chars": 1510
+    },
+    "202": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000526147&office_id=374&code=207940&page=3&sm=",
+      "title": "[어제장 오늘장] 양대지수 희비 교차…AI·반도체 밸류체인 약세에 비....",
+      "date": "2026.08.07 08:32",
+      "doc_type": "article",
+      "content_sha256": "d05ee31c2e1aa29b0476128eb8dd1838a1911b221f21d487ecebb6c67fb81f58",
+      "content_chars": 1910
+    },
+    "203": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0006346584&office_id=018&code=207940&page=4&sm=",
+      "title": "韓 규제 정비·美 관세 예외…삼성바이오로직스 직접 수혜군 주목",
+      "date": "2026.08.07 08:07",
+      "doc_type": "article",
+      "content_sha256": "2f04eba0a4bf2072a2a1f9cf4465023cbd224e4ee7cc62c1d51f5bafaab7fadb",
+      "content_chars": 2927
+    },
+    "204": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0009101389&office_id=421&code=207940&page=4&sm=",
+      "title": "코스피 소외주 온기에 고려아연·한화에어로 '황제주' 탈환",
+      "date": "2026.08.06 17:03",
+      "doc_type": "article",
+      "content_sha256": "d51aacc7c1bbda2db5351f4ca49b985d79bd12fcad2ca22aa2d612b41311f469",
+      "content_chars": 1183
+    },
+    "205": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649239&office_id=011&code=207940&page=4&sm=",
+      "title": "코스피, 반도체 투톱 급락에 6200선 후퇴…코스닥은 5거래일째 상승[...",
+      "date": "2026.08.06 16:42",
+      "doc_type": "article",
+      "content_sha256": "6587c902c0c7427972443ae40030e56b059e836e25bcb9b95e6ab62366d98d7a",
+      "content_chars": 1706
+    },
+    "207": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004176266&office_id=079&code=207940&page=4&sm=",
+      "title": "코스피 6200선대로 주저앉아…코스닥 겨우 상승 마감",
+      "date": "2026.08.06 16:41",
+      "doc_type": "article",
+      "content_sha256": "cde0ab7da3b3e1e53cb94606857ecb86e9077f8f6c72036eef2d45a15553eba1",
+      "content_chars": 1421
+    },
+    "208": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002387961&office_id=123&code=207940&page=4&sm=",
+      "title": "반도체주 급락에 코스피 4.58% 하락 '충격'...코스닥은 소폭 상승",
+      "date": "2026.08.06 16:38",
+      "doc_type": "article",
+      "content_sha256": "797518e2609ee0b027ec93d4f3a62ecb164f594d9196373726f278bca30ad366",
+      "content_chars": 1645
+    },
+    "209": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005717595&office_id=009&code=207940&page=4&sm=",
+      "title": "개인은 사고 외국인 팔고…최근 상승세였던 코스피, 4%대 급락 마감",
+      "date": "2026.08.06 16:32",
+      "doc_type": "article",
+      "content_sha256": "40fdc06e013e0735be0d06ba3d12040269c8a5144afe8bc51bd296dc7b02b115",
+      "content_chars": 970
+    },
+    "210": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001047832&office_id=031&code=207940&page=4&sm=",
+      "title": "'반도체株 와르르' 코스피 4%대↓?코스닥 800선 탈환",
+      "date": "2026.08.06 16:26",
+      "doc_type": "article",
+      "content_sha256": "6ddcadc968db7ff616274433d8ab93a1a792f5977ce792444ff2b36408d4c19e",
+      "content_chars": 1680
+    },
+    "211": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0014113065&office_id=003&code=207940&page=4&sm=",
+      "title": "외인 폭풍매도에 코스피 6200선 '털썩'…코스닥은 3주만에 800선 ...",
+      "date": "2026.08.06 16:21",
+      "doc_type": "article",
+      "content_sha256": "8c6f39babda54fa5e22aa3e353b260dc3b9096e436a5f0bafbe714244755e832",
+      "content_chars": 1551
+    },
+    "212": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0006346196&office_id=018&code=207940&page=4&sm=",
+      "title": "삼전닉스 형제들 10%↓ 폭락…코스피 4.58% 하락 마감",
+      "date": "2026.08.06 16:17",
+      "doc_type": "article",
+      "content_sha256": "1e4ea3f862c5248836ecc341686d50ed77171c82836b8249648d8ced7a12b94e",
+      "content_chars": 2298
+    },
+    "213": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002236888&office_id=138&code=207940&page=4&sm=",
+      "title": "외국인 3.3조원 ‘매물 폭탄’…반도체 급락에 코스피 4.6%↓",
+      "date": "2026.08.06 16:14",
+      "doc_type": "article",
+      "content_sha256": "3d93a0a0dd93a6e983e902131030abc89eafd560a90107774b3aa6930cf44c01",
+      "content_chars": 1445
+    },
+    "214": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002680558&office_id=016&code=207940&page=5&sm=",
+      "title": "외국인 3.3조 던졌다…코스피 4% 급락에 6200대로 후퇴 [투자36...",
+      "date": "2026.08.06 16:10",
+      "doc_type": "article",
+      "content_sha256": "c487fa945d896ff51f1e1aceeebbae4b09bf9ccb73c10dfd415058fc0ccf4045",
+      "content_chars": 1271
+    },
+    "215": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0016237993&office_id=001&code=207940&page=5&sm=",
+      "title": "코스피, 4.6% 급락 6,200대 마감…코스닥 닷새째 상승(종합)",
+      "date": "2026.08.06 16:06",
+      "doc_type": "article",
+      "content_sha256": "167b870466fc9ab2604b61844c78eebd33f81f39e8fffae094e5bc169b33356c",
+      "content_chars": 2703
+    },
+    "216": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005558221&office_id=014&code=207940&page=5&sm=",
+      "title": "코스피는 기술주 약세에 6300선 밑으로…코스닥은 15거래일 만 800...",
+      "date": "2026.08.06 16:01",
+      "doc_type": "article",
+      "content_sha256": "0667b19bc74a6332c6e903bb44436a31e8623ee1dd8f67172bd711b0f87e90b6",
+      "content_chars": 1375
+    },
+    "217": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0009101235&office_id=421&code=207940&page=5&sm=",
+      "title": "'삼전닉스' 급락에 코스피 4% 내려…'바이오' 업고 800스닥 회복[...",
+      "date": "2026.08.06 16:00",
+      "doc_type": "article",
+      "content_sha256": "289babf5fa0a40a3e6ce187dde23817af4a2b01afb63c9d0180ee18ca83c1664",
+      "content_chars": 1710
+    },
+    "218": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003119119&office_id=119&code=207940&page=5&sm=",
+      "title": "외국인 3.3조 순매도…코스피 6290선 하락 마감 [시황]",
+      "date": "2026.08.06 15:59",
+      "doc_type": "article",
+      "content_sha256": "82931cee0e63cd6c02d440c0735f8f403d1ff747bb20380c29210d103de00396",
+      "content_chars": 1049
+    },
+    "219": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003041097&office_id=029&code=207940&page=5&sm=",
+      "title": "‘삼전 -6%·하닉 -10%’…또 무너진 ‘삼전닉스’에 코스피 4.5%...",
+      "date": "2026.08.06 15:57",
+      "doc_type": "article",
+      "content_sha256": "1f49df8d75cae3d166ef295f0f76a75c1bc26c937f740861c4c2fd6efa847525",
+      "content_chars": 1247
+    },
+    "220": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005558157&office_id=014&code=207940&page=5&sm=",
+      "title": "코스피는 여전히 하락세…코스닥은 바이오·전지·로보틱스에 상승 전...",
+      "date": "2026.08.06 14:56",
+      "doc_type": "article",
+      "content_sha256": "5b8830821ffda448ee20642bfdb537c28116bf528b08f3bc0a702a41d0510a26",
+      "content_chars": 1061
+    },
+    "221": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0006345895&office_id=018&code=207940&page=5&sm=",
+      "title": "차익실현에 코스피 4%대 하락…외국인 매도 공세",
+      "date": "2026.08.06 13:58",
+      "doc_type": "article",
+      "content_sha256": "4d66564df6e15bd43e9ad3ff7fe06cdf22c7a1255bd55aa16a90681da1e1b167",
+      "content_chars": 1875
+    },
+    "222": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004176132&office_id=079&code=207940&page=5&sm=",
+      "title": "코스피 하락폭 키워 매도사이드카…코스닥도 나흘만에 반락",
+      "date": "2026.08.06 11:47",
+      "doc_type": "article",
+      "content_sha256": "8280901919ab5d14fed07f1fd826dba803700bc6895e05544293a28d2df38e41",
+      "content_chars": 1431
+    },
+    "223": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0016237025&office_id=001&code=207940&page=5&sm=",
+      "title": "코스피 4~5%대 급락, 삼전닉스 휘청…코스닥도 하락",
+      "date": "2026.08.06 11:25",
+      "doc_type": "article",
+      "content_sha256": "40b793639a33d7fccef529f58f1cd0642309a682fef812b5d393667931d9186a",
+      "content_chars": 1722
+    },
+    "224": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0009100199&office_id=421&code=207940&page=6&sm=",
+      "title": "'삼전닉스' 급락세에 코스피 5% 하락…매도 사이드카 발동[장중시황]",
+      "date": "2026.08.06 10:51",
+      "doc_type": "article",
+      "content_sha256": "ff189d7b663b6c0364fa69f769f788c7724bf1d87907a97886dea051723b5367",
+      "content_chars": 1284
+    },
+    "225": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002236812&office_id=138&code=207940&page=6&sm=",
+      "title": "코스피 장중 4%대 급락…외국인 1.3조 매도에 ‘사이드카’ 발동",
+      "date": "2026.08.06 10:33",
+      "doc_type": "article",
+      "content_sha256": "74f710686f595f68fbe26803de311ab13c1f33b0c72d600023aa89415debaab7",
+      "content_chars": 1137
+    },
+    "226": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005717359&office_id=009&code=207940&page=6&sm=",
+      "title": "최근 상승세 보였지만…외국인투자자 매도에 코스피, 장 초반 하락 중",
+      "date": "2026.08.06 10:18",
+      "doc_type": "article",
+      "content_sha256": "e85b858d7cfb5f1366fd86812bdbb176a98b52d6570e2d3e80f6cab26fdd7d80",
+      "content_chars": 1192
+    },
+    "227": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001378507&office_id=055&code=207940&page=6&sm=",
+      "title": "연이틀 오른 코스피 숨 고르기…2~3%대 내려 6,400대",
+      "date": "2026.08.06 10:05",
+      "doc_type": "article",
+      "content_sha256": "25cd96485d067466b2f18960fe2393cf5d6f389ffa8bc43c35ba9fcfca018342",
+      "content_chars": 1662
+    },
+    "228": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0016236527&office_id=001&code=207940&page=6&sm=",
+      "title": "'숨고르기' 코스피, 2~3%대 내려 6,400대…코스닥 닷새만 반락...",
+      "date": "2026.08.06 09:36",
+      "doc_type": "article",
+      "content_sha256": "2d9d852fe21299c982fafa46413056186de9cd51111511c399e2ce6ffe9058cb",
+      "content_chars": 2029
+    },
+    "229": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003118840&office_id=119&code=207940&page=6&sm=",
+      "title": "코스피, 외인 ‘팔자’에 6300선 후퇴 [시황]",
+      "date": "2026.08.06 10:03",
+      "doc_type": "article",
+      "content_sha256": "2dc1ac918312f4384955de305ac39ba22431021a4f21f0eb58a181bbd52678d3",
+      "content_chars": 1247
+    },
+    "230": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001047654&office_id=031&code=207940&page=6&sm=",
+      "title": "외인 '차익 실현'에 코스피 2%대↓?코스닥 800선 터치",
+      "date": "2026.08.06 09:48",
+      "doc_type": "article",
+      "content_sha256": "eb509e8677b31498dae80cd5510314f7565b803237ab0f822067c243e278dc86",
+      "content_chars": 1333
+    },
+    "231": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000088789&office_id=293&code=105560&page=1&sm=",
+      "title": "JB우리캐피탈, 외형·수익성 다 잡았다…금융자산 '균형성장'",
+      "date": "2026.08.08 09:00",
+      "doc_type": "article",
+      "content_sha256": "d1b3ffaf99c47f2d7074c2e72f557860d0f4de6158ecc9537a9dfeb659773299",
+      "content_chars": 1999
+    },
+    "232": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005318584&office_id=015&code=105560&page=1&sm=",
+      "title": "KB·신한·하나·우리…4대 금융지주 중 한 종목을 산다면? [한경 프리...",
+      "date": "2026.08.07 18:06",
+      "doc_type": "article",
+      "content_sha256": "aa00378f8b86267d58642084328b910fba8a3c56d90eb1a6a14f163157c29a83",
+      "content_chars": 669
+    },
+    "233": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0006347056&office_id=018&code=105560&page=1&sm=",
+      "title": "[마켓인]KB금융지주, 최대 4000억 신종자본증권 발행한다",
+      "date": "2026.08.07 17:46",
+      "doc_type": "article",
+      "content_sha256": "f016e0a9219421445d9c0e3e5033a925738840229f5dbdd5d7eeca84498c8fc3",
+      "content_chars": 1717
+    },
+    "234": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002237073&office_id=138&code=105560&page=1&sm=",
+      "title": "디에이치방배 잔금대출 ‘숨통’…KB·신한·하나 1000억씩 배정",
+      "date": "2026.08.07 17:18",
+      "doc_type": "article",
+      "content_sha256": "4b414132ec43c7839c7c4980709f0d02f9f0fb0df5b860bfaab03b7c347f5afa",
+      "content_chars": 893
+    },
+    "235": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001154709&office_id=417&code=105560&page=1&sm=",
+      "title": "디에이치방배 잔금대출 숨통…KB·신한·하나은행, 1000억씩 배정",
+      "date": "2026.08.07 16:55",
+      "doc_type": "article",
+      "content_sha256": "eb0127f65e0feb14b664f195a0cda53221e28fa5d7f15037d857faa49278ca7b",
+      "content_chars": 964
+    },
+    "236": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0006346955&office_id=018&code=105560&page=1&sm=",
+      "title": "‘디에이치방배’ 잔금대출 물꼬…KB·신한·하나 3000억 배정",
+      "date": "2026.08.07 16:41",
+      "doc_type": "article",
+      "content_sha256": "75ce4cb7442cefb8f21530d6739277ebcd57f335707ef97fab2ad250d70792ae",
+      "content_chars": 1235
+    },
+    "237": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0009102589&office_id=421&code=105560&page=1&sm=",
+      "title": "'잔금대출 대란' 디에이치방배 숨통…KB·신한·하나 3000억 배정(...",
+      "date": "2026.08.07 14:12",
+      "doc_type": "article",
+      "content_sha256": "b49302f874a9bc41b14ebccd01e56a5cad959470a1184b134b9224fbe3081eea",
+      "content_chars": 1146
+    },
+    "238": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000526200&office_id=374&code=105560&page=1&sm=",
+      "title": "농협·신한·국민은행 디에이치방배 잔금대출 '감정가 50%' 검토",
+      "date": "2026.08.07 11:45",
+      "doc_type": "broadcast",
+      "content_sha256": "b75486865836dd64ccf320e3a7142eae0b210a01635a4b0004e9ed4cc19dc0df",
+      "content_chars": 1117
+    },
+    "239": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002237036&office_id=138&code=105560&page=2&sm=",
+      "title": "하나금융, 롯데카드 다시 본다…인수 땐 KB 제치고 4위",
+      "date": "2026.08.07 15:17",
+      "doc_type": "article",
+      "content_sha256": "fa0e997f927ce4c40e1772ab7a657859b3f4a0bbe8b89adf779973f733dc2016",
+      "content_chars": 2693
+    },
+    "240": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0006346860&office_id=018&code=105560&page=3&sm=",
+      "title": "AI만 오른 게 아니었다…월가가 금융주에 베팅하는 이유",
+      "date": "2026.08.07 14:30",
+      "doc_type": "article",
+      "content_sha256": "1dc84b41a8ab16ff203d64b890addb9d760f13ae041e0fc660f11539373036d5",
+      "content_chars": 2287
+    },
+    "241": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000088754&office_id=293&code=105560&page=3&sm=",
+      "title": "[리딩뱅크 반환점]② 국민은행 순익 2.2조…3Q 타이틀 탈환 노린다",
+      "date": "2026.08.07 11:36",
+      "doc_type": "article",
+      "content_sha256": "e4a3fae563cc8db365a28c6649bbe5bc0d05ea0e942e5f137f4950ac5e056a5b",
+      "content_chars": 2661
+    },
+    "242": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000007897&office_id=665&code=105560&page=3&sm=",
+      "title": "미국·일본 개입해서 '환율' 떨어졌다고요? [경알못 스터디카페]",
+      "date": "2026.08.07 11:34",
+      "doc_type": "article",
+      "content_sha256": "7b8b7a17d314e8be221be0ff33339874a8f8da313dde44f31ff7fbe9add6f3e2",
+      "content_chars": 2268
+    },
+    "243": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003668503&office_id=081&code=105560&page=3&sm=",
+      "title": "반년 만에 1년 치 벌었는데…증권가, 한국금융지주 목표가 줄하향",
+      "date": "2026.08.07 11:23",
+      "doc_type": "article",
+      "content_sha256": "f9857c31b689de0db67466b0e43dda54b36837abf8b263254115399d46dcd258",
+      "content_chars": 1079
+    },
+    "244": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001184898&office_id=366&code=105560&page=3&sm=",
+      "title": "상승분 반납한 코스피, 6200선 아래로…코스닥도 약세 전환",
+      "date": "2026.08.07 10:58",
+      "doc_type": "article",
+      "content_sha256": "18a8fd50ce65cc73945003e982b3609286cc62f48b93409d10a9f8066ae960d7",
+      "content_chars": 1135
+    },
+    "245": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001154644&office_id=417&code=105560&page=4&sm=",
+      "title": "환율 내려가니 금융지주 '방긋'…밸류업에도 청신호",
+      "date": "2026.08.07 10:21",
+      "doc_type": "article",
+      "content_sha256": "8501f8c9d68aa81cd080ad6d29dbe0da1c2ecc0887e3b593abe7fbdd88c2561f",
+      "content_chars": 1776
+    },
+    "246": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000049617&office_id=648&code=105560&page=4&sm=",
+      "title": "[인사이드 스토리]시중은행과 인뱅, '비용효율성' 다른 잣대 왜?",
+      "date": "2026.08.07 10:15",
+      "doc_type": "article",
+      "content_sha256": "1a3c0fb0736e2d87646e881e958db27812ecac180c4a427c0a8975bca33f2c61",
+      "content_chars": 2132
+    },
+    "247": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001047950&office_id=031&code=105560&page=4&sm=",
+      "title": "코스피, 외인 '사자'에 6300선 보합권…코스닥 800 유지",
+      "date": "2026.08.07 09:44",
+      "doc_type": "article",
+      "content_sha256": "da7a3046ef3fb8e9eb844dc0898870f6e591cd691fe2b50071b4805953cf695b",
+      "content_chars": 1532
+    },
+    "248": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005800034&office_id=277&code=105560&page=5&sm=",
+      "title": "우리은행, 상반기 서민금융 4000억원 공급…포용금융 지속 과제도",
+      "date": "2026.08.07 07:28",
+      "doc_type": "article",
+      "content_sha256": "abf0136b019b017ecccf0fe180ee662257c0daac4bdd3aa21ed4a0a5578509f3",
+      "content_chars": 2542
+    },
+    "249": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003119252&office_id=119&code=105560&page=5&sm=",
+      "title": "발표만 수차례…금융지주 지배구조 개편안 '차일피일'",
+      "date": "2026.08.07 07:07",
+      "doc_type": "article",
+      "content_sha256": "85969aced9dcf19415d01e48d9a15e37a8eccf200fb19cbf561e34cbda68e3d3",
+      "content_chars": 1899
+    },
+    "250": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005396818&office_id=008&code=105560&page=5&sm=",
+      "title": "또 금융권 겨눈 공정위...'15조' 과징금 폭탄? '국고채 담합' 결...",
+      "date": "2026.08.07 05:20",
+      "doc_type": "article",
+      "content_sha256": "0ff6179a21fc573665cd8a12201a539ad8d05592bb48dad46bb982909c4fa99b",
+      "content_chars": 7358
+    },
+    "251": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000151654&office_id=658&code=105560&page=5&sm=",
+      "title": "국내 상장사 90개 기업 7조4000억 현금 배당 결정",
+      "date": "2026.08.06 19:10",
+      "doc_type": "article",
+      "content_sha256": "60b455159685d9144719a1bfed1c02ebb0281ae1f570e93d0f988ab3d54921e8",
+      "content_chars": 1014
+    },
+    "253": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0016236586&office_id=001&code=105560&page=5&sm=",
+      "title": "삼성전자 등 90개 상장사, 지난달 7.4조 현금배당 결정",
+      "date": "2026.08.06 09:53",
+      "doc_type": "article",
+      "content_sha256": "10b714b86e333db4c21d601b3e4b873f718d464f17a0d6cea09d57c72257324c",
+      "content_chars": 862
+    },
+    "254": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005558345&office_id=014&code=105560&page=5&sm=",
+      "title": "증권·자산운용이 성장축… 5대 금융지주, 비은행에 사활",
+      "date": "2026.08.06 18:28",
+      "doc_type": "article",
+      "content_sha256": "5221a6ea4a9a1717f4e0b1eef69313ea2912211be2f62e35d2022b61d44a2811",
+      "content_chars": 1783
+    },
+    "255": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005558343&office_id=014&code=105560&page=5&sm=",
+      "title": "생산적금융 늘려야 되는데 부실채권 급증",
+      "date": "2026.08.06 18:27",
+      "doc_type": "article",
+      "content_sha256": "c8c3ae71766d55a1566d2e9d084f9e98a0dde44cddb0662909ec58cf0aa3f452",
+      "content_chars": 1564
+    },
+    "256": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003739144&office_id=020&code=105560&page=5&sm=",
+      "title": "스노우플레이크, AI 실용화 시대로의 초대… ‘월드투어 서울’ 개최",
+      "date": "2026.08.06 17:47",
+      "doc_type": "article",
+      "content_sha256": "73057eca19bdd33a94988038cb23e5343a9921948ab17853cc1455c71af3e7aa",
+      "content_chars": 1661
+    },
+    "258": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649107&office_id=011&code=105560&page=5&sm=",
+      "title": "스노우플레이크, 연례 컨퍼런스 ‘월드투어 서울’ 27일 개최",
+      "date": "2026.08.06 10:30",
+      "doc_type": "article",
+      "content_sha256": "5a2c57d68a12bd721f001652d32c7a88eacdefae0abe1662f8fec43f2d1d4492",
+      "content_chars": 1240
+    },
+    "259": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000049601&office_id=648&code=105560&page=5&sm=",
+      "title": "'상생금융' 힘준 은행권…내달 첫 '성적표' 나온다",
+      "date": "2026.08.06 17:21",
+      "doc_type": "article",
+      "content_sha256": "88e7737a18172e2b5bd3fbec92cd9c524ac67d59ca60fd3cc85fd834b2a53426",
+      "content_chars": 1778
+    },
+    "260": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003543049&office_id=025&code=329180&page=1&sm=",
+      "title": "이젠 가성비만으론 안된다…K방산이 준비한 ‘비장의 카드’",
+      "date": "2026.08.08 06:00",
+      "doc_type": "article",
+      "content_sha256": "186b202fe43bfb25cbc7dc9933ae6bb79170cc3f8e34761a9972cf514067a7ea",
+      "content_chars": 4143
+    },
+    "261": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000088765&office_id=293&code=329180&page=1&sm=",
+      "title": "[HD현대 3세 경영]조선 호황 곳간 어디로…복잡해진 '자본배분' 셈법",
+      "date": "2026.08.07 13:47",
+      "doc_type": "article",
+      "content_sha256": "b26743ee0fa3f1f52221e3fd7d27fca038476e1dd654ea6d4d91a6df768bfa01",
+      "content_chars": 2695
+    },
+    "262": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002680903&office_id=016&code=329180&page=1&sm=",
+      "title": "HD하이드로젠, 한국형 SOFC〈고체산화물연료전지〉 양산체계 구축",
+      "date": "2026.08.07 11:30",
+      "doc_type": "article",
+      "content_sha256": "0077ae7941d2c7c23bed0967d1d87d1aaa0d78b1a4fd8ce9ad458b6de06a52d3",
+      "content_chars": 1095
+    },
+    "263": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002680718&office_id=016&code=329180&page=1&sm=",
+      "title": "HD하이드로젠, 한국형 SOFC 양산체계 구축",
+      "date": "2026.08.07 09:10",
+      "doc_type": "article",
+      "content_sha256": "97ce5b8644269caf8fe74a7ad70895a7c5e279d4a70262382b60ab9322b0f40f",
+      "content_chars": 1172
+    },
+    "264": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002680762&office_id=016&code=329180&page=1&sm=",
+      "title": "코스피, 상승 출발 후 6300선 ‘숨고르기’…삼전 상승·SK하닉 하락...",
+      "date": "2026.08.07 09:58",
+      "doc_type": "article",
+      "content_sha256": "78083141e642226f0f247a78273ff60f09a14bf38eef06549a00919f975a379e",
+      "content_chars": 1699
+    },
+    "265": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0016238601&office_id=001&code=329180&page=1&sm=",
+      "title": "코스피·코스닥, 상승 출발후 보합권서 혼조(종합)",
+      "date": "2026.08.07 09:39",
+      "doc_type": "article",
+      "content_sha256": "5c5971c0ba6f4731816735cb47a188231791f6921edfe9e951f04ed8f4a91ed7",
+      "content_chars": 2030
+    },
+    "268": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000109403&office_id=050&code=329180&page=2&sm=",
+      "title": "AI 슈퍼사이클의 그늘…‘공급망 프리미엄’ 시험대 오른 K산업",
+      "date": "2026.08.07 07:06",
+      "doc_type": "article",
+      "content_sha256": "67398ddc4dd8a999493e900a4d5559ec25ffe51517c84f628c744f5fc35279cc",
+      "content_chars": 3269
+    },
+    "270": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003041112&office_id=029&code=329180&page=2&sm=",
+      "title": "삼성重, 업계 첫 200㎿급 해상 데이터센터 美선급 인증",
+      "date": "2026.08.06 16:33",
+      "doc_type": "article",
+      "content_sha256": "87cf254fa98ae377b8b670ecb9f90c5f65dfd2b13f9a9956a124c0deb4f6e827",
+      "content_chars": 989
+    },
+    "271": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0009101083&office_id=421&code=329180&page=3&sm=",
+      "title": "폭염에 항공업계 '식은땀'…기업들 냉방기 추가 설치·휴식 시간 확대",
+      "date": "2026.08.06 15:34",
+      "doc_type": "article",
+      "content_sha256": "c97dead963bc38a7d67b4e13a6c65c1d4174a651d1010dc54a8c76324d153924",
+      "content_chars": 2566
+    },
+    "272": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000526000&office_id=374&code=329180&page=3&sm=",
+      "title": "[ETF 따라잡기] 8월 변동성 장세 ETF 전략 금융지주사 배당 '주...",
+      "date": "2026.08.06 14:34",
+      "doc_type": "article",
+      "content_sha256": "2c2824b8765e890537539d16c4ba2d2cc1d367c203dc8be388517e3420c6fd9a",
+      "content_chars": 3286
+    },
+    "273": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000088699&office_id=293&code=329180&page=3&sm=",
+      "title": "[HD현대 3세 경영] 조선·건설기계 통합 원년…정기선 첫 시험대",
+      "date": "2026.08.06 14:20",
+      "doc_type": "article",
+      "content_sha256": "d524ef6af205116c3a9f81ea3c2ca84d9ef7f44893cc4a4a76480d3c665a5068",
+      "content_chars": 2816
+    },
+    "275": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005396355&office_id=008&code=329180&page=3&sm=",
+      "title": "美 증시 혼조에 코스피 숨고르기, 코스닥 장중 800선 터치",
+      "date": "2026.08.06 09:40",
+      "doc_type": "article",
+      "content_sha256": "890196ade0780c2e5903803b29f539e968c38612df15e1cd96c955f0cc466d5e",
+      "content_chars": 1688
+    },
+    "276": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002680223&office_id=016&code=329180&page=3&sm=",
+      "title": "강제노동 논란 번진 ‘울산형 외국인력 사업’…K-조선 수출 리스크 .....",
+      "date": "2026.08.06 09:26",
+      "doc_type": "article",
+      "content_sha256": "2b45d9d32d4a928cc945dc7516eb5a9ee91fe476da9a3c82c3977de0dcc02218",
+      "content_chars": 1979
+    },
+    "278": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003040993&office_id=029&code=329180&page=3&sm=",
+      "title": "코스피, 美기술주 약세에 1.8% 하락 출발…SK하닉 -5% 급락",
+      "date": "2026.08.06 09:17",
+      "doc_type": "article",
+      "content_sha256": "a292ec30b28703b23f1c2204c1c5c2c03de1d0b8f99b6cc89cee1dabb8360b02",
+      "content_chars": 1014
+    },
+    "281": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004433526&office_id=076&code=329180&page=4&sm=",
+      "title": "'안전 최우선' 내세웠지만…HD현대중공업 안전관리 역량 시험대",
+      "date": "2026.08.06 08:15",
+      "doc_type": "article",
+      "content_sha256": "f6b0c041b19a1939f93acf8ea7453bf9fc0ae719e58a492068d36b7257fafb83",
+      "content_chars": 2174
+    },
+    "282": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001184571&office_id=366&code=329180&page=4&sm=",
+      "title": "AI 데이터센터 큰손 놓칠라… 신발끈 조여매는 K선박엔진",
+      "date": "2026.08.06 06:01",
+      "doc_type": "article",
+      "content_sha256": "d68ce18a969c83727bcbea218dc9962fea9b4348419f317505dee73ccf56d32a",
+      "content_chars": 2314
+    },
+    "283": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003668022&office_id=081&code=329180&page=4&sm=",
+      "title": "HD현대 첨단기술 품는 美방산조선소… 美군함 한국건조 ‘마스가’ 순.....",
+      "date": "2026.08.06 05:04",
+      "doc_type": "article",
+      "content_sha256": "8fe309087f6ac03c8e772fe859a58a4a7cbdd761acaf429a6d82759362ada8b1",
+      "content_chars": 1459
+    },
+    "284": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000946483&office_id=469&code=329180&page=4&sm=",
+      "title": "진정한 '원팀'의 조건[36.5˚C]",
+      "date": "2026.08.06 04:30",
+      "doc_type": "article",
+      "content_sha256": "77c6ce91ced3e1f606363a4be3ab32fec02a6669190be61a55ea3cca31f2c164",
+      "content_chars": 1683
+    },
+    "285": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002389431&office_id=052&code=329180&page=4&sm=",
+      "title": "반도체 강세에 코스피 3.8% '껑충'...코스닥도 상승",
+      "date": "2026.08.05 23:12",
+      "doc_type": "broadcast",
+      "content_sha256": "d74f6da1a36f89406a795655667165429a095e4f3bc41d64ebf0c7e5a17b8123",
+      "content_chars": 846
+    },
+    "287": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003462559&office_id=032&code=329180&page=4&sm=",
+      "title": "HD현대, 미 최대 방산 조선사에 ‘지능형 용접’ 전수",
+      "date": "2026.08.05 20:34",
+      "doc_type": "article",
+      "content_sha256": "8adece923e487d8086a4d16f4b2cf4f204965f2ab38685821ab0042f2523f2ef",
+      "content_chars": 652
+    },
+    "288": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003040934&office_id=029&code=329180&page=4&sm=",
+      "title": "‘한미 조선동맹’ 공들이는 HD현대…美최대 방산 조선사와 협력 속도",
+      "date": "2026.08.05 18:43",
+      "doc_type": "article",
+      "content_sha256": "357009a8ceac6ae28631955d8ebeb924fe332d2245c8874e14b968220cdbf4d9",
+      "content_chars": 934
+    },
+    "289": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002817227&office_id=028&code=329180&page=4&sm=",
+      "title": "기능장 노하우 입력된 HD현대 용접 로봇, 미 조선소에 들어간다",
+      "date": "2026.08.05 15:16",
+      "doc_type": "article",
+      "content_sha256": "c9d377a63f0f120198a8dd5b73dd41320b889d745b4981888ce693d868c3e32e",
+      "content_chars": 932
+    },
+    "290": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005716989&office_id=009&code=329180&page=4&sm=",
+      "title": "HD현대, 미국 최대 방산 조선사와 맞손…첨단 조선 협력에 박차",
+      "date": "2026.08.05 15:16",
+      "doc_type": "article",
+      "content_sha256": "4b16f5a6b8baa1cac58eb5716c70b4a08b7876138b12d984fc9591c61f1735e8",
+      "content_chars": 1281
+    },
+    "291": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003462441&office_id=032&code=329180&page=4&sm=",
+      "title": "HD현대, 미국 최대 방산 조선사에 지능형 용접 시스템 전수",
+      "date": "2026.08.05 13:58",
+      "doc_type": "article",
+      "content_sha256": "9a295b521d9dcaa0e021bb8ac7f3fe5935d53249773dc4db68d7f05ab60c3af8",
+      "content_chars": 872
+    },
+    "292": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001392676&office_id=082&code=329180&page=4&sm=",
+      "title": "HD현대, 美 최대 방산 조선사에 용접 기술 전수",
+      "date": "2026.08.05 13:51",
+      "doc_type": "article",
+      "content_sha256": "f49f1dd8dcca0307b179d69978d44ca979b5311ebcbd28b322a747cb4249dcf5",
+      "content_chars": 1003
+    },
+    "293": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001184446&office_id=366&code=329180&page=4&sm=",
+      "title": "HD현대, 美 조선소에 지능형 용접 시스템 도입... 한미 조선 협력...",
+      "date": "2026.08.05 12:06",
+      "doc_type": "article",
+      "content_sha256": "122348da10914463768521db14369d22c49922358aff2a641e89d6515b1143ab",
+      "content_chars": 1016
+    },
+    "294": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000892590&office_id=422&code=329180&page=4&sm=",
+      "title": "HD현대, 미국 최대 방산 조선사와 협력…용접 시스템 전수",
+      "date": "2026.08.05 11:39",
+      "doc_type": "article",
+      "content_sha256": "2f0be1b771e25a316d8b7b329065ced3e286d5e7615d13e9a4d4ac2eabbe3867",
+      "content_chars": 635
+    },
+    "295": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003542431&office_id=025&code=329180&page=4&sm=",
+      "title": "HD현대, 미국 조선소에 ‘K첨단 용접 기술’ 첫 도입",
+      "date": "2026.08.05 11:38",
+      "doc_type": "article",
+      "content_sha256": "7efa0631aa9cedc0e7b58f129fbe3b190ee710b514ee76cc2f2ba2ff46707048",
+      "content_chars": 1053
+    },
+    "296": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0016234662&office_id=001&code=329180&page=4&sm=",
+      "title": "HD현대, 미국 최대 방산 조선사와 협력 속도…용접 시스템 전수",
+      "date": "2026.08.05 11:30",
+      "doc_type": "article",
+      "content_sha256": "37129d32534dd5d691a59def002db81e06f32790604a41c9708bed514f43549d",
+      "content_chars": 1068
+    },
+    "297": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005317775&office_id=015&code=329180&page=4&sm=",
+      "title": "[단독] 직장금고 대출도 '극과극'…반도체·조선·방산만 늘었다",
+      "date": "2026.08.05 18:17",
+      "doc_type": "article",
+      "content_sha256": "f8bf90c80531e15c0f9d57645bdc19451585e05c9622d91b96cafc77b8d98615",
+      "content_chars": 1852
+    },
+    "298": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005717183&office_id=009&code=329180&page=5&sm=",
+      "title": "美잉걸스 조선소에 HD현대 용접시스템",
+      "date": "2026.08.05 17:56",
+      "doc_type": "article",
+      "content_sha256": "ee74b5afbf49ad56f3f13f8faa580de8e7d4ac51b261d84a2541a0ab604a2cf6",
+      "content_chars": 519
+    },
+    "299": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002809412&office_id=021&code=329180&page=5&sm=",
+      "title": "HD현대, 美 헌팅턴 잉걸스와 첨단 조선 기술 협력 본격화",
+      "date": "2026.08.05 15:41",
+      "doc_type": "article",
+      "content_sha256": "1ae8b196b08578500e59a4a3e2ad896999d5d2a829680847cdb8178a946fb9c0",
+      "content_chars": 1536
+    },
+    "300": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005716968&office_id=009&code=329180&page=5&sm=",
+      "title": "美잉걸스 조선소에 HD현대 용접시스템",
+      "date": "2026.08.05 14:44",
+      "doc_type": "article",
+      "content_sha256": "be5156ba4b7b1a6481b93e979cf6a3f7c66136a508bdf59a833e50b009b62ab9",
+      "content_chars": 697
+    },
+    "301": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000525709&office_id=374&code=329180&page=5&sm=",
+      "title": "HD현대-美헌팅턴 잉걸스, 조선협력 속도…자체 용접시스템 전수",
+      "date": "2026.08.05 11:38",
+      "doc_type": "article",
+      "content_sha256": "923464d33d3cd17c5e5893877639e0a2e07dd28cbbc203035d8ca891ae689352",
+      "content_chars": 934
+    },
+    "303": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002237043&office_id=138&code=012450&page=2&sm=",
+      "title": "K-방산 4사, 2분기 합산 영업이익 1.75조 '역대 최대'…수출이 ...",
+      "date": "2026.08.07 15:56",
+      "doc_type": "article",
+      "content_sha256": "5c3a7c3536276d48014cb0c7b9433318b21d34ffb9fbeaa8d955f7a319a3510f",
+      "content_chars": 2715
+    },
+    "304": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0006346873&office_id=018&code=012450&page=2&sm=",
+      "title": "비츠로넥스텍, 한화에어로와 535억 규모 누리호 엔진 부품 공급계약",
+      "date": "2026.08.07 14:47",
+      "doc_type": "article",
+      "content_sha256": "a62c19bd30bd41645df50251305370b3a35dc9bac2777918a82db3e126eff277",
+      "content_chars": 763
+    },
+    "305": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000526224&office_id=374&code=012450&page=2&sm=",
+      "title": "[오후장 체크포인트] 상승장 결국 삼전닉스 필수 \"완만한 반등 기대\"",
+      "date": "2026.08.07 14:27",
+      "doc_type": "article",
+      "content_sha256": "ed33399cedd7354ed95c4212e9075ad82e80efaf04bf7bf4a5afedb2c958242d",
+      "content_chars": 1849
+    },
+    "306": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001154611&office_id=417&code=012450&page=3&sm=",
+      "title": "승계 퍼즐 맞추는 재계, 한화·HD현대·LX 80년대생 오너 전면에",
+      "date": "2026.08.07 06:00",
+      "doc_type": "article",
+      "content_sha256": "89af8355acecc059bb24690501acab2a2f699349c54af5dca4b972d56af88a71",
+      "content_chars": 1962
+    },
+    "307": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005396793&office_id=008&code=012450&page=3&sm=",
+      "title": "\"3조 던져요\" 또 돌아선 외인, 이번엔 왜?...AI 투심 '이 회사...",
+      "date": "2026.08.07 04:00",
+      "doc_type": "article",
+      "content_sha256": "68afdbbc3183fc6001abb9b522d8736606a6ae7430193143b45f7e8ce96e89cb",
+      "content_chars": 1615
+    },
+    "308": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001261446&office_id=215&code=012450&page=3&sm=",
+      "title": "미국·중국 꺾고 무기 선주문 1위...국산화 없인 ‘반짝 특수’ [배창...",
+      "date": "2026.08.06 18:33",
+      "doc_type": "article",
+      "content_sha256": "2c31de0a7a848f89d21969a2061ede11bfeae8d3a470b042c18418ad30979d44",
+      "content_chars": 2714
+    },
+    "309": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005717735&office_id=009&code=012450&page=4&sm=",
+      "title": "K방산 4사, 합산 영업익 1.7조 최대",
+      "date": "2026.08.06 18:15",
+      "doc_type": "article",
+      "content_sha256": "d35b411d8cfb7202293377545157da0bb66398e290305d8bb190fcd1dbc7c1c4",
+      "content_chars": 888
+    },
+    "310": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000522402&office_id=629&code=012450&page=4&sm=",
+      "title": "방산 4사, 2분기 합산 영업익 1조7520억원…5분기 연속 '1조 ...",
+      "date": "2026.08.06 15:43",
+      "doc_type": "article",
+      "content_sha256": "dbfac53191c8ffdb1f122b4fab6a3e80fd7beabf43945760060598266dace0fb",
+      "content_chars": 2535
+    },
+    "311": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005396707&office_id=008&code=012450&page=4&sm=",
+      "title": "'반도체 거리두기' 외인 이탈 코스피 4%대↓, 네이버 실적이 분수령",
+      "date": "2026.08.06 17:20",
+      "doc_type": "article",
+      "content_sha256": "6c74e6d64b4e16ffb8e61215d712eeea3dce363b24f2df021210852d66965656",
+      "content_chars": 1709
+    },
+    "312": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005396646&office_id=008&code=012450&page=4&sm=",
+      "title": "이틀 상승 '말짱 도루묵'…3조 팔아치운 외인에 코스피 4%대 '뚝'",
+      "date": "2026.08.06 16:18",
+      "doc_type": "article",
+      "content_sha256": "f247be07f60319598743ee6a581b42a5908fe113a56d1e4972e3171f3f2e74c7",
+      "content_chars": 1708
+    },
+    "313": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002389823&office_id=052&code=012450&page=4&sm=",
+      "title": "코스피 4.6% 급락에 6,200선으로...코스닥은 상승",
+      "date": "2026.08.06 17:03",
+      "doc_type": "broadcast",
+      "content_sha256": "25b569fe5fbab2593a818981377faa44885f109da72133bd5070108ad018dedd",
+      "content_chars": 1010
+    },
+    "314": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002389727&office_id=052&code=012450&page=4&sm=",
+      "title": "코스피 급락에 '매도 사이드카'...코스닥은 상승",
+      "date": "2026.08.06 14:38",
+      "doc_type": "broadcast",
+      "content_sha256": "f5ab48da9de80e8286e6a60a34738553d8efd8013f3c1b08665be523e7897eaa",
+      "content_chars": 872
+    },
+    "315": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002389657&office_id=052&code=012450&page=4&sm=",
+      "title": "코스피 급락에 '매도 사이드카'...코스닥도 하락",
+      "date": "2026.08.06 11:45",
+      "doc_type": "broadcast",
+      "content_sha256": "649a8b4ce785da85bdf880a89153eb102e196821fb5aa0cc432bf394f13bd3ef",
+      "content_chars": 890
+    },
+    "316": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005799937&office_id=277&code=012450&page=4&sm=",
+      "title": "코스피 4%대 급락…코스닥은 보합 마감",
+      "date": "2026.08.06 16:07",
+      "doc_type": "article",
+      "content_sha256": "447b5ebd47afc56133d956196206331cb8a7e18dbe7594fc9cc74e26068a5dcb",
+      "content_chars": 1197
+    },
+    "317": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000526019&office_id=374&code=012450&page=5&sm=",
+      "title": "코스피 이틀 만에 또 6300선 털썩…매도 사이드카 발동",
+      "date": "2026.08.06 15:39",
+      "doc_type": "broadcast",
+      "content_sha256": "f7c7167ade1a1de99b124c3883fd7147403266d2d91efa813e5493bb78db244b",
+      "content_chars": 920
+    },
+    "319": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005558075&office_id=014&code=012450&page=5&sm=",
+      "title": "\"또 사이드카야\"…·코스피, 반도체 약세에 4%대 하락한 6300선 [...",
+      "date": "2026.08.06 13:05",
+      "doc_type": "article",
+      "content_sha256": "91d0ab33a3d2d65b1bd9d7b02a9f715acf783c6c9bdbdc92d3be50b0503dca89",
+      "content_chars": 1406
+    },
+    "320": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005396474&office_id=008&code=012450&page=5&sm=",
+      "title": "\"어젠 차익실현, 오늘은 줍줍\"...하락장에 개미 '나홀로 방어'",
+      "date": "2026.08.06 11:44",
+      "doc_type": "article",
+      "content_sha256": "2b22bb3437965bc61b72cc07d9165f83f56591f32fef79d14d1380e3562d4ff8",
+      "content_chars": 1491
+    },
+    "326": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003668430&office_id=081&code=034020&page=1&sm=",
+      "title": "[서울데이터랩]개장 직후 인기 검색 종목 20選",
+      "date": "2026.08.07 09:18",
+      "doc_type": "article",
+      "content_sha256": "b6ae8d76904dad07d1275c2bd134ba37a0d63352566a7e334b29575a8c0320ea",
+      "content_chars": 1184
+    },
+    "330": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001154451&office_id=417&code=034020&page=1&sm=",
+      "title": "\"결정하면 배임, 안 하면 직무유기\"… 고심 깊은 이사회",
+      "date": "2026.08.05 16:00",
+      "doc_type": "article",
+      "content_sha256": "b1af09cbf3021ec6d8bca0d568d835a11cf46bc2ffefc89c0feecc7bcaa2e0ef",
+      "content_chars": 2385
+    },
+    "331": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003991478&office_id=023&code=034020&page=2&sm=",
+      "title": "코스피, 3.76% 상승 마감... 대형주 전반 강세",
+      "date": "2026.08.05 15:54",
+      "doc_type": "article",
+      "content_sha256": "aeb4098a63a4db0e52d37e25403a48e71fc8e57499384d8cce8d6e4ef7c05d00",
+      "content_chars": 813
+    },
+    "332": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005557594&office_id=014&code=034020&page=2&sm=",
+      "title": "두산스코다파워, 英 프로토스 증기터빈 자동운전 시험 통과…상업운전...",
+      "date": "2026.08.05 14:37",
+      "doc_type": "article",
+      "content_sha256": "6934dea798f58b9efdef782adb2e626c48f978f80bacb571e1bb7fb168bef940",
+      "content_chars": 2274
+    },
+    "333": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005395998&office_id=008&code=034020&page=2&sm=",
+      "title": "\"AI, 돈 버네\" 외국인 뭉칫돈 들어온다…코스피서 뭐 담나 보니",
+      "date": "2026.08.05 14:28",
+      "doc_type": "article",
+      "content_sha256": "02e8df4d37d3f61b1d10dfdf58586287c2ccee01d637dd660211fa1ded45c3fb",
+      "content_chars": 2383
+    },
+    "334": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002236682&office_id=138&code=034020&page=2&sm=",
+      "title": "KAI·대한항공·한화 뭉쳤다…차세대 민항기 공동개발 '원팀' 가동",
+      "date": "2026.08.05 13:59",
+      "doc_type": "article",
+      "content_sha256": "9d5702eb4a9384b75eae615e35b00c328cbad93a33338400835b1587305b49c4",
+      "content_chars": 2886
+    },
+    "335": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003667787&office_id=081&code=034020&page=2&sm=",
+      "title": "[서울데이터랩]코스피 시총상위주 장중 강세…SK하이닉스 6%대 상승, ...",
+      "date": "2026.08.05 13:07",
+      "doc_type": "article",
+      "content_sha256": "45b9e7811a84298f3d91ecc913d81c6a13fe96ddeec359c36e27fa9f260fb190",
+      "content_chars": 1603
+    },
+    "336": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005557483&office_id=014&code=034020&page=2&sm=",
+      "title": "\"10조원 시공물량 탄다\" GS건설, 데이터센터·원전 겹모멘텀…카카오....",
+      "date": "2026.08.05 11:01",
+      "doc_type": "article",
+      "content_sha256": "d20ee4b3115b91fc0c85f2a9a3f114b95014a9c72e20628aaca66eea6d9de133",
+      "content_chars": 3277
+    },
+    "337": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003040755&office_id=029&code=034020&page=2&sm=",
+      "title": "코스피, 6600선 회복…美 AI·반도체 훈풍에 삼전 5%·SK하닉 7...",
+      "date": "2026.08.05 09:14",
+      "doc_type": "article",
+      "content_sha256": "2e8b9284e72697c5aa8b86fb5976e682bf88278031617e07bdfaf32d1725c467",
+      "content_chars": 1569
+    },
+    "338": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003667687&office_id=081&code=034020&page=2&sm=",
+      "title": "[서울데이터랩]개장 직후 인기 검색 종목 20選",
+      "date": "2026.08.05 09:11",
+      "doc_type": "article",
+      "content_sha256": "79f1c318d1a9d674da2bd06ce19f4c94e2acde2129730e8d08a4aaca21fb9248",
+      "content_chars": 1192
+    },
+    "339": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003040728&office_id=029&code=034020&page=2&sm=",
+      "title": "美 반도체 신고가, 삼전 4%·SK하닉 5% 프리마켓 급등…삼성전기 1...",
+      "date": "2026.08.05 08:09",
+      "doc_type": "article",
+      "content_sha256": "5a8130601f9e0054df8df38ffcf2920b721aeeae3670934e9b3eeefbe2f3551d",
+      "content_chars": 1045
+    },
+    "340": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004648471&office_id=011&code=034020&page=2&sm=",
+      "title": "기계진흥회 부회장에 김상모…플랜트협 부회장에 이위로",
+      "date": "2026.08.04 17:46",
+      "doc_type": "article",
+      "content_sha256": "76fc534d0c7135433432e41370edff71382856175c4409cae551398b7289a63c",
+      "content_chars": 1093
+    },
+    "341": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004648353&office_id=011&code=034020&page=2&sm=",
+      "title": "기계진흥회 부회장에 김상모...플랜트협 부회장에 이위로",
+      "date": "2026.08.04 13:32",
+      "doc_type": "article",
+      "content_sha256": "81143d7a54a2b1d6289c4181b4bb89f72f0f79e68d4ea9ae7e5355e1810465a2",
+      "content_chars": 1170
+    },
+    "342": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005557119&office_id=014&code=034020&page=3&sm=",
+      "title": "코스피, '삼전·닉스' 회복에 1.6% 상승마감...코스닥 5.88%[...",
+      "date": "2026.08.04 16:37",
+      "doc_type": "article",
+      "content_sha256": "0f97f9474ea22d61716d8e43f271e86e6799fcccc94c83e7d46ed798d06a8e39",
+      "content_chars": 1295
+    },
+    "343": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001047182&office_id=031&code=034020&page=3&sm=",
+      "title": "롤러코스터 탄 코스피 1.5%↑?코스닥 연일 '질주'",
+      "date": "2026.08.04 16:26",
+      "doc_type": "article",
+      "content_sha256": "d65afa5ea0cb08225ba587e0cac1b67afacb87e3c63ed3519c594f36f083a239",
+      "content_chars": 1603
+    },
+    "344": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004648425&office_id=011&code=034020&page=3&sm=",
+      "title": "“하락 대비 상승이 8배”… 코스피 뒷심에 코스닥 ‘3연 사이드카’.....",
+      "date": "2026.08.04 16:05",
+      "doc_type": "article",
+      "content_sha256": "bca67dea670c9a561018a92b2ffbe18454598fa7add1c26888128907d19d4217",
+      "content_chars": 1596
+    },
+    "345": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002388749&office_id=052&code=034020&page=3&sm=",
+      "title": "코스피 1.6% 상승 마감...코스닥은 매수 사이드카",
+      "date": "2026.08.04 15:55",
+      "doc_type": "article",
+      "content_sha256": "055cd451f0907e12f959daca0bbf8b1ed5dc1afdd83df61789ec5a38d276eee4",
+      "content_chars": 483
+    },
+    "346": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005798771&office_id=277&code=034020&page=3&sm=",
+      "title": "코스피, 장 초반 하락 딛고 상승 마감…코스닥은 6% 가까이 올라",
+      "date": "2026.08.04 15:54",
+      "doc_type": "article",
+      "content_sha256": "412aa5ce90014fde639ab1a1b9f342e27344e66409c1bba482e22b3c97f00b2b",
+      "content_chars": 1479
+    },
+    "347": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0016233368&office_id=001&code=034020&page=3&sm=",
+      "title": "원전 제조 중심지 경남도 \"SMR, 국가전략기술 지정 환영\"",
+      "date": "2026.08.04 15:44",
+      "doc_type": "article",
+      "content_sha256": "342b0a390fdb404838793f14d150964200a9dfcfc74d23169716faf5b8a61fcc",
+      "content_chars": 785
+    },
+    "348": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003667459&office_id=081&code=034020&page=3&sm=",
+      "title": "[서울데이터랩]마감 직후 인기 검색 종목 20選",
+      "date": "2026.08.04 15:43",
+      "doc_type": "article",
+      "content_sha256": "76036b29e7ed5fa61059112740949382a1fff4a1e9ea5f7a0e6e45c00cb4c12d",
+      "content_chars": 1306
+    },
+    "350": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002388722&office_id=052&code=034020&page=3&sm=",
+      "title": "'오락가락' 코스피...코스닥은 매수 사이드카",
+      "date": "2026.08.04 15:14",
+      "doc_type": "broadcast",
+      "content_sha256": "a97b5c94526b415f7692dcc12ad82e9706f50315fb23e10e96184dfddddc7d3d",
+      "content_chars": 858
+    },
+    "351": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002388632&office_id=052&code=034020&page=3&sm=",
+      "title": "기관 매도에 코스피 혼조세...코스닥 매수 사이드카",
+      "date": "2026.08.04 11:48",
+      "doc_type": "broadcast",
+      "content_sha256": "8e839cb65357027bfe28ad23eaf62a084055e39b9ceab7d98f0f5b072aaa7199",
+      "content_chars": 819
+    },
+    "352": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002388564&office_id=052&code=034020&page=3&sm=",
+      "title": "'뉴욕발 훈풍'에 코스피 상승 출발...코스닥은 급등",
+      "date": "2026.08.04 09:44",
+      "doc_type": "broadcast",
+      "content_sha256": "3c3ebeab922bf97c85b0e44ccc6d093048f0741be591eb4045b1c23f71883694",
+      "content_chars": 716
+    },
+    "353": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005557020&office_id=014&code=034020&page=3&sm=",
+      "title": "코스피, 'CXMT 증설'에 반도체 고전...코스닥, 제약 급등에 4%...",
+      "date": "2026.08.04 14:38",
+      "doc_type": "article",
+      "content_sha256": "891102273f2b27f65a6b852b41ce6d84cb2c376514a7dfe2547dcac101bba5c7",
+      "content_chars": 1235
+    },
+    "354": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003667408&office_id=081&code=034020&page=4&sm=",
+      "title": "[서울데이터랩]코스피 시총 상위주 약세 우위…삼성전자 4%대 하락, 한...",
+      "date": "2026.08.04 14:02",
+      "doc_type": "article",
+      "content_sha256": "af0efbada738a77f74626b5622247c770931c97526f3d1542c408908b3b75291",
+      "content_chars": 1506
+    },
+    "356": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005798654&office_id=277&code=034020&page=4&sm=",
+      "title": "코스피, 장 초반 하락 딛고 횡보…삼전닉스 하락세 여전",
+      "date": "2026.08.04 12:11",
+      "doc_type": "article",
+      "content_sha256": "3b107a7ed241ccca95d7b1ac7f349d221fc3a3147daf1cf93867a1d5a57fef55",
+      "content_chars": 1236
+    },
+    "357": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004648337&office_id=011&code=034020&page=4&sm=",
+      "title": "상위 1% 초고수, 두산에너빌리티 사고 삼성전자 팔았다[주식 초고수는....",
+      "date": "2026.08.04 11:53",
+      "doc_type": "article",
+      "content_sha256": "88f0c0dbd988037033f5f501479b433f3ee9253f44ceb5f6fbcfd2ba600d0975",
+      "content_chars": 1091
+    },
+    "358": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005556936&office_id=014&code=034020&page=4&sm=",
+      "title": "코스피, 반도체 대형주 약세에 약보합...코스닥은 매수사이드카[fn오전...",
+      "date": "2026.08.04 11:30",
+      "doc_type": "article",
+      "content_sha256": "fef80622fe9e335aa54999a972045dba60ac3c35ad47e65eec4cef5900aa3dfb",
+      "content_chars": 1127
+    },
+    "359": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005798498&office_id=277&code=034020&page=4&sm=",
+      "title": "코스피, 장 초반 상승 출발 후 하락…삼전닉스 하락세",
+      "date": "2026.08.04 09:48",
+      "doc_type": "article",
+      "content_sha256": "67820d1d5d3069e49e2d2ca06697b219d87a41bc0d3a37dc87ba1ade8a665a49",
+      "content_chars": 985
+    },
+    "360": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003040508&office_id=029&code=034020&page=4&sm=",
+      "title": "코스피, 1.5% 상승 출발…삼전·하닉 반등에 6350선 회복",
+      "date": "2026.08.04 09:15",
+      "doc_type": "article",
+      "content_sha256": "223caa929afa6167d57bfeb4b5ee8a62bd3c76a38e73ce971432b081fc55fbb6",
+      "content_chars": 1479
+    },
+    "361": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003667293&office_id=081&code=034020&page=4&sm=",
+      "title": "[서울데이터랩]개장 직후 인기 검색 종목 20選",
+      "date": "2026.08.04 09:15",
+      "doc_type": "article",
+      "content_sha256": "b693ea1ec7b097b7a2530f67ed3fde3e6a7a88e326c64aed9b403a96eb5bee50",
+      "content_chars": 1355
+    },
+    "362": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000525413&office_id=374&code=034020&page=4&sm=",
+      "title": "[어제장 오늘장] 코스피 폭등, '일일천하'…반도체 대형주 vs 코스닥...",
+      "date": "2026.08.04 08:30",
+      "doc_type": "article",
+      "content_sha256": "c276c45408c4371fd9c7ffec0660070aeceb8a86dd10c499d5d5bfac5df43254",
+      "content_chars": 1962
+    },
+    "363": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003040496&office_id=029&code=034020&page=4&sm=",
+      "title": "프리마켓 반도체주 반등…삼성전기 8%, 삼전·SK하닉 2%대 강세",
+      "date": "2026.08.04 08:14",
+      "doc_type": "article",
+      "content_sha256": "0ff510b4b59d037bb668aed9056da0ad9adabb5d237424a6c8501765e6290385",
+      "content_chars": 997
+    },
+    "364": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003667084&office_id=081&code=034020&page=5&sm=",
+      "title": "[서울데이터랩]마감 직후 인기 검색 종목 20選",
+      "date": "2026.08.03 16:01",
+      "doc_type": "article",
+      "content_sha256": "32be45f2869dd43c5df9c227b3f62d7eb8f54dca82a0b3439d800b623ba0cfbd",
+      "content_chars": 1425
+    },
+    "365": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001260956&office_id=215&code=034020&page=5&sm=",
+      "title": "빅딜 승자는 두산…SK, 8년 안전장치 통할까",
+      "date": "2026.08.03 14:56",
+      "doc_type": "article",
+      "content_sha256": "57519bb315da8aa035aa028a7dc2a21bf6894c60080b055ca0d053f3411e4670",
+      "content_chars": 2529
+    },
+    "366": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002678701&office_id=016&code=034020&page=5&sm=",
+      "title": "‘CCL·후공정·웨이퍼’ 두산, 반도체 삼각편대 완성",
+      "date": "2026.08.03 11:23",
+      "doc_type": "article",
+      "content_sha256": "55fa1e8f728ab0032915702d29da30d49d7609f76aa910bd32fed1385bead843",
+      "content_chars": 1537
+    },
+    "367": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002678523&office_id=016&code=034020&page=5&sm=",
+      "title": "‘비욘드 중공업’ 두산, 반도체 삼각편대 완성",
+      "date": "2026.08.03 08:46",
+      "doc_type": "article",
+      "content_sha256": "f5d2121443a2681552dc12cbd4c8d89315d47c15283021017fcea9ff280e88c7",
+      "content_chars": 2422
+    },
+    "368": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005715828&office_id=009&code=034020&page=5&sm=",
+      "title": "발전사 통합·LH·해사까지…도, “경남 핵심 기관 못 뺏긴다”",
+      "date": "2026.08.03 11:42",
+      "doc_type": "article",
+      "content_sha256": "e844ca642d3bcccef6730705600d8829506cac8ae44f42c18ec947a263937c2a",
+      "content_chars": 1898
+    },
+    "369": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003666920&office_id=081&code=034020&page=5&sm=",
+      "title": "[서울데이터랩]개장 직후 인기 검색 종목 20選",
+      "date": "2026.08.03 09:34",
+      "doc_type": "article",
+      "content_sha256": "c6f578c959d5c9ceadf7e40c02bdfcc70b0bd65e3cf32c35735579daac7e0627",
+      "content_chars": 1241
+    },
+    "370": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005556229&office_id=014&code=034020&page=5&sm=",
+      "title": "두산에너빌리티, 하반기 원전·가스터빈 등 수주 모멘텀 가시화 -iM證",
+      "date": "2026.08.03 09:05",
+      "doc_type": "article",
+      "content_sha256": "e2bc641843f36fdbcd0c5c57cf3927313225a888efdf2206d171ff9de1a783b2",
+      "content_chars": 1083
+    },
+    "371": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003040283&office_id=029&code=034020&page=5&sm=",
+      "title": "폭등 후폭풍?…삼전·SK하닉, 프리마켓서 3% 하락",
+      "date": "2026.08.03 08:14",
+      "doc_type": "article",
+      "content_sha256": "12565bdf3f1530ad24a8ff7bd18f95dfbf4cbb6913d772c9b6ad3c447a1de5e2",
+      "content_chars": 1127
+    },
+    "372": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0009092006&office_id=421&code=034020&page=5&sm=",
+      "title": "'기대의 8월' 팔천피 또는 그 너머…관건은 '외국인과 금리'",
+      "date": "2026.08.02 06:00",
+      "doc_type": "article",
+      "content_sha256": "33249f8b28b6a7dea68f279b5cc5fbd19f3447bf2f17403f8f0f5c1f8c887cc0",
+      "content_chars": 2014
+    },
+    "373": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000945624&office_id=469&code=034020&page=5&sm=",
+      "title": "반도체 뛰어든 두산, AI 집중하는 SK…'슈퍼사이클' 속 실트론 주고...",
+      "date": "2026.08.01 04:30",
+      "doc_type": "article",
+      "content_sha256": "f803937a714b0a57cb13cdac8472b6f19821a43176ffc13f2762a98dc197520f",
+      "content_chars": 1741
+    },
+    "374": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003738075&office_id=020&code=034020&page=5&sm=",
+      "title": "SK, 두산에 SK실트론 매각… 거래금액 2.3조원",
+      "date": "2026.08.01 01:41",
+      "doc_type": "article",
+      "content_sha256": "86c1c5cbbc4cfd6f28e24aae0ffff212f14fde2dd328073e9e557fcd459d6386",
+      "content_chars": 852
+    },
+    "375": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003461652&office_id=032&code=034020&page=6&sm=",
+      "title": "두산, 2.3조에 SK실트론 품는다···중공업 넘어 AI·반도체 기업으...",
+      "date": "2026.07.31 19:11",
+      "doc_type": "article",
+      "content_sha256": "63143d89d735ea406caabad73bba9ee6b4a1e8cec227019a637c69b21695b6ce",
+      "content_chars": 2277
+    },
+    "376": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000945597&office_id=469&code=034020&page=6&sm=",
+      "title": "SK실트론 품은 두산, 반도체 전후방 공정 밸류체인 완성",
+      "date": "2026.07.31 19:04",
+      "doc_type": "article",
+      "content_sha256": "edfbf036dcdbd618e7f93c2e5092d0901c541798256a19ca46eab15788f85b24",
+      "content_chars": 1132
+    },
+    "377": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649809&office_id=011&code=035420&page=1&sm=",
+      "title": "네이버 AI 브리핑 효과…블로거 수익·지원 2배 늘었다",
+      "date": "2026.08.08 13:01",
+      "doc_type": "article",
+      "content_sha256": "e9bfa39ffa986e07e302ed51a1b78a67622d7b746d94b47ab2aa85c58aa503de",
+      "content_chars": 1527
+    },
+    "378": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0014115383&office_id=003&code=035420&page=1&sm=",
+      "title": "\"한국판 팔란티어 꿈꾼다\"…네이버가 국방 AI 사업에 진심인 이유",
+      "date": "2026.08.08 11:00",
+      "doc_type": "article",
+      "content_sha256": "7a3b8d48c67fe293b65ae0a4312b3abe292bdb5279e8356a2b83ef095fb09304",
+      "content_chars": 1024
+    },
+    "379": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649791&office_id=011&code=035420&page=1&sm=",
+      "title": "말 끊어도 알아듣고 감정 표현까지…‘인간형 음성 AI’ 뜬다[빛이 나....",
+      "date": "2026.08.08 10:01",
+      "doc_type": "article",
+      "content_sha256": "07d86044ee6bbb1532bbc12ca1cb624a3acb0495a34c8f1af3b08437376d3d5c",
+      "content_chars": 3140
+    },
+    "380": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005397253&office_id=008&code=035420&page=1&sm=",
+      "title": "\"GPU 빨리 바뀌는데\"…눈가린 네이버, 감가상각 '5년→6년'",
+      "date": "2026.08.08 10:00",
+      "doc_type": "article",
+      "content_sha256": "99ad7f7ecb9d8760855e4ef94737519301db22c41668dfec70057b3bceb04e63",
+      "content_chars": 1792
+    },
+    "381": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649776&office_id=011&code=035420&page=1&sm=",
+      "title": "지역상권 살릴 해법 바꾼다…지원금 대신 로컬기업 육성",
+      "date": "2026.08.08 08:44",
+      "doc_type": "article",
+      "content_sha256": "e2d7585ed32c166f6a5f757a9c8c9b1493d425a077a90d466644d410d429529b",
+      "content_chars": 2503
+    },
+    "382": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649771&office_id=011&code=035420&page=1&sm=",
+      "title": "파업 끝낸 카카오 노사, 연봉총액 6.3% 인상 타결",
+      "date": "2026.08.08 08:40",
+      "doc_type": "article",
+      "content_sha256": "5a1f0a21c5802b6a201a9a5ce689354a51e73f81fd39285040cefc4b04f670a3",
+      "content_chars": 2253
+    },
+    "383": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0006347479&office_id=018&code=035420&page=1&sm=",
+      "title": "'사옥도 전략이다'…기업들이 '내집 마련' 나선 이유는?",
+      "date": "2026.08.08 08:02",
+      "doc_type": "article",
+      "content_sha256": "553c4378e2bd3b7faaf5875b71ee1bdf406913fc5655c918f6c433b9057ff188",
+      "content_chars": 1151
+    },
+    "384": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002433380&office_id=092&code=035420&page=1&sm=",
+      "title": "네카오 'AI 수익화' 시점 변했다...네이버는 시작, 카카오는 내년",
+      "date": "2026.08.08 08:01",
+      "doc_type": "article",
+      "content_sha256": "673645f3476da9976381ad5946962baea62ec8d48daf6c4df4b5b49d825b9fc8",
+      "content_chars": 1992
+    },
+    "386": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005718229&office_id=009&code=035420&page=2&sm=",
+      "title": "“반려주식된 네이버, 내년엔 다를까요”…사상최대 매출 찍었다는데",
+      "date": "2026.08.08 06:06",
+      "doc_type": "article",
+      "content_sha256": "4ef50033cbb2ae549bc9ad9d5c863aabc966343ad938c3d09b6d2510f43318de",
+      "content_chars": 1180
+    },
+    "387": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002237081&office_id=138&code=035420&page=2&sm=",
+      "title": "[AI 클로즈업] 오픈AI發 '무료 폭격'…국내 AI, 특화·AX로 활...",
+      "date": "2026.08.08 05:48",
+      "doc_type": "article",
+      "content_sha256": "bf550c6c0e4a5790d4559b860f518c2f17ebb85b60c017119848fc6c0ce0ee36",
+      "content_chars": 3351
+    },
+    "388": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003991931&office_id=023&code=035420&page=2&sm=",
+      "title": "스마트폰 배터리 유난히 빨리 닳는 분, 5가지 해결 방법",
+      "date": "2026.08.08 05:31",
+      "doc_type": "article",
+      "content_sha256": "0121fc4333a011ab357fddbe97f44bbbdb69644e7c5bd7e254e813d12660e98e",
+      "content_chars": 1202
+    },
+    "390": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002681067&office_id=016&code=035420&page=2&sm=",
+      "title": "‘17만→ 3만원’ 역대급 실적에도 “또 속았다” 아우성…국민메신저.....",
+      "date": "2026.08.07 20:41",
+      "doc_type": "article",
+      "content_sha256": "bfa3f8046e6ce52d2d336c37634a83cf4c6292e497309bd8d7d174c20ad4dd06",
+      "content_chars": 1709
+    },
+    "391": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000007901&office_id=665&code=035420&page=2&sm=",
+      "title": "최고 분기 매출 찍었는데… 네이버 주가 '7%' 빠진 까닭 [시크한 분...",
+      "date": "2026.08.07 20:22",
+      "doc_type": "article",
+      "content_sha256": "fc2681c8943f52ab36623e3413a926cf6d82d6bb2e19c1800029e3e7bfa9fbc8",
+      "content_chars": 1730
+    },
+    "392": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003668589&office_id=081&code=035420&page=2&sm=",
+      "title": "네이버, 2분기 역대 최고 매출, 영업익은 0.2% 하락…“AI 투자...",
+      "date": "2026.08.07 15:45",
+      "doc_type": "article",
+      "content_sha256": "25617517fcb47c32a8a7b3fe26f4686f97c57d604e8d4956937d8610a133aeb8",
+      "content_chars": 1904
+    },
+    "393": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002433345&office_id=092&code=035420&page=2&sm=",
+      "title": "엔비디아 동반자 네이버 \"내년 ‘AI 팩토리’ 수익 가시화\" 자신",
+      "date": "2026.08.07 15:44",
+      "doc_type": "article",
+      "content_sha256": "b3bf9c28a4c1d340efd56332fc4db7a664045fc00c785974edc4d96261dfafa9",
+      "content_chars": 2620
+    },
+    "394": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002390223&office_id=052&code=035420&page=2&sm=",
+      "title": "네이버 역대 최대 매출...영업이익은 AI 투자로 감소",
+      "date": "2026.08.07 14:16",
+      "doc_type": "article",
+      "content_sha256": "a4b98fda9f6989b8d48457e3d9dc28e414a14bca0cf4154c5f85cbe1de8f3a38",
+      "content_chars": 267
+    },
+    "395": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003462919&office_id=032&code=035420&page=2&sm=",
+      "title": "네이버, 2분기 역대 최대 매출…영업이익은 AI 투자로 0.2% 감소",
+      "date": "2026.08.07 14:12",
+      "doc_type": "article",
+      "content_sha256": "b228b566dafbe10d491430d3425f7036ee809be6c33690f18827049d1221cfaf",
+      "content_chars": 1268
+    },
+    "396": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002817563&office_id=028&code=035420&page=2&sm=",
+      "title": "네이버 2분기 매출 3.4조…“엔비디아와 AI팩토리, 내년 초 매출 ...",
+      "date": "2026.08.07 11:14",
+      "doc_type": "article",
+      "content_sha256": "3dab13d158aab2502a37485ead340d23ea8787820e2bacd6a440097a40e1ea54",
+      "content_chars": 1078
+    },
+    "397": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001130602&office_id=144&code=035420&page=2&sm=",
+      "title": "아트뮤, PD 3.1 140W · PD 3.2 AVS 지원 170W 차...",
+      "date": "2026.08.07 19:14",
+      "doc_type": "article",
+      "content_sha256": "2cf1887848f36f01192916d54ee3cdcf6669041a40fbeac3f0734db87f8fc2db",
+      "content_chars": 1467
+    },
+    "398": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005718200&office_id=009&code=035420&page=2&sm=",
+      "title": "“GPU도 전력도 아니다”…AI 기업 주가 흔든 건 결국 ‘돈’ [반도...",
+      "date": "2026.08.07 19:06",
+      "doc_type": "article",
+      "content_sha256": "b7ccfc50635d0098fb38f367e5aec43ba1fe919eba11cc7920bdb85309ff0656",
+      "content_chars": 2345
+    },
+    "399": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005718197&office_id=009&code=035420&page=3&sm=",
+      "title": "코스피 폭락 경고 8배 급증…이번엔 샌디 공포 [플러스 관심종목]",
+      "date": "2026.08.07 18:46",
+      "doc_type": "article",
+      "content_sha256": "1a5542c1165325eccd17a756149d75be4541806d28ae630787d684afc6edb266",
+      "content_chars": 1782
+    },
+    "400": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000088785&office_id=293&code=035420&page=3&sm=",
+      "title": "네이버, 'AI 서비스·팩토리' 투트랙 성장 전략 가동",
+      "date": "2026.08.07 18:14",
+      "doc_type": "article",
+      "content_sha256": "ca64201b2293cdf6f66ac1cc25f63628a33029674ceebe9a091eeabf90d937d5",
+      "content_chars": 3412
+    },
+    "401": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0006346784&office_id=018&code=035420&page=3&sm=",
+      "title": "네이버, 2분기 매출 역대 최대…AI·커머스 수익화 속도(종합)",
+      "date": "2026.08.07 11:41",
+      "doc_type": "article",
+      "content_sha256": "392a9f8364b3864e527d815812c77ecfec4de29257eb2dda79b32e44ac109f6c",
+      "content_chars": 3121
+    },
+    "402": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004092666&office_id=117&code=035420&page=3&sm=",
+      "title": "[컨콜 종합] 네이버, AI 수익화 본궤도…AI 팩토리 200MW·광...",
+      "date": "2026.08.07 11:28",
+      "doc_type": "article",
+      "content_sha256": "b8c2192f4ddfc3f6bd5d644e2630a42e1a852d54b113d2c5fe16e651b50506c7",
+      "content_chars": 2083
+    },
+    "403": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0004649673&office_id=011&code=035420&page=3&sm=",
+      "title": "“네이버 AI 팩토리, 내년부터 수익 창출”",
+      "date": "2026.08.07 18:08",
+      "doc_type": "article",
+      "content_sha256": "73d17e6e0a44e02f53ee50f92a983f515c2a334c0b2987e79d357bec66089a5e",
+      "content_chars": 1647
+    },
+    "404": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003542937&office_id=025&code=035420&page=3&sm=",
+      "title": "네이버 2분기 매출 역대 최대…“내년부터 ‘AI팩토리’ 성과 낼 것”",
+      "date": "2026.08.07 11:42",
+      "doc_type": "article",
+      "content_sha256": "8bb59739ec6a1e47ceefc789c9bb63772526f078b1cb3400f4e6f66f43c532a7",
+      "content_chars": 1794
+    },
+    "405": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0009102294&office_id=421&code=035420&page=3&sm=",
+      "title": "2분기 '역대 최대' 매출 네이버…AI팩토리·파이낸셜 투자도 박차",
+      "date": "2026.08.07 11:37",
+      "doc_type": "article",
+      "content_sha256": "cefc048c01604c103b8138ab3cc4bbd1c9b5eb899a3a6f5087a3eca070b5872f",
+      "content_chars": 2324
+    },
+    "406": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002680897&office_id=016&code=035420&page=3&sm=",
+      "title": "최수연 네이버 대표 “글로벌 AI 팩토리 내년 상반기 매출로 성과낸다...",
+      "date": "2026.08.07 11:28",
+      "doc_type": "article",
+      "content_sha256": "950cd690be6a5437b26a60a9691c190a0b91d84ba2faf92ef30e570eb3eca3ce",
+      "content_chars": 2168
+    },
+    "407": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0003119402&office_id=119&code=035420&page=3&sm=",
+      "title": "네이버, B2C 키우고 AI B2B로 외연 확장…내년 'AI 팩토리'...",
+      "date": "2026.08.07 11:15",
+      "doc_type": "article",
+      "content_sha256": "ec6cfd248c1153f1c887cf9ebab5e739cc0f1a2de94f3881ea0b508ce838df7e",
+      "content_chars": 2726
+    },
+    "408": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002680792&office_id=016&code=035420&page=3&sm=",
+      "title": "AI 투자로 영업익 하락한 네이버…최수연 “AI 첫 수익화 실현, 엔...",
+      "date": "2026.08.07 10:37",
+      "doc_type": "article",
+      "content_sha256": "73a90a993a7eeb1b9c164fb8fa715329f7af563710a8c6d714b687dbdb57a496",
+      "content_chars": 2158
+    },
+    "409": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005718176&office_id=009&code=035420&page=3&sm=",
+      "title": "네이버 2분기 실적 '선방'… 매출 3.4조원 사상최대",
+      "date": "2026.08.07 18:02",
+      "doc_type": "article",
+      "content_sha256": "2b46c27196cf8934afa0acd398d72aae23d4bd6d0823b58047816f1abf35f7f5",
+      "content_chars": 838
+    },
+    "414": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0014115063&office_id=003&code=035420&page=3&sm=",
+      "title": "AI 검색 요약에 블로그 죽는다?…네이버 \"창작자 지원금 2배 늘었다\"",
+      "date": "2026.08.07 17:58",
+      "doc_type": "article",
+      "content_sha256": "92292c34ed0b9fc961fd984e061adb3569de841d259b25cd016b901689e995c1",
+      "content_chars": 1490
+    },
+    "415": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0000526254&office_id=374&code=035420&page=3&sm=",
+      "title": "네이버 \"AI 브리핑 도입 이후 창작자 지원 2배 성장\"",
+      "date": "2026.08.07 16:42",
+      "doc_type": "article",
+      "content_sha256": "816bd684a940e1d99cda4c11e21d6f381ed8ab78637201d640369cd8b7d2c2ba",
+      "content_chars": 595
+    },
+    "416": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001048043&office_id=031&code=035420&page=3&sm=",
+      "title": "네이버 \"AI 검색 요약 도입 후 창작자 지원 2배 늘어\"",
+      "date": "2026.08.07 14:08",
+      "doc_type": "article",
+      "content_sha256": "f51d9fc097d1d014bd942a524bc513db198fd0015363ed0b3b7a58f4b5b35465",
+      "content_chars": 973
+    },
+    "417": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0006346836&office_id=018&code=035420&page=3&sm=",
+      "title": "네이버 AI 브리핑 도입 이후…블로그 창작자 지원 2배 늘었다",
+      "date": "2026.08.07 14:03",
+      "doc_type": "article",
+      "content_sha256": "cf9d67bb2d2fb53a9831119b90372415c239ff70392379b0f7f6075dee553378",
+      "content_chars": 1634
+    },
+    "418": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0009102532&office_id=421&code=035420&page=3&sm=",
+      "title": "네이버, AI 브리핑 도입 이후 블로그 창작자 수익·지원 2배 확대",
+      "date": "2026.08.07 13:40",
+      "doc_type": "article",
+      "content_sha256": "6556937c3182b3fd10de5f19a349b4273363670ad5caeeec902d073ae1979805",
+      "content_chars": 800
+    },
+    "419": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005717971&office_id=009&code=035420&page=3&sm=",
+      "title": "네이버 “AI 브리핑 도입 이후 창작자 지원 2배 늘어”",
+      "date": "2026.08.07 13:29",
+      "doc_type": "article",
+      "content_sha256": "cea58a49b9f1bdf97e04632e29ee2a84ac9590d1508e4d119a90726828f71a1d",
+      "content_chars": 916
+    },
+    "420": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005558596&office_id=014&code=035420&page=3&sm=",
+      "title": "네이버 AI 브리핑 도입 후 창작자 지원 규모 2배 늘었다",
+      "date": "2026.08.07 11:53",
+      "doc_type": "article",
+      "content_sha256": "9a6a7ea64d2381b6a431f2d62167161565582cad2f5e1cf09880fa3aaff2c831",
+      "content_chars": 810
+    },
+    "421": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002236996&office_id=138&code=035420&page=3&sm=",
+      "title": "네이버 \"AI 브리핑 도입 이후 창작자 지원 규모 2배 확대\"",
+      "date": "2026.08.07 11:47",
+      "doc_type": "article",
+      "content_sha256": "6f968ad60ac4fc1e2ae380ad6f5bfe9c03a8c9c7e6b6e5295da9da92bb4e7808",
+      "content_chars": 1326
+    },
+    "422": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0001154656&office_id=417&code=035420&page=3&sm=",
+      "title": "AI 검색이 만든 선순환…네이버, 창작자 지원 규모 2배 확대",
+      "date": "2026.08.07 11:37",
+      "doc_type": "article",
+      "content_sha256": "7dfb0734e6003e593079f3fe4759cf798d6332b7146bf0f6ec5ff7bd42820918",
+      "content_chars": 1561
+    },
+    "423": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002433313&office_id=092&code=035420&page=3&sm=",
+      "title": "네이버 \"AI 브리핑 도입 전보다 블로그 창작자 지원금 2배 증가\"",
+      "date": "2026.08.07 11:37",
+      "doc_type": "article",
+      "content_sha256": "4ad0cac6787edb4f8c5453ab0595695c80f301b05373b29face742cc76378dec",
+      "content_chars": 1220
+    },
+    "424": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0016238977&office_id=001&code=035420&page=3&sm=",
+      "title": "네이버 \"AI 브리핑 도입 후 창작자 수익·지원액 약 2배\"",
+      "date": "2026.08.07 11:22",
+      "doc_type": "article",
+      "content_sha256": "0ea8cafa6add26fcf795e4e8b9e83bac4551aeb253395c816142e7adeaf4a7b1",
+      "content_chars": 892
+    },
+    "427": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0006347026&office_id=018&code=035420&page=3&sm=",
+      "title": "카카오, 창사 첫 파업 끝 임금협상 타결…AI 에이전트 띄운다(종합)",
+      "date": "2026.08.07 17:37",
+      "doc_type": "article",
+      "content_sha256": "306399ab920af0ce914edbe9a441a15a2018d3477faca960a6676bee138da789",
+      "content_chars": 2548
+    },
+    "428": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005318531&office_id=015&code=035420&page=3&sm=",
+      "title": "'역대 최대 매출' 네이버 \"내년부터 AI 팩토리로 돈번다\"",
+      "date": "2026.08.07 17:32",
+      "doc_type": "article",
+      "content_sha256": "5e7b74aff15957452b51fef41575ed06d6e7de32b7b78db7b4e159ba77519c4e",
+      "content_chars": 1621
+    },
+    "429": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0005318508&office_id=015&code=035420&page=3&sm=",
+      "title": "역대 최대 매출 낸 네이버…“내년 상반기부터 AI 팩토리로 돈번다”....",
+      "date": "2026.08.07 16:46",
+      "doc_type": "article",
+      "content_sha256": "abaada09ca04c980ccfd2387b21a4110542f99b533fa832093e5d62a93ba0ae5",
+      "content_chars": 2156
+    },
+    "431": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0006346715&office_id=018&code=035420&page=4&sm=",
+      "title": "네이버 글로벌 도전 매출 첫 1조 돌파…C2C 새 성장축[컨콜]",
+      "date": "2026.08.07 10:18",
+      "doc_type": "article",
+      "content_sha256": "754a20d246184e0a6fbb8e0a8e0e6f511299524de866f8f981fa5aeb6a5f8438",
+      "content_chars": 1141
+    },
+    "432": {
+      "url": "https://finance.naver.com/item/news_read.naver?article_id=0002236953&office_id=138&code=035420&page=4&sm=",
+      "title": "[컨콜] \"포시마크·소다, 땡큐\"…네이버 '글로벌 도전' 매출 첫 1...",
+      "date": "2026.08.07 09:55",
+      "doc_type": "article",
+      "content_sha256": "27c596cead539942d5cb7e54f1ba8195656c0cb0b2aae791f210d4f99a73af29",
+      "content_chars": 1697
+    }
+  }
+}

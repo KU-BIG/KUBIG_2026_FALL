@@ -1,0 +1,32 @@
+[project]
+name = "kr-news-rag"
+version = "0.1.0"
+description = "한국 금융 뉴스 기반 RAG 에이전트"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "anthropic>=0.122.0",
+    "beautifulsoup4>=4.15.0",
+    "chromadb>=1.5.9",
+    "kiwipiepy>=0.23.2",
+    "openai>=3.3.1",
+    "python-dotenv>=1.2.2",
+    "rank-bm25>=0.2.2",
+    "requests>=2.34.2",
+    "sentence-transformers>=5.7.0",
+    "streamlit>=1.61.1",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+# Tests must not spend API credits. Anything that calls the real Claude API is
+# marked `live` and deselected by default; run it deliberately with
+#   uv run pytest -m live
+markers = ["live: calls the real Claude API and costs credits"]
+addopts = "-m 'not live'"

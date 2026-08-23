@@ -1,0 +1,15 @@
+{
+  "input": 600,
+  "tail:bare_mail": 30,
+  "tail:byline_mail": 8,
+  "tail:resale": 4,
+  "tail:jebo": 38,
+  "tail:magazine": 2,
+  "tail:byline_box": 1,
+  "tail:jebo_label": 9,
+  "tail:promo_url": 1,
+  "tail:photo_credit": 1,
+  "dropped_short": 1,
+  "merged_away": 167,
+  "output": 432
+}

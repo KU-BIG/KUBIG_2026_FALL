@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 기사 전문은 공개 리포에 두지 않는다. 저작권이 각 언론사에 있고 재배포가 되므로,
+# preprocessing/crawl.py → clean.py 로 각자 수집한다.
+data/raw/crawl_cache/
+data/raw/news_data.json
+data/processed/news_data_clean.json
+
+# 정제본 + mapping 에서 바이트 단위로 재생성되는 파생물 (evaluation/rebuild_pool.py)
+evaluation/pools/blind_pool_50.jsonl
+
+# 생성되는 청크/벡터 인덱스와 모델 캐시
+data/processed/news_chunks.jsonl
+data/chroma/
+.cache/huggingface/
+
+# 사람이 작성한 평가 문항은 추적하되 실행 결과는 재생성
+evaluation/results/
+
+# 환경 변수 (API 키 등)
+.env
+evaluation/.checkpoints/
+.env.*
+!.env.example
+
+# 에디터 / OS
+.vscode/
+.idea/
+.DS_Store
+.claude/
