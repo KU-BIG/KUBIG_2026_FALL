@@ -1,0 +1,22 @@
+# 파이썬 캐시/빌드 산출물
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 대회 공식 데이터 — 재현할 때 로컬에 직접 배치 (재배포 금지, DACON 규정)
+# 지금은 repo에 data/ 자체가 없지만, README 안내대로 재현하려고 로컬에
+# data/train/, data/test/ 를 만드는 순간 실수로 커밋되는 걸 막아준다.
+data/train/
+data/test/
+data/sample_submission.csv
+
+# Tier B API 키
+.env
+
+# OS/에디터 잡파일
+.DS_Store
+Thumbs.db
+
+# 삭제 예정(권한 문제로 옮겨만 둔 __pycache__ 등) — 확인 후 폴더째 지워도 됨
+_to_delete/
