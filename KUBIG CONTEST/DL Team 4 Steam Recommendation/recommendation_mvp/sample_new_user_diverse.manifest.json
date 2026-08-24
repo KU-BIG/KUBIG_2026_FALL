@@ -1,0 +1,25 @@
+{
+  "output": "recommendation_mvp\\sample_new_user_diverse.csv",
+  "shape": [
+    10,
+    26
+  ],
+  "profile_name": "rpg_new_user_diverse",
+  "preferred_tags": [
+    "RPG",
+    "Open World",
+    "Story Rich"
+  ],
+  "liked_app_ids": [
+    292030
+  ],
+  "exclude_app_ids": [],
+  "content_weight_requested": 0.85,
+  "effective_method": "minilm_preferences_plus_train_popularity",
+  "effective_content_weight": 0.85,
+  "top_k": 10,
+  "embedding": "all-MiniLM-L6-v2 item-to-item cosine profile",
+  "diversity": true,
+  "diversity_lambda": 0.65,
+  "candidate_multiplier": 10
+}

@@ -1,0 +1,13 @@
+experiment,n_eval_users,n_cold_eval_users,n_users_with_negative_train
+simple_mean_pos>=1,5000,2311,2880
+hours_weighted_pos>=1,5000,2311,2880
+pos_minus_0.2_neg_pos>=1,5000,2311,2880
+pos_minus_0.5_neg_pos>=1,5000,2311,2880
+simple_mean_pos>=3,4938,2279,2818
+hours_weighted_pos>=3,4938,2279,2818
+pos_minus_0.2_neg_pos>=3,4938,2279,2818
+pos_minus_0.5_neg_pos>=3,4938,2279,2818
+simple_mean_pos>=5,4534,2103,2414
+hours_weighted_pos>=5,4534,2103,2414
+pos_minus_0.2_neg_pos>=5,4534,2103,2414
+pos_minus_0.5_neg_pos>=5,4534,2103,2414

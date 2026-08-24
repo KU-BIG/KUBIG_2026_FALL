@@ -1,0 +1,16 @@
+{
+  "catalog_rows": 50872,
+  "history_rows": 579249,
+  "history_users": 50000,
+  "popularity_games": 16499,
+  "source_splits": [
+    "debug_train.parquet",
+    "debug_validation.parquet",
+    "debug_test.parquet"
+  ],
+  "files": {
+    "catalog_ui.parquet": 4127370,
+    "seen_history_all.parquet": 1639406,
+    "train_positive_counts.csv": 174080
+  }
+}

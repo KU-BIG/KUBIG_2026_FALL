@@ -1,0 +1,50 @@
+{
+  "checkpoint_seed": 42,
+  "checkpoint_dir": "outputs/mvp_50k/repro_seed_42/checkpoints",
+  "hybrid_summary": "outputs/mvp_50k/repro_seed_42/hybrid/hybrid_summary.json",
+  "data_dir": "outputs/mvp_50k/data_seed_42",
+  "catalog": "text_data/games_text_ready.csv",
+  "text_embedding_prefix": "text_data/emb_text_minilm",
+  "multimodal_embedding_prefix": "game_fusion/emb_game_concat_64",
+  "multimodal_user_checkpoint": "recommendation_mvp/model_artifacts/frozen_multimodal_user_bpr_seed42.pt",
+  "multimodal_summary": "recommendation_mvp/model_artifacts/multimodal_evaluation_summary_seed42.json",
+  "tabular_embedding_prefix": "tabular_embedding/leakage_safe/emb_tabular_safe_svd64",
+  "catalog_games": 50872,
+  "known_users": 49742,
+  "default_top_k": 10,
+  "default_history_scope": "all",
+  "models": [
+    "mf_bpr",
+    "text_bpr",
+    "balanced_hybrid"
+    ,"multimodal_bpr"
+    ,"mf_multimodal_hybrid"
+  ],
+  "balanced_hybrid": {
+    "alpha_mf": 0.2,
+    "alpha_text": 0.8,
+    "selection_data": "validation only",
+    "selection_rule": "maximize validation long-tail Recall@10 while retaining at least 99.5% of best validation NDCG@10"
+  },
+  "mf_multimodal_hybrid": {
+    "alpha_mf": 0.4,
+    "alpha_multimodal": 0.6,
+    "selection_data": "validation only",
+    "selected_game_bank": "frozen text + image + tabular concat"
+  },
+  "cold_start": {
+    "preferred_input": ["preferred_tags", "liked_app_ids"],
+    "content_embedding": "frozen multimodal for liked games; MiniLM for tags",
+    "content_weight": 0.85,
+    "popularity_weight": 0.15,
+    "tag_policy": "at least one preferred tag must match when tags are supplied",
+    "no_preference_fallback": "train positive interaction popularity"
+  },
+  "diversity_reranking": {
+    "method": "MMR using MiniLM cosine similarity and normalized-title Jaccard",
+    "enabled_by_default_in_ui": true,
+    "candidate_multiplier": 10,
+    "lambda_relevance": 0.65,
+    "lambda_diversity": 0.35
+  }
+}

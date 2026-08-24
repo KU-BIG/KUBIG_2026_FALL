@@ -1,0 +1,22 @@
+{
+  "output": "recommendation_mvp\\sample_recommendations.csv",
+  "shape": [
+    90,
+    20
+  ],
+  "users": [
+    13,
+    7654189,
+    14306011
+  ],
+  "models": [
+    "mf_bpr",
+    "text_bpr",
+    "balanced_hybrid"
+  ],
+  "top_k": 10,
+  "history_scope": "all",
+  "hybrid_alpha_mf": 0.2,
+  "hybrid_alpha_text": 0.8,
+  "device": "cpu"
+}

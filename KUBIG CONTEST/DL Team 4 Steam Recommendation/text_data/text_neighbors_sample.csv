@@ -1,0 +1,31 @@
+query_app_id,query_title,rank,neighbor_app_id,neighbor_title,cosine,neighbor_tags
+13500,Prince of Persia: Warrior Within™,1,13600,Prince of Persia®: The Sands of Time,0.8195792436599731,Action Adventure Parkour Platformer Third Person Classic Singleplayer Time Manipulation Puzzle Platformer Story Rich Time Travel Fantasy Great Soundtrack Atmospheric Hack and Slash Controller 3D Platformer Puzzle
+13500,Prince of Persia: Warrior Within™,2,13530,Prince of Persia: The Two Thrones™,0.775103747844696,Action Adventure Platformer Parkour Third Person Singleplayer Hack and Slash Fantasy Time Manipulation Time Travel Story Rich Stealth Classic Atmospheric Great Soundtrack 3D Platformer
+13500,Prince of Persia: Warrior Within™,3,33320,Prince of Persia: The Forgotten Sands™,0.7081701755523682,Action Adventure Platformer Parkour Third Person Singleplayer Fantasy Hack and Slash 3D Platformer Time Manipulation
+13500,Prince of Persia: Warrior Within™,4,19980,Prince of Persia®,0.7057138085365295,Action Adventure Parkour Platformer Third Person Singleplayer Fantasy Exploration Story Rich Atmospheric Open World Hack and Slash Great Soundtrack Relaxing Beautiful Action-Adventure 3D Platformer Controller Romance
+13500,Prince of Persia: Warrior Within™,5,1805480,Like a Dragon: Ishin!,0.6377915740013123,Action Adventure Beat 'em up Action-Adventure Hack and Slash Singleplayer JRPG Violent Historical Story Rich Gore Great Soundtrack Open World Sexual Content Funny Action RPG Nudity Minigames Martial Arts Comedy
+13500,Prince of Persia: Warrior Within™,6,385070,Atonement: Scourge of Time,0.611190915107727,Indie RPG Adventure RPGMaker Dark Fantasy Great Soundtrack
+113020,Monaco: What's Yours Is Mine,1,306690,PAYDAY 2: The Big Bank Heist,0.6426650285720825,Action FPS Co-op Heist Stealth Online Co-Op RPG Shooter Multiplayer Crime Great Soundtrack First-Person Strategy Team-Based
+113020,Monaco: What's Yours Is Mine,2,508550,Sneak Thief,0.6301416158676147,Stealth Action Indie Strategy First-Person Singleplayer Early Access Heist FPS Puzzle Multiplayer Horror Shooter Crime Gore Open World Co-op
+113020,Monaco: What's Yours Is Mine,3,1521580,Perfect Heist 2,0.6087590456008911,Action Shooter Strategy Stealth Social Deduction Heist 3D Detective Hero Shooter Multiplayer FPS Class-Based Level Editor Outbreak Sim First-Person Casual PvP Singleplayer Tactical Asynchronous Multiplayer
+113020,Monaco: What's Yours Is Mine,4,2119740,United heist,0.6040729880332947,Co-op Campaign Puzzle Adventure Mystery Mystery Dungeon 3D First-Person Foreign Logic Co-op Linear Narration Indie Free to Play Multiplayer Online Co-Op Escape Room Heist Realistic
+113020,Monaco: What's Yours Is Mine,5,2106110,Mafia Pigs,0.5979983806610107,Stealth Heist Action-Adventure Adventure Loot Competitive PvP 2D Hand-drawn Top-Down Crime Dark Humor Action Alternate History Comedy Looter Shooter Battle Royale Multiplayer Singleplayer PvE
+113020,Monaco: What's Yours Is Mine,6,24240,PAYDAY™ The Heist,0.5970872044563293,FPS Action Co-op Heist Multiplayer Crime Online Co-Op Shooter First-Person Great Soundtrack Team-Based Stealth Difficult Tactical Strategy Singleplayer Simulation RPG Indie Adventure
+620,Portal 2,1,400,Portal,0.8656795024871826,
+620,Portal 2,2,104600,Portal 2 - The Final Hours,0.7426694631576538,Documentary Story Rich Action Puzzle Adventure Game Development Movie Beautiful Emotional Feature Film Linear Singleplayer Multiplayer
+620,Portal 2,3,1255980,Portal Reloaded,0.7107376456260681,Free to Play Action Puzzle Mod First-Person Time Travel Singleplayer Multiplayer Puzzle Platformer 3D Platformer Psychological Horror Sci-fi Difficult Science Adventure Atmospheric Great Soundtrack Funny FPS Co-op
+620,Portal 2,4,2012840,Portal with RTX,0.6720103025436401,Action Puzzle First-Person Beautiful Singleplayer Sci-fi Story Rich Atmospheric Mod Psychological Horror Free to Play Realistic Female Protagonist Multiplayer Cult Classic Puzzle Platformer Funny
+620,Portal 2,5,617090,Portal Knights - Portal Pioneer Pack,0.6623255610466003,Action Adventure RPG
+620,Portal 2,6,317400,Portal Stories: Mel,0.6183595061302185,Free to Play Puzzle Adventure Mod Action Singleplayer First-Person Female Protagonist Difficult Story Rich Great Soundtrack Sci-fi Atmospheric Science Indie Funny Multiplayer FPS Strategy Co-op
+413150,Stardew Valley,1,1401590,Disney Dreamlight Valley,0.5672285556793213,
+413150,Stardew Valley,2,588030,Derail Valley,0.5347000360488892,
+413150,Stardew Valley,3,281990,Stellaris,0.515681266784668,
+413150,Stardew Valley,4,2084240,Starshifter,0.5106736421585083,Adventure Nature Casual Cute Colorful Story Rich Platformer Exploration Fantasy Relaxing Collectathon Indie Early Access 3D Platformer Third Person 3D Open World Singleplayer
+413150,Stardew Valley,5,1380220,Starsand,0.5066053867340088,Open World Survival Craft Survival Open World Realistic 3D First-Person Exploration Crafting Base Building Inventory Management Resource Management Sci-fi Atmospheric Story Rich Mystery Sandbox Singleplayer Building Aliens Adventure
+413150,Stardew Valley,6,1538920,Starcaller,0.494146466255188,Puzzle Score Attack VR Fast-Paced Arcade Physics Strategy Stylized Colorful Fantasy Magic Singleplayer Mystery Casual Indie Character Customization 3D
+292030,The Witcher® 3: Wild Hunt,1,378647,The Witcher 3: Wild Hunt - NEW GAME +,0.8579744100570679,RPG
+292030,The Witcher® 3: Wild Hunt,2,355880,The Witcher 3: Wild Hunt - Expansion Pass,0.7536629438400269,RPG Story Rich Open World Atmospheric Fantasy Adventure Mature Singleplayer Third Person Action Nudity Great Soundtrack Dark Fantasy Choices Matter Epic Sexual Content Gore Exploration Magic Multiplayer
+292030,The Witcher® 3: Wild Hunt,3,370002,The Witcher 3: Wild Hunt - Alternative Look for Yennefer,0.750525951385498,RPG
+292030,The Witcher® 3: Wild Hunt,4,378649,The Witcher 3: Wild Hunt - Hearts of Stone,0.7468565702438354,RPG Story Rich Open World Atmospheric Mature Fantasy Third Person Adventure Singleplayer Great Soundtrack Nudity Action Choices Matter Horror Gore Dark Fantasy Magic Action RPG Exploration
+292030,The Witcher® 3: Wild Hunt,5,378644,The Witcher 3: Wild Hunt - Alternative Look for Ciri,0.7391899228096008,RPG
+292030,The Witcher® 3: Wild Hunt,6,378642,The Witcher 3: Wild Hunt - New Quest 'Contract: Skellige's Most Wanted',0.7370538711547852,RPG

@@ -1,0 +1,31 @@
+{
+  "seeds": [
+    42,
+    7,
+    2026
+  ],
+  "selection": "bank and alpha selected using validation only",
+  "selected_bank": "emb_game_concat_64 (frozen concat)",
+  "balanced_alpha_mf_each_seed": [
+    {
+      "seed": 42,
+      "alpha_mf": 0.4
+    },
+    {
+      "seed": 7,
+      "alpha_mf": 0.4
+    },
+    {
+      "seed": 2026,
+      "alpha_mf": 0.4
+    }
+  ],
+  "mean_delta_hybrid_vs_mf": {
+    "recall@10": 0.020532852564102644,
+    "ndcg@10": 0.02363082709262876,
+    "mrr": 0.024227031654518894,
+    "long_tail_recall@10": 0.0341085271317829,
+    "catalog_coverage@10": 0.015968181579912963
+  },
+  "synthetic_bank_warning": "Step 3/4 banks were tuned on synthetic interactions and performed far below the frozen concat bank on real recommendation data. Do not deploy them."
+}

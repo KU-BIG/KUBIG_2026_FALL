@@ -1,0 +1,51 @@
+{
+  "cold": {
+    "function": "recommend_cold",
+    "input": {
+      "preferred_genres": "list[str]",
+      "liked_game_ids": "list[int]",
+      "interest_weight": "float, 0.0 <= value <= 1.0, default 1.0",
+      "k": "int, positive, default 10"
+    },
+    "output": "list[int] top-k app_id",
+    "detail_output_columns": [
+      "rank",
+      "app_id",
+      "score",
+      "content_score_z",
+      "baseline_score_z",
+      "baseline",
+      "interest_weight",
+      "method"
+    ],
+    "score": "interest_weight * z(game_bank @ cold_user_vector) + (1 - interest_weight) * z(train_popularity)",
+    "exclusions": "liked_game_ids"
+  },
+  "warm": {
+    "function": "recommend_warm",
+    "input": {
+      "user_id": "int",
+      "interest_weight": "float, 0.0 <= value <= 1.0, default 0.6",
+      "k": "int, positive, default 10"
+    },
+    "output": "list[int] top-k app_id",
+    "detail_output_columns": [
+      "user_id",
+      "rank",
+      "app_id",
+      "score",
+      "content_score_z",
+      "baseline_score_z",
+      "baseline",
+      "interest_weight",
+      "method"
+    ],
+    "score": "interest_weight * z(game_bank @ warm_user_vector) + (1 - interest_weight) * z(MF-BPR score)",
+    "exclusions": "seen games"
+  },
+  "shared": {
+    "game_bank": "game_fusion/emb_game_concat_64.npy",
+    "retrieval": "dot product in 64D frozen multimodal game space",
+    "normalization": "within available catalog z-score before score fusion"
+  }
+}

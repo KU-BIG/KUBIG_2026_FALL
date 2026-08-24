@@ -1,0 +1,16 @@
+{
+  "recommendation_rows_scanned": 41154794,
+  "catalog_games": 50872,
+  "embedding_games": 50872,
+  "sampled_users": 100000,
+  "users_with_vector": 99805,
+  "user_vector_dim": 384,
+  "positive_history_rows": 985386,
+  "train_eligible_users": 1550295,
+  "min_train_interactions": 5,
+  "min_positive_history": 1,
+  "max_users": 100000,
+  "seed": 42,
+  "train_end": "2022-04-01",
+  "app_id_mapping_ok": true
+}

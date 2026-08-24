@@ -1,0 +1,21 @@
+{
+  "output": "recommendation_mvp\\sample_known_user_diverse.csv",
+  "shape": [
+    10,
+    25
+  ],
+  "users": [
+    13
+  ],
+  "models": [
+    "balanced_hybrid"
+  ],
+  "top_k": 10,
+  "history_scope": "all",
+  "hybrid_alpha_mf": 0.2,
+  "hybrid_alpha_text": 0.8,
+  "device": "cpu",
+  "diversity": true,
+  "diversity_lambda": 0.65,
+  "candidate_multiplier": 10
+}

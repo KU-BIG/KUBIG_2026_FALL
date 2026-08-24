@@ -1,0 +1,12 @@
+{
+  "candidate_pool_multiplier": 10,
+  "lambda_relevance": 0.65,
+  "lambda_diversity": 0.35,
+  "top_k": 10,
+  "shared_games": 9,
+  "relevance_retention": 0.9974450086254844,
+  "intra_list_cosine_delta": -0.007708942283006559,
+  "high_title_overlap_pairs_before": 1,
+  "high_title_overlap_pairs_after": 0,
+  "conclusion": "The default MMR removes the Witcher DLC title-overlap pair with minimal relevance loss on the sample profile."
+}

@@ -1,0 +1,11 @@
+{
+  "eval_split": "test",
+  "min_train_interactions": 5,
+  "max_users": 100000,
+  "max_eval_users": 5000,
+  "seed": 42,
+  "sampled_train_users": 100000,
+  "base_eval_users": 5000,
+  "best_experiment": "hours_weighted_pos>=1",
+  "best_selection_score": 0.02045432471706367
+}

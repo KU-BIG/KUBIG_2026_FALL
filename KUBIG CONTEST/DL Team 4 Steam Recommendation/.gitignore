@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.streamlit/secrets.toml
+
+# Local training/evaluation artifacts are intentionally not deployed.
+outputs/
+text_data/games_text_ready.csv
+tabular_embedding/leakage_safe/*.npy
+
+# Temporary local recommendation exports.
+outputs/*.csv
+outputs/*.json

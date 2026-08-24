@@ -1,0 +1,16 @@
+{
+  "output": "recommendation_mvp\\sample_new_user_popularity.csv",
+  "shape": [
+    10,
+    21
+  ],
+  "profile_name": "no_preferences_new_user",
+  "preferred_tags": [],
+  "liked_app_ids": [],
+  "exclude_app_ids": [],
+  "content_weight_requested": 0.85,
+  "effective_method": "train_positive_popularity_fallback",
+  "effective_content_weight": 0.0,
+  "top_k": 10,
+  "embedding": "all-MiniLM-L6-v2 item-to-item cosine profile"
+}
