@@ -1,0 +1,7 @@
+torch
+transformers
+pymupdf
+colpali-engine
+qwen-vl-utils
+beautifulsoup4
+Pillow
