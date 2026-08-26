@@ -1,0 +1,17 @@
+data/pages/
+data/*_samples.json
+data/samples.json
+ocr_text_*.json
+retrieval_text_*.json
+retrieval_vision_*.json
+answers_*.json
+scored_*.json
+review_*.json
+page_stats.json
+pagecounts.json
+*.log
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+*.pdf
