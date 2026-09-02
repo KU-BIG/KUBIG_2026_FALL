@@ -19,7 +19,7 @@ from transformers import CLIPSegForImageSegmentation, CLIPSegProcessor
 
 ROOT = Path(__file__).resolve().parent.parent
 IMAGES_DIR = ROOT / "data" / "SemArt" / "Images"
-OUT_DIR = Path("/tmp/claude-1000/-teamspace-studios-this-studio-cv-session-1/8bdaf5ca-ae9b-42ec-9531-62abf6aaadc5/scratchpad")
+OUT_DIR = ROOT / "results" / "figures"
 
 EXAMPLES = [
     {"file": "17288-selfpo15.jpg", "prompt": "catalogue numbers", "note": "비접지 텍스트를 짧은 구로 — 찾을 대상이 없어야 함"},

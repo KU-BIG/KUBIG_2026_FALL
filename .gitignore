@@ -1,0 +1,17 @@
+# Repo-wide safety net. Each track under image-text/ and single-cell-multiomics/
+# additionally has its own .gitignore scoped to that track's data/artifact layout.
+
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# local Claude Code settings (personal paths, not for sharing)
+.claude/settings.local.json

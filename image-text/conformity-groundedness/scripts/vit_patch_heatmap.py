@@ -111,7 +111,7 @@ def main():
                          "sim_std": float(sim_map.std()), "b64": b64})
         print(f"  sim range [{sim_map.min():.3f}, {sim_map.max():.3f}] std={sim_map.std():.4f}")
 
-    out_dir = Path("/tmp/claude-1000/-teamspace-studios-this-studio-cv-session-1/8bdaf5ca-ae9b-42ec-9531-62abf6aaadc5/scratchpad")
+    out_dir = ROOT / "results" / "figures"
     out_dir.mkdir(parents=True, exist_ok=True)
     for i, r in enumerate(results):
         p = out_dir / f"heatmap_{i}.png"
