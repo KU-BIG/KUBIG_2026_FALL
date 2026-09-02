@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-08-22T17:04:33.948749+00:00",
+  "n": 9356,
+  "source_npz": "outputs/embeddings/clip_vitb32_embeddings.npz",
+  "delta_gap_visual_a_norm": 0.8540669083595276,
+  "delta_gap_visual_a_ci_95": [
+    0.8523411039269336,
+    0.8558430062290767
+  ],
+  "delta_gap_contextual_norm": 0.8608506321907043,
+  "delta_gap_contextual_ci_95": [
+    0.8594037486223584,
+    0.8623691993234294
+  ],
+  "bootstrap_n": 2000,
+  "bootstrap_seed": 42,
+  "linear_sep_acc_visual_a_mean": 1.0,
+  "linear_sep_acc_visual_a_std": 0.0,
+  "linear_sep_acc_contextual_mean": 1.0,
+  "linear_sep_acc_contextual_std": 0.0,
+  "linear_sep_n_splits": 5,
+  "linear_sep_random_state": 42,
+  "paired_cosine": {
+    "cos_a_mean": 0.3028181791305542,
+    "cos_b_mean": 0.2988889217376709,
+    "ttest_statistic": 7.960703201234416,
+    "ttest_pvalue": 1.9099253124433143e-15,
+    "wilcoxon_statistic": 19869932.0,
+    "wilcoxon_pvalue": 1.1938957531699228e-14
+  },
+  "h1_supported": true,
+  "h1_supported_note": "h1_supported is a plain point-estimate direction flag (delta_gap_visual_a_norm < delta_gap_contextual_norm), not a statistical significance test. See 02_experiment_plan.md section 3.3: rejection of H1 is an equally meaningful result, not a failure.",
+  "pca_figure": "outputs/figures/stage_a_pca.png",
+  "umap_figure": "outputs/figures/stage_a_umap.png"
+}

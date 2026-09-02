@@ -1,0 +1,13 @@
+# 이미지 원본 (Lightning Studio에서만 받음, 로컬/저장소에 안 둠)
+data/raw/
+
+# 대용량 산출물 — 재추출 대상, outputs/results/*.json 등 작은 산출물은 커밋
+outputs/embeddings/*.npz
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Claude Code 로컬 설정 (개인 경로 포함, 공유 금지)
+.claude/settings.local.json

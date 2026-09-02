@@ -1,0 +1,7 @@
+parquet_path: data/processed/semart_v1_modality_gap_dataset.parquet
+images_dir: data/raw/SemArt/Images
+output_path: outputs/embeddings/clip_vitb32_embeddings.npz
+model_name: openai/clip-vit-base-patch32
+batch_size: 64
+num_workers: 4
+device: auto        # "auto" -> cuda 있으면 cuda, 없으면 cpu

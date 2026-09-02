@@ -1,0 +1,170 @@
+{
+  "source_parquet": "data/processed/semart_v1_modality_gap_dataset.parquet",
+  "columns": {
+    "school": {
+      "column": "school",
+      "n_total": 9356,
+      "n_missing": 0,
+      "n_missing_ratio": 0.0,
+      "n_unique": 26,
+      "top1_class": "Italian",
+      "top1_ratio": 0.432129115006413,
+      "top3_ratio": 0.6993373236425823,
+      "rare_classes": [
+        "Other",
+        "Swedish",
+        "Norwegian",
+        "Finnish",
+        "Polish",
+        "Portuguese"
+      ],
+      "n_rare_classes": 6,
+      "value_counts": {
+        "Italian": 4043,
+        "Dutch": 1469,
+        "Flemish": 1031,
+        "French": 1012,
+        "German": 581,
+        "Spanish": 382,
+        "English": 171,
+        "Netherlandish": 152,
+        "Hungarian": 126,
+        "Austrian": 91,
+        "Danish": 58,
+        "American": 51,
+        "Swiss": 33,
+        "Russian": 23,
+        "Greek": 21,
+        "Scottish": 19,
+        "Catalan": 19,
+        "Belgian": 17,
+        "Bohemian": 15,
+        "Irish": 12,
+        "Other": 7,
+        "Swedish": 7,
+        "Norwegian": 7,
+        "Finnish": 5,
+        "Polish": 3,
+        "Portuguese": 1
+      },
+      "figure": "outputs/figures/downstream_label_distribution_school.png"
+    },
+    "type": {
+      "column": "type",
+      "n_total": 9356,
+      "n_missing": 0,
+      "n_missing_ratio": 0.0,
+      "n_unique": 10,
+      "top1_class": "religious",
+      "top1_ratio": 0.3993159469858914,
+      "top3_ratio": 0.6819153484395041,
+      "rare_classes": [],
+      "n_rare_classes": 0,
+      "value_counts": {
+        "religious": 3736,
+        "portrait": 1487,
+        "landscape": 1157,
+        "mythological": 921,
+        "genre": 778,
+        "still-life": 459,
+        "interior": 282,
+        "historical": 282,
+        "other": 240,
+        "study": 14
+      },
+      "figure": "outputs/figures/downstream_label_distribution_type.png"
+    },
+    "timeframe": {
+      "column": "timeframe",
+      "n_total": 9356,
+      "n_missing": 0,
+      "n_missing_ratio": 0.0,
+      "n_unique": 21,
+      "top1_class": "1601-1650",
+      "top1_ratio": 0.16513467293715262,
+      "top3_ratio": 0.44057289439931596,
+      "rare_classes": [
+        "1101-1150",
+        "0751-0800",
+        "0951-1000",
+        "0801-0850",
+        "0851-0900"
+      ],
+      "n_rare_classes": 5,
+      "value_counts": {
+        "1601-1650": 1545,
+        "1501-1550": 1388,
+        "1451-1500": 1189,
+        "1651-1700": 1007,
+        "1551-1600": 819,
+        "1851-1900": 739,
+        "1701-1750": 656,
+        "1401-1450": 498,
+        "1751-1800": 436,
+        "1801-1850": 433,
+        "1301-1350": 337,
+        "1351-1400": 200,
+        "1251-1300": 49,
+        "1051-1100": 16,
+        "1151-1200": 14,
+        "1201-1250": 13,
+        "1101-1150": 7,
+        "0751-0800": 3,
+        "0951-1000": 3,
+        "0801-0850": 3,
+        "0851-0900": 1
+      },
+      "figure": "outputs/figures/downstream_label_distribution_timeframe.png"
+    }
+  },
+  "multivalue_flags": {
+    "school": {
+      "column": "school",
+      "n_flagged": 0,
+      "flagged_ratio": 0.0,
+      "examples": []
+    },
+    "type": {
+      "column": "type",
+      "n_flagged": 0,
+      "flagged_ratio": 0.0,
+      "examples": []
+    },
+    "timeframe": {
+      "column": "timeframe",
+      "n_flagged": 0,
+      "flagged_ratio": 0.0,
+      "examples": []
+    }
+  },
+  "recommendation": {
+    "criteria": "class count in [5, 30] AND top1_ratio < 0.5, then prefer lower top1_ratio (more balanced) among qualifying columns",
+    "ranking": [
+      {
+        "column": "timeframe",
+        "n_unique": 21,
+        "top1_ratio": 0.16513467293715262,
+        "in_class_count_range": true,
+        "top1_ratio_acceptable": true,
+        "meets_criteria": true
+      },
+      {
+        "column": "type",
+        "n_unique": 10,
+        "top1_ratio": 0.3993159469858914,
+        "in_class_count_range": true,
+        "top1_ratio_acceptable": true,
+        "meets_criteria": true
+      },
+      {
+        "column": "school",
+        "n_unique": 26,
+        "top1_ratio": 0.432129115006413,
+        "in_class_count_range": true,
+        "top1_ratio_acceptable": true,
+        "meets_criteria": true
+      }
+    ],
+    "top_choice": "timeframe"
+  }
+}
