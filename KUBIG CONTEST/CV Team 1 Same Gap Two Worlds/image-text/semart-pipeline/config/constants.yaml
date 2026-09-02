@@ -1,0 +1,21 @@
+dataset:
+  n_rows_expected: 9356
+
+stage_a:
+  visual_token_len_mean: 44.16
+  visual_token_len_median: 44.0
+  contextual_token_len_mean: 48.77
+  contextual_token_len_median: 52.0
+  token_max: 75
+
+stage_b:
+  visual_first_sentence_token_mean: 31.77
+  visual_first_sentence_token_median: 30.0
+  visual_first_sentence_token_std: 13.05
+  visual_first_sentence_token_min: 3
+  visual_first_sentence_token_max: 75
+  treated_fraction_expected: 0.409   # 3,825 / 9,351 근사치, 전처리문서 6.3절
+
+tolerance:
+  mean_abs: 0.5      # 토큰 평균 검증 허용 오차
+  fraction_abs: 0.02  # treated_fraction 검증 허용 오차

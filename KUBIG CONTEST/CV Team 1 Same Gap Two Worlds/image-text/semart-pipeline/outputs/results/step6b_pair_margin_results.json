@@ -1,0 +1,236 @@
+{
+  "generated_at": "2026-08-22T17:48:42.460056+00:00",
+  "source_npz": "outputs/embeddings/clip_vitb32_embeddings.npz",
+  "bootstrap_n": 2000,
+  "bootstrap_seed": 42,
+  "combos": {
+    "stage_a_visual": {
+      "n": 9356,
+      "diag_mean": 0.3028181791305542,
+      "off_diag_mean": 0.21913255332339032,
+      "image_to_text": {
+        "mean": 0.08368495106697083,
+        "std": 0.04096544533967972,
+        "ci_95": [
+          0.08281054347753525,
+          0.0845345351845026
+        ],
+        "cohens_d": 2.042818069458008,
+        "rank_biserial_correlation": 0.9950378833102752,
+        "wilcoxon_statistic": 108601.0,
+        "wilcoxon_pvalue": 0.0,
+        "n_bootstrap": 2000,
+        "bootstrap_seed": 42
+      },
+      "text_to_image": {
+        "mean": 0.08368494361639023,
+        "std": 0.04399252310395241,
+        "ci_95": [
+          0.08275335654616356,
+          0.08459248840808868
+        ],
+        "cohens_d": 1.9022537469863892,
+        "rank_biserial_correlation": 0.9975405307761944,
+        "wilcoxon_statistic": 53828.0,
+        "wilcoxon_pvalue": 0.0,
+        "n_bootstrap": 2000,
+        "bootstrap_seed": 42
+      },
+      "margin_hist_figure": "outputs/figures/step6b_pair_margin_hist_stageA_visual.png",
+      "diag_offdiag_figure": "outputs/figures/step6b_pair_margin_diagoffdiag_stageA_visual.png"
+    },
+    "stage_a_contextual": {
+      "n": 9356,
+      "diag_mean": 0.2988889217376709,
+      "off_diag_mean": 0.22786905923744633,
+      "image_to_text": {
+        "mean": 0.07102013379335403,
+        "std": 0.03758019581437111,
+        "ci_95": [
+          0.0702433992177248,
+          0.07177547924220562
+        ],
+        "cohens_d": 1.8898286819458008,
+        "rank_biserial_correlation": 0.9888593738570045,
+        "wilcoxon_statistic": 243824.0,
+        "wilcoxon_pvalue": 0.0,
+        "n_bootstrap": 2000,
+        "bootstrap_seed": 42
+      },
+      "text_to_image": {
+        "mean": 0.07102014124393463,
+        "std": 0.04299052059650421,
+        "ci_95": [
+          0.07015112470835447,
+          0.07187299896031618
+        ],
+        "cohens_d": 1.6519954204559326,
+        "rank_biserial_correlation": 0.9921958868452254,
+        "wilcoxon_statistic": 170801.0,
+        "wilcoxon_pvalue": 0.0,
+        "n_bootstrap": 2000,
+        "bootstrap_seed": 42
+      },
+      "margin_hist_figure": "outputs/figures/step6b_pair_margin_hist_stageA_contextual.png",
+      "diag_offdiag_figure": "outputs/figures/step6b_pair_margin_diagoffdiag_stageA_contextual.png"
+    },
+    "stage_b_visual": {
+      "n": 9356,
+      "diag_mean": 0.29437732696533203,
+      "off_diag_mean": 0.2202322800540826,
+      "image_to_text": {
+        "mean": 0.07414491474628448,
+        "std": 0.04107748344540596,
+        "ci_95": [
+          0.07330208830535412,
+          0.07498590387403965
+        ],
+        "cohens_d": 1.8050013780593872,
+        "rank_biserial_correlation": 0.9872930774129224,
+        "wilcoxon_statistic": 278104.0,
+        "wilcoxon_pvalue": 0.0,
+        "n_bootstrap": 2000,
+        "bootstrap_seed": 42
+      },
+      "text_to_image": {
+        "mean": 0.07414489984512329,
+        "std": 0.04324492812156677,
+        "ci_95": [
+          0.07321808822453021,
+          0.07501471489667892
+        ],
+        "cohens_d": 1.714534044265747,
+        "rank_biserial_correlation": 0.9946874313346011,
+        "wilcoxon_statistic": 116271.0,
+        "wilcoxon_pvalue": 0.0,
+        "n_bootstrap": 2000,
+        "bootstrap_seed": 42
+      },
+      "margin_hist_figure": "outputs/figures/step6b_pair_margin_hist_stageB_visual.png",
+      "diag_offdiag_figure": "outputs/figures/step6b_pair_margin_diagoffdiag_stageB_visual.png"
+    },
+    "stage_b_contextual": {
+      "n": 9356,
+      "diag_mean": 0.2988889217376709,
+      "off_diag_mean": 0.22786905923744633,
+      "image_to_text": {
+        "mean": 0.07102013379335403,
+        "std": 0.03758019581437111,
+        "ci_95": [
+          0.0702433992177248,
+          0.07177547924220562
+        ],
+        "cohens_d": 1.8898286819458008,
+        "rank_biserial_correlation": 0.9888593738570045,
+        "wilcoxon_statistic": 243824.0,
+        "wilcoxon_pvalue": 0.0,
+        "n_bootstrap": 2000,
+        "bootstrap_seed": 42
+      },
+      "text_to_image": {
+        "mean": 0.07102014124393463,
+        "std": 0.04299052059650421,
+        "ci_95": [
+          0.07015112470835447,
+          0.07187299896031618
+        ],
+        "cohens_d": 1.6519954204559326,
+        "rank_biserial_correlation": 0.9921958868452254,
+        "wilcoxon_statistic": 170801.0,
+        "wilcoxon_pvalue": 0.0,
+        "n_bootstrap": 2000,
+        "bootstrap_seed": 42
+      },
+      "margin_hist_figure": "outputs/figures/step6b_pair_margin_hist_stageB_contextual.png",
+      "diag_offdiag_figure": "outputs/figures/step6b_pair_margin_diagoffdiag_stageB_contextual.png"
+    }
+  },
+  "sanity_check_stage_a_b_contextual": {
+    "max_abs_diff_mean_margin": 0.0,
+    "passed": true
+  },
+  "stage_b_treated_only": {
+    "n": 3854,
+    "stage_b_visual": {
+      "n": 3854,
+      "diag_mean": 0.29084357619285583,
+      "off_diag_mean": 0.22297769104362164,
+      "image_to_text": {
+        "mean": 0.06786590814590454,
+        "std": 0.040870387107133865,
+        "ci_95": [
+          0.06657424792647362,
+          0.0691915363073349
+        ],
+        "cohens_d": 1.6605154275894165,
+        "rank_biserial_correlation": 0.9774998872598214,
+        "wilcoxon_statistic": 83572.0,
+        "wilcoxon_pvalue": 0.0,
+        "n_bootstrap": 2000,
+        "bootstrap_seed": 42
+      },
+      "text_to_image": {
+        "mean": 0.06786591559648514,
+        "std": 0.040922682732343674,
+        "ci_95": [
+          0.0665519330650568,
+          0.0691806210204959
+        ],
+        "cohens_d": 1.6583936214447021,
+        "rank_biserial_correlation": 0.9927095133191584,
+        "wilcoxon_statistic": 27079.0,
+        "wilcoxon_pvalue": 0.0,
+        "n_bootstrap": 2000,
+        "bootstrap_seed": 42
+      },
+      "margin_hist_figure": "outputs/figures/step6b_pair_margin_hist_stageB_treated_visual.png",
+      "diag_offdiag_figure": "outputs/figures/step6b_pair_margin_diagoffdiag_stageB_treated_visual.png"
+    },
+    "stage_b_contextual": {
+      "n": 3854,
+      "diag_mean": 0.29901260137557983,
+      "off_diag_mean": 0.230127259829346,
+      "image_to_text": {
+        "mean": 0.06888531148433685,
+        "std": 0.03815116733312607,
+        "ci_95": [
+          0.06772001497447491,
+          0.07007374819368124
+        ],
+        "cohens_d": 1.8055886030197144,
+        "rank_biserial_correlation": 0.985471257312126,
+        "wilcoxon_statistic": 53964.0,
+        "wilcoxon_pvalue": 0.0,
+        "n_bootstrap": 2000,
+        "bootstrap_seed": 42
+      },
+      "text_to_image": {
+        "mean": 0.06888530403375626,
+        "std": 0.04218171909451485,
+        "ci_95": [
+          0.06752101685851812,
+          0.07014158573001623
+        ],
+        "cohens_d": 1.6330605745315552,
+        "rank_biserial_correlation": 0.9914476310091357,
+        "wilcoxon_statistic": 31766.0,
+        "wilcoxon_pvalue": 0.0,
+        "n_bootstrap": 2000,
+        "bootstrap_seed": 42
+      },
+      "margin_hist_figure": "outputs/figures/step6b_pair_margin_hist_stageB_treated_contextual.png",
+      "diag_offdiag_figure": "outputs/figures/step6b_pair_margin_diagoffdiag_stageB_treated_contextual.png"
+    },
+    "comparison": {
+      "margin_diff_full": -0.0031247809529304504,
+      "margin_diff_treated": 0.001019403338432312,
+      "note": "margin_diff = contextual.image_to_text.mean - visual.image_to_text.mean (same subtraction order as step5_stage_b_results.json's gap_diff, for direct comparability). Margin is a 'higher is better' quantity (unlike gap distance, which is 'lower is better'), so the H1-consistent direction here is NEGATIVE (visual margin > contextual margin), the mirror image of gap_diff's polarity -- this is the opposite convention from delta_gap and is called out explicitly to avoid confusion. Compare |margin_diff_treated| vs |margin_diff_full|: shrinking toward zero (or flipping sign) leans scenario 1 (length dominates); holding or growing leans scenario 2 (information type dominates) -- mirroring step5's interpretation framework (02_experiment_plan.md section 4.2). This script does not decide between them."
+    }
+  },
+  "notes": {
+    "post_hoc_not_training_reproduction": "This is a post-hoc verification on the frozen model's output embeddings, not a reproduction of the CLIP training process.",
+    "delta_gap_pairing_invariant": "compute_delta_gap (centroid distance) = mean(image_emb) - mean(text_emb) is mathematically invariant to pairing order -- it does not depend on which image is paired with which text. Do not conflate a change in pair margin with a change in delta_gap; they answer different questions (alignment quality vs. distribution-centroid distance).",
+    "retrieval_excluded": "Retrieval R@k is intentionally excluded here. It overlaps computationally with the section 7 downstream task (if retrieval is chosen), and candidate pool size is an open TODO in section 7.3 -- computing it now would pre-decide that design before the team discussion.",
+    "margin_i2t_not_independent": "margin_i2t (and margin_t2i) values are not fully independent across rows -- they all share the same fixed set of n texts (or images) as the off-diagonal comparison pool, so row-level off-diagonal means can be correlated through shared terms. Wilcoxon/bootstrap CI here do not correct for this. With n=9,356, p-values tend to be significant almost regardless of this non-independence, so interpretation should lean on Cohen's d / rank-biserial correlation (effect size), not p-value."
+  }
+}
