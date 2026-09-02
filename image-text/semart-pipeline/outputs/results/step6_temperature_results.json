@@ -1,0 +1,326 @@
+{
+  "generated_at": "2026-08-22T17:20:05.943545+00:00",
+  "source_npz": "outputs/embeddings/clip_vitb32_embeddings.npz",
+  "n_subsample": 2000,
+  "seed": 42,
+  "taus": {
+    "1/100": 0.01,
+    "1/50": 0.02,
+    "1/30": 0.03333333333333333,
+    "1/20": 0.05,
+    "1/10": 0.1,
+    "1": 1.0
+  },
+  "subsample_check": {
+    "stage_a_visual": {
+      "distance_sub": 0.8551095128059387,
+      "distance_full_reference": 0.8540669083595276,
+      "relative_diff": 0.0012207526555662294
+    },
+    "stage_a_contextual": {
+      "distance_sub": 0.8613744378089905,
+      "distance_full_reference": 0.8608506321907043,
+      "relative_diff": 0.0006084744538702901
+    },
+    "stage_b_visual": {
+      "distance_sub": 0.8782669305801392,
+      "distance_full_reference": 0.8769544959068298,
+      "relative_diff": 0.0014965824104159254
+    },
+    "stage_b_contextual": {
+      "distance_sub": 0.8613744378089905,
+      "distance_full_reference": 0.8608506321907043,
+      "relative_diff": 0.0006084744538702901
+    }
+  },
+  "combos": {
+    "stage_a_visual": {
+      "original_distance": 0.8551095128059387,
+      "per_tau": {
+        "1/100": {
+          "tau": 0.01,
+          "global_min_distance": 0.8551095128059387,
+          "global_min_loss": 5.242552280426025,
+          "original_minus_global_min_distance": 0.0,
+          "has_repulsive_structure": true,
+          "repulsive_region_distance": [
+            1.7525910733258305,
+            1.7525910733258305
+          ]
+        },
+        "1/50": {
+          "tau": 0.02,
+          "global_min_distance": 0.8551095128059387,
+          "global_min_loss": 5.1322503089904785,
+          "original_minus_global_min_distance": 0.0,
+          "has_repulsive_structure": true,
+          "repulsive_region_distance": [
+            1.5984959870052697,
+            1.5984959870052697
+          ]
+        },
+        "1/30": {
+          "tau": 0.03333333333333333,
+          "global_min_distance": 0.7094017267227173,
+          "global_min_loss": 5.676826238632202,
+          "original_minus_global_min_distance": -0.14570778608322144,
+          "has_repulsive_structure": true,
+          "repulsive_region_distance": [
+            1.2903058143641482,
+            1.2903058143641482
+          ]
+        },
+        "1/20": {
+          "tau": 0.05,
+          "global_min_distance": 0.549752414226532,
+          "global_min_loss": 6.140902042388916,
+          "original_minus_global_min_distance": -0.30535709857940674,
+          "has_repulsive_structure": false,
+          "repulsive_region_distance": null
+        },
+        "1/10": {
+          "tau": 0.1,
+          "global_min_distance": 0.37826231122016907,
+          "global_min_loss": 6.758688926696777,
+          "original_minus_global_min_distance": -0.47684720158576965,
+          "has_repulsive_structure": false,
+          "repulsive_region_distance": null
+        },
+        "1": {
+          "tau": 1.0,
+          "global_min_distance": 0.047914180904626846,
+          "global_min_loss": 7.501021146774292,
+          "original_minus_global_min_distance": -0.8071953319013119,
+          "has_repulsive_structure": false,
+          "repulsive_region_distance": null
+        }
+      },
+      "repulsive_taus": [
+        "1/100",
+        "1/50",
+        "1/30"
+      ],
+      "critical_tau_bracket": "1/30~1/20",
+      "n_lambda_points": 61,
+      "lambda_max": 6.0,
+      "figure": "outputs/figures/step6_landscape_stageA_visual.png"
+    },
+    "stage_a_contextual": {
+      "original_distance": 0.8613744378089905,
+      "per_tau": {
+        "1/100": {
+          "tau": 0.01,
+          "global_min_distance": 0.8613744378089905,
+          "global_min_loss": 5.7791430950164795,
+          "original_minus_global_min_distance": 0.0,
+          "has_repulsive_structure": true,
+          "repulsive_region_distance": [
+            1.7712234433871417,
+            1.7712234433871417
+          ]
+        },
+        "1/50": {
+          "tau": 0.02,
+          "global_min_distance": 0.8613744378089905,
+          "global_min_loss": 5.588517665863037,
+          "original_minus_global_min_distance": 0.0,
+          "has_repulsive_structure": true,
+          "repulsive_region_distance": [
+            1.6453034511238487,
+            1.6453034511238487
+          ]
+        },
+        "1/30": {
+          "tau": 0.03333333333333333,
+          "global_min_distance": 0.7144078612327576,
+          "global_min_loss": 6.029097318649292,
+          "original_minus_global_min_distance": -0.1469665765762329,
+          "has_repulsive_structure": true,
+          "repulsive_region_distance": [
+            1.4515803861033976,
+            1.4515803861033976
+          ]
+        },
+        "1/20": {
+          "tau": 0.05,
+          "global_min_distance": 0.553026020526886,
+          "global_min_loss": 6.40423059463501,
+          "original_minus_global_min_distance": -0.3083484172821045,
+          "has_repulsive_structure": false,
+          "repulsive_region_distance": null
+        },
+        "1/10": {
+          "tau": 0.1,
+          "global_min_distance": 0.37929439544677734,
+          "global_min_loss": 6.903068780899048,
+          "original_minus_global_min_distance": -0.48208004236221313,
+          "has_repulsive_structure": false,
+          "repulsive_region_distance": null
+        },
+        "1": {
+          "tau": 1.0,
+          "global_min_distance": 0.03740201145410538,
+          "global_min_loss": 7.516953945159912,
+          "original_minus_global_min_distance": -0.8239724263548851,
+          "has_repulsive_structure": false,
+          "repulsive_region_distance": null
+        }
+      },
+      "repulsive_taus": [
+        "1/100",
+        "1/50",
+        "1/30"
+      ],
+      "critical_tau_bracket": "1/30~1/20",
+      "n_lambda_points": 61,
+      "lambda_max": 6.0,
+      "figure": "outputs/figures/step6_landscape_stageA_contextual.png"
+    },
+    "stage_b_visual": {
+      "original_distance": 0.8782669305801392,
+      "per_tau": {
+        "1/100": {
+          "tau": 0.01,
+          "global_min_distance": 0.8782669305801392,
+          "global_min_loss": 5.69041109085083,
+          "original_minus_global_min_distance": 0.0,
+          "has_repulsive_structure": true,
+          "repulsive_region_distance": [
+            1.7622642018294066,
+            1.7622642018294066
+          ]
+        },
+        "1/50": {
+          "tau": 0.02,
+          "global_min_distance": 0.8782669305801392,
+          "global_min_loss": 5.45592188835144,
+          "original_minus_global_min_distance": 0.0,
+          "has_repulsive_structure": true,
+          "repulsive_region_distance": [
+            1.6163474828678759,
+            1.6163474828678759
+          ]
+        },
+        "1/30": {
+          "tau": 0.03333333333333333,
+          "global_min_distance": 0.7294631004333496,
+          "global_min_loss": 5.917302846908569,
+          "original_minus_global_min_distance": -0.14880383014678955,
+          "has_repulsive_structure": true,
+          "repulsive_region_distance": [
+            1.402336295057631,
+            1.402336295057631
+          ]
+        },
+        "1/20": {
+          "tau": 0.05,
+          "global_min_distance": 0.5653561949729919,
+          "global_min_loss": 6.322478294372559,
+          "original_minus_global_min_distance": -0.3129107356071472,
+          "has_repulsive_structure": false,
+          "repulsive_region_distance": null
+        },
+        "1/10": {
+          "tau": 0.1,
+          "global_min_distance": 0.38796424865722656,
+          "global_min_loss": 6.861790418624878,
+          "original_minus_global_min_distance": -0.4903026819229126,
+          "has_repulsive_structure": false,
+          "repulsive_region_distance": null
+        },
+        "1": {
+          "tau": 1.0,
+          "global_min_distance": 0.03071913681924343,
+          "global_min_loss": 7.512516498565674,
+          "original_minus_global_min_distance": -0.8475477937608957,
+          "has_repulsive_structure": false,
+          "repulsive_region_distance": null
+        }
+      },
+      "repulsive_taus": [
+        "1/100",
+        "1/50",
+        "1/30"
+      ],
+      "critical_tau_bracket": "1/30~1/20",
+      "n_lambda_points": 61,
+      "lambda_max": 6.0,
+      "figure": "outputs/figures/step6_landscape_stageB_visual.png"
+    },
+    "stage_b_contextual": {
+      "original_distance": 0.8613744378089905,
+      "per_tau": {
+        "1/100": {
+          "tau": 0.01,
+          "global_min_distance": 0.8613744378089905,
+          "global_min_loss": 5.7791430950164795,
+          "original_minus_global_min_distance": 0.0,
+          "has_repulsive_structure": true,
+          "repulsive_region_distance": [
+            1.7712234433871417,
+            1.7712234433871417
+          ]
+        },
+        "1/50": {
+          "tau": 0.02,
+          "global_min_distance": 0.8613744378089905,
+          "global_min_loss": 5.588517665863037,
+          "original_minus_global_min_distance": 0.0,
+          "has_repulsive_structure": true,
+          "repulsive_region_distance": [
+            1.6453034511238487,
+            1.6453034511238487
+          ]
+        },
+        "1/30": {
+          "tau": 0.03333333333333333,
+          "global_min_distance": 0.7144078612327576,
+          "global_min_loss": 6.029097318649292,
+          "original_minus_global_min_distance": -0.1469665765762329,
+          "has_repulsive_structure": true,
+          "repulsive_region_distance": [
+            1.4515803861033976,
+            1.4515803861033976
+          ]
+        },
+        "1/20": {
+          "tau": 0.05,
+          "global_min_distance": 0.553026020526886,
+          "global_min_loss": 6.40423059463501,
+          "original_minus_global_min_distance": -0.3083484172821045,
+          "has_repulsive_structure": false,
+          "repulsive_region_distance": null
+        },
+        "1/10": {
+          "tau": 0.1,
+          "global_min_distance": 0.37929439544677734,
+          "global_min_loss": 6.903068780899048,
+          "original_minus_global_min_distance": -0.48208004236221313,
+          "has_repulsive_structure": false,
+          "repulsive_region_distance": null
+        },
+        "1": {
+          "tau": 1.0,
+          "global_min_distance": 0.03740201145410538,
+          "global_min_loss": 7.516953945159912,
+          "original_minus_global_min_distance": -0.8239724263548851,
+          "has_repulsive_structure": false,
+          "repulsive_region_distance": null
+        }
+      },
+      "repulsive_taus": [
+        "1/100",
+        "1/50",
+        "1/30"
+      ],
+      "critical_tau_bracket": "1/30~1/20",
+      "n_lambda_points": 61,
+      "lambda_max": 6.0,
+      "figure": "outputs/figures/step6_landscape_stageB_contextual.png"
+    }
+  },
+  "sanity_check_stage_a_b_contextual": {
+    "max_abs_diff_global_min_distance": 0.0,
+    "passed": true
+  }
+}

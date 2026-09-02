@@ -1,0 +1,7 @@
+{
+  "smoke_n": 25,
+  "batch_size": 8,
+  "device": "cuda",
+  "elapsed_seconds_image": 1.283758483999918,
+  "elapsed_seconds_text": 0.29110412100021676
+}

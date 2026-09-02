@@ -1,0 +1,398 @@
+{
+  "source_npz": "outputs/embeddings/clip_vitb32_embeddings.npz",
+  "source_parquet": "data/processed/semart_v1_modality_gap_dataset.parquet",
+  "model": "openai/clip-vit-base-patch32",
+  "device": "cpu",
+  "columns": {
+    "type": {
+      "single_prompt": {
+        "prompt_template": "a painting depicting {}.",
+        "n": 9356,
+        "n_classes": 10,
+        "micro_accuracy": 0.554617357845233,
+        "macro_accuracy": 0.5239122898712678,
+        "majority_baseline_accuracy": 0.3993159469858914,
+        "chance_accuracy": 0.1,
+        "micro_accuracy_above_majority": 0.15530141085934163,
+        "per_class_accuracy": {
+          "genre": {
+            "n": 778,
+            "accuracy": 0.005141388174807198
+          },
+          "historical": {
+            "n": 282,
+            "accuracy": 0.30141843971631205
+          },
+          "interior": {
+            "n": 282,
+            "accuracy": 0.9078014184397163
+          },
+          "landscape": {
+            "n": 1157,
+            "accuracy": 0.8435609334485739
+          },
+          "mythological": {
+            "n": 921,
+            "accuracy": 0.5266015200868621
+          },
+          "other": {
+            "n": 240,
+            "accuracy": 0.125
+          },
+          "portrait": {
+            "n": 1487,
+            "accuracy": 0.7995965030262273
+          },
+          "religious": {
+            "n": 3736,
+            "accuracy": 0.466541755888651
+          },
+          "still-life": {
+            "n": 459,
+            "accuracy": 0.906318082788671
+          },
+          "study": {
+            "n": 14,
+            "accuracy": 0.35714285714285715
+          }
+        },
+        "prompt_rationale": "'a painting depicting {}.' -- type labels (religious/portrait/landscape/...) describe what the painting depicts, so 'depicting' phrasing mirrors CLIP's original 'a photo of a {}.' template adapted to painting subject matter.",
+        "verdict": "informative",
+        "verdict_threshold": 0.05,
+        "verdict_note": "This threshold (5 percentage points) is a provisional practical cutoff, not a statistical significance test. The team should make the final call after reviewing the actual micro_accuracy_above_majority value and the per-class accuracy breakdown, especially for borderline cases."
+      },
+      "ensemble_prompt": {
+        "prompt_templates": [
+          "a painting.",
+          "a painting depicting {}.",
+          "a {} painting.",
+          "an artwork in the {} genre."
+        ],
+        "n": 9356,
+        "n_classes": 10,
+        "micro_accuracy": 0.5130397605814451,
+        "macro_accuracy": 0.5095698650260189,
+        "majority_baseline_accuracy": 0.3993159469858914,
+        "chance_accuracy": 0.1,
+        "micro_accuracy_above_majority": 0.11372381359555367,
+        "per_class_accuracy": {
+          "genre": {
+            "n": 778,
+            "accuracy": 0.0012853470437017994
+          },
+          "historical": {
+            "n": 282,
+            "accuracy": 0.35815602836879434
+          },
+          "interior": {
+            "n": 282,
+            "accuracy": 0.9680851063829787
+          },
+          "landscape": {
+            "n": 1157,
+            "accuracy": 0.7942955920484011
+          },
+          "mythological": {
+            "n": 921,
+            "accuracy": 0.5157437567861021
+          },
+          "other": {
+            "n": 240,
+            "accuracy": 0.0
+          },
+          "portrait": {
+            "n": 1487,
+            "accuracy": 0.7827841291190316
+          },
+          "religious": {
+            "n": 3736,
+            "accuracy": 0.38356531049250536
+          },
+          "still-life": {
+            "n": 459,
+            "accuracy": 0.934640522875817
+          },
+          "study": {
+            "n": 14,
+            "accuracy": 0.35714285714285715
+          }
+        },
+        "prompt_rationale": "CLIP/Fahim et al. style prompt ensembling: encode each of the 4 templates below for every class (no class-specific template selection), L2-normalize each per-template embedding, average across templates per class, then re-normalize -- this is the standard 'prompt ensembling' technique from the CLIP paper, applied identically to all 10 classes.",
+        "verdict": "informative",
+        "verdict_threshold": 0.05,
+        "verdict_note": "This threshold (5 percentage points) is a provisional practical cutoff, not a statistical significance test. The team should make the final call after reviewing the actual micro_accuracy_above_majority value and the per-class accuracy breakdown, especially for borderline cases."
+      },
+      "confusion_matrix_figure": "outputs/figures/downstream_type_confusion_matrix.png",
+      "genre_misclassification_summary": {
+        "true_class": "genre",
+        "n_total": 778,
+        "n_correct": 4,
+        "accuracy": 0.005141388174807198,
+        "top3_misclassified_as": [
+          {
+            "predicted_class": "study",
+            "count": 325,
+            "fraction_of_true_class": 0.41773778920308485
+          },
+          {
+            "predicted_class": "interior",
+            "count": 145,
+            "fraction_of_true_class": 0.18637532133676094
+          },
+          {
+            "predicted_class": "landscape",
+            "count": 80,
+            "fraction_of_true_class": 0.10282776349614396
+          }
+        ],
+        "top3_fraction_of_total": 0.7069408740359897,
+        "n_other_classes_receiving_misclassifications": 9
+      },
+      "final_prevalence_filtered": {
+        "prompt_template": "a painting depicting {}.",
+        "n": 9342,
+        "n_classes": 9,
+        "micro_accuracy": 0.584136159280668,
+        "macro_accuracy": 0.5683407218299115,
+        "majority_baseline_accuracy": 0.3999143652322843,
+        "chance_accuracy": 0.1111111111111111,
+        "micro_accuracy_above_majority": 0.18422179404838368,
+        "per_class_accuracy": {
+          "genre": {
+            "n": 778,
+            "accuracy": 0.007712082262210797
+          },
+          "historical": {
+            "n": 282,
+            "accuracy": 0.3049645390070922
+          },
+          "interior": {
+            "n": 282,
+            "accuracy": 0.9609929078014184
+          },
+          "landscape": {
+            "n": 1157,
+            "accuracy": 0.8461538461538461
+          },
+          "mythological": {
+            "n": 921,
+            "accuracy": 0.5624321389793703
+          },
+          "other": {
+            "n": 240,
+            "accuracy": 0.15
+          },
+          "portrait": {
+            "n": 1487,
+            "accuracy": 0.8628110289172831
+          },
+          "religious": {
+            "n": 3736,
+            "accuracy": 0.49625267665952894
+          },
+          "still-life": {
+            "n": 459,
+            "accuracy": 0.9237472766884531
+          }
+        },
+        "verdict": "informative",
+        "verdict_threshold": 0.05,
+        "verdict_note": "This threshold (5 percentage points) is a provisional practical cutoff, not a statistical significance test. The team should make the final call after reviewing the actual micro_accuracy_above_majority value and the per-class accuracy breakdown, especially for borderline cases.",
+        "class_prevalence": [
+          {
+            "class_name": "genre",
+            "n": 778,
+            "ratio": 0.08315519452757589,
+            "excluded": false
+          },
+          {
+            "class_name": "historical",
+            "n": 282,
+            "ratio": 0.030141085934159897,
+            "excluded": false
+          },
+          {
+            "class_name": "interior",
+            "n": 282,
+            "ratio": 0.030141085934159897,
+            "excluded": false
+          },
+          {
+            "class_name": "landscape",
+            "n": 1157,
+            "ratio": 0.12366395895681916,
+            "excluded": false
+          },
+          {
+            "class_name": "mythological",
+            "n": 921,
+            "ratio": 0.09843950406156478,
+            "excluded": false
+          },
+          {
+            "class_name": "other",
+            "n": 240,
+            "ratio": 0.025651988029072252,
+            "excluded": false
+          },
+          {
+            "class_name": "portrait",
+            "n": 1487,
+            "ratio": 0.1589354424967935,
+            "excluded": false
+          },
+          {
+            "class_name": "religious",
+            "n": 3736,
+            "ratio": 0.3993159469858914,
+            "excluded": false
+          },
+          {
+            "class_name": "still-life",
+            "n": 459,
+            "ratio": 0.049059427105600684,
+            "excluded": false
+          },
+          {
+            "class_name": "study",
+            "n": 14,
+            "ratio": 0.001496365968362548,
+            "excluded": true
+          }
+        ],
+        "min_ratio_threshold": 0.01,
+        "excluded_classes": [
+          "study"
+        ],
+        "n_excluded_rows": 14,
+        "notes": {
+          "rule_applied_before_seeing_accuracy": "This 1% prevalence rule is a prior criterion decided before looking at any accuracy results, and is not targeted at any specific class. It only depends on class sample counts, never on classification accuracy.",
+          "genre_low_accuracy_retained_by_design": "genre is well above the 1% threshold and is NOT excluded by this filter, even though its single_prompt accuracy is very low (see columns.type.single_prompt.per_class_accuracy.genre). Accuracy plays no role in this filter by design -- this is intentionally retained for the report footnote.",
+          "used_for": "This final_prevalence_filtered configuration is the one to be used in Step 7b (embedding shift zero-shot sweep)."
+        }
+      }
+    },
+    "school": {
+      "single_prompt": {
+        "prompt_template": "a painting from the {} school.",
+        "n": 9356,
+        "n_classes": 26,
+        "micro_accuracy": 0.28398888413852075,
+        "macro_accuracy": 0.13758887579794898,
+        "majority_baseline_accuracy": 0.432129115006413,
+        "chance_accuracy": 0.038461538461538464,
+        "micro_accuracy_above_majority": -0.14814023086789224,
+        "per_class_accuracy": {
+          "American": {
+            "n": 51,
+            "accuracy": 0.49019607843137253
+          },
+          "Austrian": {
+            "n": 91,
+            "accuracy": 0.03296703296703297
+          },
+          "Belgian": {
+            "n": 17,
+            "accuracy": 0.058823529411764705
+          },
+          "Bohemian": {
+            "n": 15,
+            "accuracy": 0.0
+          },
+          "Catalan": {
+            "n": 19,
+            "accuracy": 0.0
+          },
+          "Danish": {
+            "n": 58,
+            "accuracy": 0.06896551724137931
+          },
+          "Dutch": {
+            "n": 1469,
+            "accuracy": 0.4424778761061947
+          },
+          "English": {
+            "n": 171,
+            "accuracy": 0.14619883040935672
+          },
+          "Finnish": {
+            "n": 5,
+            "accuracy": 0.0
+          },
+          "Flemish": {
+            "n": 1031,
+            "accuracy": 0.29000969932104753
+          },
+          "French": {
+            "n": 1012,
+            "accuracy": 0.07806324110671936
+          },
+          "German": {
+            "n": 581,
+            "accuracy": 0.0051635111876075735
+          },
+          "Greek": {
+            "n": 21,
+            "accuracy": 0.9047619047619048
+          },
+          "Hungarian": {
+            "n": 126,
+            "accuracy": 0.0
+          },
+          "Irish": {
+            "n": 12,
+            "accuracy": 0.0
+          },
+          "Italian": {
+            "n": 4043,
+            "accuracy": 0.364828097947069
+          },
+          "Netherlandish": {
+            "n": 152,
+            "accuracy": 0.39473684210526316
+          },
+          "Norwegian": {
+            "n": 7,
+            "accuracy": 0.0
+          },
+          "Other": {
+            "n": 7,
+            "accuracy": 0.0
+          },
+          "Polish": {
+            "n": 3,
+            "accuracy": 0.0
+          },
+          "Portuguese": {
+            "n": 1,
+            "accuracy": 0.0
+          },
+          "Russian": {
+            "n": 23,
+            "accuracy": 0.17391304347826086
+          },
+          "Scottish": {
+            "n": 19,
+            "accuracy": 0.10526315789473684
+          },
+          "Spanish": {
+            "n": 382,
+            "accuracy": 0.020942408376963352
+          },
+          "Swedish": {
+            "n": 7,
+            "accuracy": 0.0
+          },
+          "Swiss": {
+            "n": 33,
+            "accuracy": 0.0
+          }
+        },
+        "prompt_rationale": "'a painting from the {} school.' -- school labels (Italian/Dutch/Flemish/...) are an art-historical school/nationality attribution, not depicted content, so this follows the conventional art-historical phrase 'the X school' rather than treating the label as a depicted subject (which 'a painting of {}.' would incorrectly imply).",
+        "verdict": "not_informative",
+        "verdict_threshold": 0.05,
+        "verdict_note": "This threshold (5 percentage points) is a provisional practical cutoff, not a statistical significance test. The team should make the final call after reviewing the actual micro_accuracy_above_majority value and the per-class accuracy breakdown, especially for borderline cases."
+      }
+    }
+  }
+}
